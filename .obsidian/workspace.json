@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "3975e1f446ca4c6f",
+    "type": "split",
+    "children": [
+      {
+        "id": "92e60becfa7c451f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f98100e8c39ce30f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "40750321a2410792",
+    "type": "split",
+    "children": [
+      {
+        "id": "4e3038cd29543c7e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d11c6fc68efc03b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5b8d5b335b963eaa",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6754c9a404b4b053",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "f5e580471bec1e06",
+    "type": "split",
+    "children": [
+      {
+        "id": "e4990ca81893140e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30bddfa7ac54a991",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "304a085798cb4bf9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "9032d89488d6f1fa",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ee5783e116307910",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "0d11c6fc68efc03b",
+  "lastOpenFiles": [
+    "Leetcode Solutions/Easy/Valid Parenthesis.md",
+    "Leetcode Solutions/Easy/Two Sum.md",
+    "Leetcode Solutions/Easy/Roman to Integer.md",
+    "Leetcode Solutions/Easy/Palindrome.md",
+    "Leetcode Solutions/Easy/Merging Two sorted list.md",
+    "Leetcode Solutions/Easy/Longest Common Prefix.md",
+    "Leetcode Solutions/Easy/DLL - Reverse.md",
+    "Leetcode Solutions/Easy",
+    "Leetcode Solutions",
+    "🥋 Interview Prep/Design Interview/1️⃣ Design - Phase 1.md",
+    "🥋 Interview Prep/Design Interview/2️⃣ Design - Phase 2.md",
+    "🥋 Interview Prep/SWE/JavaScript Questions.md",
+    "🥋 Interview Prep/SWE/General Questions.md",
+    "🥋 Interview Prep/SWE/Data structures & Algo.md",
+    "🥋 Interview Prep/SWE/DSA notes.md",
+    "🥋 Interview Prep/Design Interview",
+    "🥋 Interview Prep/SWE",
+    "🥋 Interview Prep",
+    "Leetcode/Untitled.md",
+    "Leetcode/Easy/Valid Parenthesis.md",
+    "Leetcode/Easy/Two Sum.md",
+    "Leetcode/Easy/Roman to Integer.md",
+    "Leetcode/Easy/Palindrome.md",
+    "Leetcode/Easy/Merging Two sorted list.md",
+    "Leetcode/Easy/Longest Common Prefix.md",
+    "Leetcode/Easy/DLL - Reverse.md",
+    "Leetcode/Easy",
+    "Leetcode",
+    "Neovim/Learn-Neovim.md",
+    "Neovim/Learn Neovim.md",
+    "Neovim/Neovim config.md",
+    "Neovim",
+    "README.md",
+    "📂 Projects/Rest API in Go.md",
+    "📂 Projects"
+  ]
+}
