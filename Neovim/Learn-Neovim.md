@@ -1,14 +1,12 @@
-
-
 ##### Navigation:
 
-
 - Moving `<-` with B - to backward word by word
--  `v a w ` to select around a around 
+- `v a w ` to select around a around
 - Shift + v to select the entire line
 - ` v a t` to select around a `<tag>`
 
 ##### Braces around word
+
 ```
 -     Old text                    Command         New text
 --------------------------------------------------------------------------------
@@ -19,10 +17,9 @@
    'change quot*es'            cs'"            "change quotes"
    <b>or tag* types</b>        csth1<CR>       <h1>or tag types</h1>
    delete(functi*on calls)     dsf             function calls
- 
+
 
 ```
-
 
 # Neovim Text Editing Tricks
 
@@ -77,6 +74,12 @@
 | `gq<motion>`                       | Format text to fit width                  | E.g., `gqip` formats paragraph. Uses `textwidth` or LSP formatting.           |
 | `<leader>cf`                       | Format file or selection                  | LazyVim default (via LSP or `conform.nvim`). Check `:map <leader>c`.          |
 
+## replace
+
+Replace the word globally on the whole file
+
+`:%s/\<oldword\>/newword/g`
+
 ## Notes
 
 - **LazyVim Defaults**: Most shortcuts are core Neovim commands. LazyVim adds LSP and plugin-specific bindings (e.g., `<leader>xx` for `trouble.nvim`). Check `:map` for custom mappings in `~/.config/nvim/lua/config/keymaps.lua`.
@@ -85,11 +88,10 @@
 - **Troubleshooting**: If a shortcut fails, check for conflicts with `:map <shortcut>` or ensure plugins (e.g., `trouble.nvim`, `treesitter`) are installed via `:checkhealth`.
 - **Cursor Placement**: Most motions (e.g., `ciw`, `vaf`) work anywhere within the target (word, function, etc.). Precise placement noted where required.
 
-
-
 ### Color schemes
 
 Rose pine
+
 ```
 return {
 	{
@@ -188,7 +190,7 @@ return {
 
 ```
 
-#####  Craftzdog osaka color 
+##### Craftzdog osaka color
 
 ```
 return {
