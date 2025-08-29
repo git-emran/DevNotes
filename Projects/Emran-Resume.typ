@@ -1,12 +1,11 @@
 #import "@preview/basic-resume:0.2.8": *
 
 // Put your personal information here, replacing mine
-#let name = "Emran"
-#let location = "Dhaka, BD"
+#let name = "Emran Hossain"
 #let email = "emrn.hossn@gmail.com"
 #let github = "github.com/git-emran"
-#let linkedin = "linkedin.com/in/stuxf"
-#let personal-site = "stuxf.dev"
+#let linkedin = "https://www.linkedin.com/in/emran-hossain-80ab17190/"
+#let personal-site = "https://www.designwithemran.com"
 
 #show: resume.with(
   author: name,
@@ -41,31 +40,29 @@
 == Education
 
 #edu(
-  institution: "Harvey Mudd College",
-  location: "Claremont, CA",
-  dates: dates-helper(start-date: "Aug 2023", end-date: "May 2027"),
-  degree: "Bachelor's of Science, Computer Science and Mathematics",
+  institution: "University of Information and Technologies",
+  location: "Dhaka, Bangladesh",
+  dates: dates-helper(start-date: "Aug 2013", end-date: "May 2017"),
+  degree: "Bachelor's of Science, Computer Science",
 
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
-- Cumulative GPA: 4.0\/4.0 | Dean's List, Harvey S. Mudd Merit Scholarship, National Merit Scholarship
-- Relevant Coursework: Data Structures, Program Development, Microprocessors, Abstract Algebra I: Groups and Rings, Linear Algebra, Discrete Mathematics, Multivariable & Single Variable Calculus, Principles and Practice of Comp Sci
-
+Computer Science - UITS
 == Work Experience
 
 #work(
-  title: "Subatomic Shepherd and Caffeine Connoisseur",
-  location: "Atomville, CA",
-  company: "Microscopic Circus, Schrodinger's University",
-  dates: dates-helper(start-date: "May 2024", end-date: "Present"),
+  title: "Product Lead, Software Engineer",
+  location: "Copenhagen, Denmark",
+  company: "Tiblo Digital",
+  dates: dates-helper(start-date: "Dec 2023", end-date: "Present"),
 )
-- Played God with tiny molecules, making them dance to uncover the secrets of the universe
-- Convinced high-performance computers to work overtime without unions, reducing simulation time by 50%
-- Wowed a room full of nerds with pretty pictures of invisible things and imaginary findings
+- Proudly Launched over 25 successful products in the agency
+- Designed and Launched WheelLog, a New innovative product in collboration with TyreProf resulting in a 80% customer converted in the first quarter. Implemented support for real time collaboration and presence detection in React using conflict free replicated data (CRDT).
+- Introduced a new collaboration style, design standards and documentation strategies with Storybook and Figma to eliminate design debt.
 
 #work(
-  title: "AI Wrangler and Code Ninja",
+  title: "Total Office Dubai",
   location: "Silicon Mirage, CA",
   company: "Organic Stupidity Startup",
   dates: dates-helper(start-date: "Dec 2023", end-date: "Mar 2024"),

@@ -11,10 +11,14 @@
             "id": "f98100e8c39ce30f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Http from TCP.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Http from TCP"
             }
           }
         ]
@@ -165,8 +169,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "0d11c6fc68efc03b",
+  "active": "f98100e8c39ce30f",
   "lastOpenFiles": [
+    "Projects/Markdown notes.md",
+    "Projects/PrepTalk.md",
+    "Projects/Http from TCP.md",
+    "Interview-Prep/SWE/JavaScript Questions.md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
     "Leetcode Solutions/Easy/Valid Parenthesis.md",
     "Leetcode Solutions/Easy/Two Sum.md",
     "Leetcode Solutions/Easy/Roman to Integer.md",
@@ -195,12 +204,7 @@
     "Leetcode/Easy/DLL - Reverse.md",
     "Leetcode/Easy",
     "Leetcode",
-    "Neovim/Learn-Neovim.md",
-    "Neovim/Learn Neovim.md",
-    "Neovim/Neovim config.md",
     "Neovim",
-    "README.md",
-    "📂 Projects/Rest API in Go.md",
     "📂 Projects"
   ]
 }

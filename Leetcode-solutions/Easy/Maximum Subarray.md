@@ -4,7 +4,7 @@ Given an integer array nums, find the subarray with the largest sum, and return 
 
 ### Solve using Kedane's Algorithm
 
-Some Exmaple :
+Some Example:
 
 ```
 Example 1:
@@ -62,7 +62,7 @@ var maxSubArray = function (nums) {
 };
 ```
 
-Another way to solve it by comparing..
+Another way to solve it by comparing:
 
 ```javascript
 var maxSubArray = function (nums) {
