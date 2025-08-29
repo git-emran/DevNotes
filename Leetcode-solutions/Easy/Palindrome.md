@@ -60,4 +60,4 @@ class Solution:
 		return x == reversed_digits or x == reversed_digits // 10
 ```
 
-
+Javascirpt

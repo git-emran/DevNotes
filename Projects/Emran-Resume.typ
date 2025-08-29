@@ -6,7 +6,6 @@
 #let email = "emrn.hossn@gmail.com"
 #let github = "github.com/git-emran"
 #let linkedin = "linkedin.com/in/stuxf"
-#let phone = "+1 (xxx) xxx-xxxx"
 #let personal-site = "stuxf.dev"
 
 #show: resume.with(
@@ -18,7 +17,6 @@
   email: email,
   github: github,
   linkedin: linkedin,
-  phone: phone,
   personal-site: personal-site,
   accent-color: "#26428b",
   font: "New Computer Modern",
