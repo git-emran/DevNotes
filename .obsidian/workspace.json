@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "92e60becfa7c451f",
+        "id": "329c4181214702e1",
         "type": "tabs",
         "children": [
           {
-            "id": "f98100e8c39ce30f",
+            "id": "4e6a1a23e33f4ed9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Http from TCP.md",
+                "file": "Leetcode-solutions/Easy/Merging Two sorted list.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Http from TCP"
+              "title": "Merging Two sorted list"
             }
           }
         ]
@@ -169,13 +169,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "f98100e8c39ce30f",
+  "active": "4e6a1a23e33f4ed9",
   "lastOpenFiles": [
+    "Leetcode-solutions/Easy/Merge Intervals.md",
+    "Leetcode-solutions/Easy/MergeIntervals.md",
+    "1,3],[2,6],[8,10],[15,18.md",
+    "Leetcode-solutions/Easy/Merging Two sorted list.md",
+    "Leetcode-solutions/Easy/Two Sum.md",
+    "1,6],[8,10],[15,18.md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
+    "Leetcode-solutions/Easy/DLL - Reverse.md",
+    "Leetcode-solutions/Easy/Maximum Subarray.md",
+    "Interview-Prep/SWE/JavaScript Questions.md",
+    "Interview-Prep/SWE/General Questions.md",
+    "Interview-Prep/SWE/DSA notes.md",
+    "Neovim/Learn-Neovim.md",
+    "Projects/Gopher Social.md",
+    "Projects/Http from TCP.md",
     "Projects/Markdown notes.md",
     "Projects/PrepTalk.md",
-    "Projects/Http from TCP.md",
-    "Interview-Prep/SWE/JavaScript Questions.md",
-    "Interview-Prep/SWE/Data structures & Algo.md",
     "Leetcode Solutions/Easy/Valid Parenthesis.md",
     "Leetcode Solutions/Easy/Two Sum.md",
     "Leetcode Solutions/Easy/Roman to Integer.md",
@@ -187,21 +199,9 @@
     "Leetcode Solutions",
     "🥋 Interview Prep/Design Interview/1️⃣ Design - Phase 1.md",
     "🥋 Interview Prep/Design Interview/2️⃣ Design - Phase 2.md",
-    "🥋 Interview Prep/SWE/JavaScript Questions.md",
-    "🥋 Interview Prep/SWE/General Questions.md",
-    "🥋 Interview Prep/SWE/Data structures & Algo.md",
-    "🥋 Interview Prep/SWE/DSA notes.md",
     "🥋 Interview Prep/Design Interview",
     "🥋 Interview Prep/SWE",
     "🥋 Interview Prep",
-    "Leetcode/Untitled.md",
-    "Leetcode/Easy/Valid Parenthesis.md",
-    "Leetcode/Easy/Two Sum.md",
-    "Leetcode/Easy/Roman to Integer.md",
-    "Leetcode/Easy/Palindrome.md",
-    "Leetcode/Easy/Merging Two sorted list.md",
-    "Leetcode/Easy/Longest Common Prefix.md",
-    "Leetcode/Easy/DLL - Reverse.md",
     "Leetcode/Easy",
     "Leetcode",
     "Neovim",

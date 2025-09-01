@@ -101,3 +101,337 @@
 | 98  | How do you implement a custom Map implementation?                                              | Create a class with key-value storage. Example: `javascript class MyMap { constructor() { this.items = []; } set(key, value) { const index = this.items.findIndex(([k]) => k === key); if (index !== -1) this.items[index][1] = value; else this.items.push([key, value]); } get(key) { const pair = this.items.find(([k]) => k === key); return pair ? pair[1] : undefined; } } const map = new MyMap(); map.set('a', 1); console.log(map.get('a')); // 1`                                                                                                                                                                                                                                                                                                                                                                                                      | Edge cases: Object keys check references. Large maps impact performance.                                                                                                                  |
 | 99  | What is the purpose of `Array.prototype.toReversed`? Provide an example.                       | `toReversed` returns a new reversed array without mutating the original (proposed). Example: `javascript const arr = [1, 2, 3]; console.log(arr.toReversed()); // [3, 2, 1] console.log(arr); // [1, 2, 3]`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Edge cases: Requires modern JavaScript. Sparse arrays may skip empty slots.                                                                                                               |
 | 100 | Explain the concept of a Proxy trap for property access.                                       | The `get` trap intercepts property reads. Example: ```javascript const target = { a: 1 }; const proxy = new Proxy(target, { get(target, prop) { return target[prop]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                           |
+## ⚙️ JavaScript Deep Knowledge (25 Questions)
+
+### 1. **What is a closure in JavaScript?**
+
+**Answer:**
+
+A closure is a function that retains access to its lexical scope even after the outer function has executed.
+
+```
+js
+Copy code
+function outer() {
+  let count = 0;
+  return function inner() {
+    return ++count;
+  };
+}
+const counter = outer();
+counter(); // 1
+counter(); // 2
+
+```
+
+---
+
+### 2. **Explain prototypal inheritance.**
+
+**Answer:**
+
+Objects can inherit from other objects. In JS, every object has a prototype and delegates property access to it.
+
+```
+js
+Copy code
+const parent = { greet() { return "hi"; } };
+const child = Object.create(parent);
+child.greet(); // hi
+
+```
+
+---
+
+### 3. **What are WeakMaps and WeakSets used for?**
+
+**Answer:**
+
+They store object keys without preventing garbage collection. Great for private data or caching.
+
+```
+js
+Copy code
+const wm = new WeakMap();
+wm.set(obj, 'secret');
+
+```
+
+---
+
+### 4. **Explain event loop and microtasks vs macrotasks.**
+
+**Answer:**
+
+Microtasks (like `Promise.then`) are prioritized over macrotasks (like `setTimeout`).
+
+```
+js
+Copy code
+Promise.resolve().then(() => console.log("micro"));
+setTimeout(() => console.log("macro"), 0);
+// Output: "micro", "macro"
+
+```
+
+---
+
+### 5. **How does hoisting work in JS?**
+
+**Answer:**
+
+Variables declared with `var` are hoisted and initialized as `undefined`. `let`/`const` are hoisted but uninitialized (TDZ).
+
+---
+
+### 6. **What is currying?**
+
+**Answer:**
+
+Breaking a function into multiple unary functions.
+
+```
+js
+Copy code
+const multiply = a => b => a * b;
+multiply(2)(3); // 6
+
+```
+
+---
+
+### 7. **What is memoization and how is it implemented?**
+
+**Answer:**
+
+Caching the results of expensive function calls.
+
+```
+js
+Copy code
+function memo(fn) {
+  const cache = {};
+  return (...args) => {
+    const key = args.join(',');
+    if (key in cache) return cache[key];
+    return (cache[key] = fn(...args));
+  };
+}
+
+```
+
+---
+
+### 8. **Difference between deep and shallow copy?**
+
+**Answer:**
+
+Shallow copies reference nested objects; deep copies clone everything.
+
+```
+js
+Copy code
+JSON.parse(JSON.stringify(obj)); // deep
+Object.assign({}, obj); // shallow
+
+```
+
+---
+
+### 9. **What is the module pattern in JS?**
+
+**Answer:**
+
+Encapsulates private/public members using closures.
+
+```
+js
+Copy code
+const Counter = (function () {
+  let count = 0;
+  return {
+    inc: () => ++count,
+    get: () => count
+  };
+})();
+
+```
+
+---
+
+### 10. **Difference between `bind`, `call`, and `apply`?**
+
+**Answer:**
+
+- `bind`: returns a new function
+- `call`: invokes with args
+- `apply`: like `call` but args as array
+
+---
+
+### 11. **Explain the Observer pattern in JS.**
+
+**Answer:**
+
+Objects subscribe to events from a subject.
+
+```
+js
+Copy code
+class Subject {
+  observers = [];
+  subscribe(fn) { this.observers.push(fn); }
+  notify(data) { this.observers.forEach(fn => fn(data)); }
+}
+
+```
+
+---
+
+### 12. **Explain the Singleton pattern in JS.**
+
+**Answer:**
+
+Ensures only one instance.
+
+```
+js
+Copy code
+const singleton = (() => {
+  let instance;
+  return {
+    getInstance: () => instance ??= {}
+  };
+})();
+
+```
+
+---
+
+### 13. **What is tail call optimization?**
+
+**Answer:**
+
+A recursive call is the last operation and allows stack reuse (not supported in most JS engines yet).
+
+---
+
+### 14. **Difference between `undefined` and `null`?**
+
+**Answer:**
+
+- `undefined`: variable declared but not assigned
+- `null`: intentional absence of value
+
+---
+
+### 15. **What are generators and how do they differ from normal functions?**
+
+**Answer:**
+
+Generators can pause execution and resume later.
+
+```
+js
+Copy code
+function* gen() {
+  yield 1;
+  yield 2;
+}
+
+```
+
+---
+
+### 16. **What is the difference between `Object.freeze()` and `Object.seal()`?**
+
+**Answer:**
+
+- `freeze`: no add/remove/change
+- `seal`: no add/remove, but can change
+
+---
+
+### 17. **What is a debounce vs throttle function?**
+
+**Answer:**
+
+- Debounce: wait until no calls for X ms
+- Throttle: call at most once every X ms
+
+---
+
+### 18. **Explain composition vs inheritance.**
+
+**Answer:**
+
+Composition = “has a” (preferred), Inheritance = “is a”
+
+JS favors composition via functions and modules.
+
+---
+
+### 19. **What is the difference between strict mode and non-strict?**
+
+**Answer:**
+
+Strict mode prevents silent errors and disallows bad syntax like implicit globals.
+
+`'use strict';`
+
+---
+
+### 20. **What is a Service Worker?**
+
+**Answer:**
+
+A JS file that intercepts network requests, supports offline caching, push notifications.
+
+---
+
+### 21. **Explain Event Delegation.**
+
+**Answer:**
+
+Listening to events on a parent and using `event.target` to act on children.
+
+---
+
+### 22. **Difference between `async/await` and `.then()`?**
+
+**Answer:**
+
+`async/await` is syntactic sugar over promises. More readable and linear.
+
+---
+
+### 23. **What is the Revealing Module Pattern?**
+
+**Answer:**
+
+Expose public members by returning an object from a closure.
+
+---
+
+### 24. **Explain the Factory pattern.**
+
+**Answer:**
+
+Creates objects without exposing instantiation logic.
+
+```
+js
+Copy code
+function userFactory(role) {
+  return {
+    role,
+    permissions: () => role === "admin" ? "all" : "read"
+  };
+}
+
+```
+### 25. **Explain immutability in JS.**
+
+**Answer:**
+
+Avoid modifying existing data — use spread, `map`, etc.
