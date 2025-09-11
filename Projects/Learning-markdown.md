@@ -8,12 +8,11 @@ This is another attempt to create an web application to add it to my personal pr
 
 
 
-#####  What is Electron ? 
+##### ? 
 Its a frame work for creating desktop application. It uses Javascript, HTML, CSS By embedding [Chromium](https://www.chromium.org/) and [Node.js](https://nodejs.org/) into its binary,
 
 How it works under the hood: 
 ![[Screenshot 2025-07-21 at 8.42.54 PM.png]]
-
 
 
 ---
@@ -81,3 +80,8 @@ What I did:
 
 ###  Update 1.0.0: 
  - File system for the note 
+
+
+Bug - 
+
+- Link: When I click on the link it loads On the app browser itself

@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "329c4181214702e1",
+        "id": "10b393bc35d5fee3",
         "type": "tabs",
         "children": [
           {
-            "id": "4e6a1a23e33f4ed9",
+            "id": "3a30627e7dff11b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode-solutions/Easy/Merging Two sorted list.md",
+                "file": "Projects/Front-End challenges.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Merging Two sorted list"
+              "title": "Front-End challenges"
+            }
+          },
+          {
+            "id": "c77d02cc76048772",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Typing Speed.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Typing Speed"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 340.5024719238281
   },
   "right": {
     "id": "f5e580471bec1e06",
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "Leetcode-solutions/Easy/Merging Two sorted list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for Merging Two sorted list"
             }
           },
           {
@@ -169,36 +184,37 @@
       "bases:Create new base": false
     }
   },
-  "active": "4e6a1a23e33f4ed9",
+  "active": "c77d02cc76048772",
   "lastOpenFiles": [
-    "Leetcode-solutions/Easy/Merge Intervals.md",
+    "Projects/Front-End challenges.md",
+    "Projects/Gopher-Social.md",
+    "Projects/Http-from-TCP.md",
     "Leetcode-solutions/Easy/MergeIntervals.md",
-    "1,3],[2,6],[8,10],[15,18.md",
-    "Leetcode-solutions/Easy/Merging Two sorted list.md",
     "Leetcode-solutions/Easy/Two Sum.md",
-    "1,6],[8,10],[15,18.md",
+    "Projects/Learning-markdown.md",
+    "Projects/PrepTalk.md",
+    "Projects/Typing Speed.md",
+    "README.md",
+    "www.linkedin.com.md",
     "Interview-Prep/SWE/Data structures & Algo.md",
-    "Leetcode-solutions/Easy/DLL - Reverse.md",
-    "Leetcode-solutions/Easy/Maximum Subarray.md",
+    "Leetcode-solutions/Easy/LL - Reverse.md",
+    "Leetcode-solutions/Easy/Longest Common Prefix.md",
     "Interview-Prep/SWE/JavaScript Questions.md",
     "Interview-Prep/SWE/General Questions.md",
     "Interview-Prep/SWE/DSA notes.md",
-    "Neovim/Learn-Neovim.md",
-    "Projects/Gopher Social.md",
-    "Projects/Http from TCP.md",
-    "Projects/Markdown notes.md",
-    "Projects/PrepTalk.md",
-    "Leetcode Solutions/Easy/Valid Parenthesis.md",
-    "Leetcode Solutions/Easy/Two Sum.md",
-    "Leetcode Solutions/Easy/Roman to Integer.md",
-    "Leetcode Solutions/Easy/Palindrome.md",
-    "Leetcode Solutions/Easy/Merging Two sorted list.md",
-    "Leetcode Solutions/Easy/Longest Common Prefix.md",
-    "Leetcode Solutions/Easy/DLL - Reverse.md",
+    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
+    "Interview-Prep/rubylabs.md",
+    "Ideas/Vault.md",
+    "Leetcode-solutions/Easy/Maximum Subarray.md",
+    "Interview-Prep/SWE/Web Development Questions.md",
+    "Projects/Writer.md",
+    "Leetcode-solutions/Easy/Roman to Integer.md",
+    "Leetcode-solutions/Easy/Palindrome.md",
+    "Leetcode-solutions/Easy/DLL - Reverse.md",
+    "Ideas",
     "Leetcode Solutions/Easy",
     "Leetcode Solutions",
-    "🥋 Interview Prep/Design Interview/1️⃣ Design - Phase 1.md",
-    "🥋 Interview Prep/Design Interview/2️⃣ Design - Phase 2.md",
     "🥋 Interview Prep/Design Interview",
     "🥋 Interview Prep/SWE",
     "🥋 Interview Prep",

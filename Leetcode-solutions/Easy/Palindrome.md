@@ -1,7 +1,7 @@
 
 Approaching with the two pointer method. Creating self.head and self.tail. Dividing self length by 2 and if left value doesn't match the right value return false, else turn left pointer to next and right pointer to prev.
 
-```
+```python
    def is_palindrome(self): 
         if self.length <= 1:
             return True
@@ -35,7 +35,7 @@ Edge cases -
 + For odd digit numbers removing the middle 
  
 
-```
+```python
 
 class Solution: 
 

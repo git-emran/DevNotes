@@ -56,12 +56,13 @@ binary
 
 BST
     TODO: treap https://jvns.ca/blog/2017/09/09/data-structure--the-treap-/
-
+```
     find(): O(lgn) (_If_ you can guarantee that the number of nodes ~halved each
                     iteration. This is why BST must be "balanced".)
     Other important properties:
         can obtain the smallest element by following all the left children
         can obtain the largest element by following all the right children
+```
 
 heap
     TODO: https://github.com/wincent/command-t/blob/master/ruby/command-t/heap.c

@@ -38,10 +38,14 @@ Algorithm:
  * @return {number[][]}
  */
 var merge = function(intervals) {
-    if (intervals.length === 0) return []
 
+	// Edge case
+    if (intervals.length === 0) return []
+	
+	// Sorting the first index of the both intervals
     intervals.sort((a,b) => a[0] - b[0])
 
+	// create a new node to store the array
     const merged = []
 
     for (const [start, end] of intervals ) {

@@ -92,7 +92,7 @@ Replace the word globally on the whole file
 
 Rose pine
 
-```
+```lua
 return {
 	{
 		"rose-pine/neovim",
@@ -192,7 +192,7 @@ return {
 
 ##### Craftzdog osaka color
 
-```
+```lua
 return {
 	{
 		"craftzdog/solarized-osaka.nvim",

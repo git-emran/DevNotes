@@ -1,4 +1,4 @@
-
+	
 Find the longest common characters in a list of words
 
 ##### Edge case
@@ -8,7 +8,7 @@ Find the longest common characters in a list of words
 + For everything in range of length of the strings
 
 
-```
+```python
 class Solution:
 
 	def longestCommonPrefix(self, strs: List[str]) -> str:

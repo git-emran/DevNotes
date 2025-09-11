@@ -1,12 +1,9 @@
-
-
-
 + First checking if the char and bracket_map values are equal or not. If yes, append the char to stack
 + Else, if check if the stack is empty or last item of stack is not equal to  `bracket_map[char]` .
 + If it's true the return False.
 + And close the For loop by return empty `stack`
 
-```
+```python
 class Solution:
 
 def isValid(self, s: str) -> bool:
@@ -28,7 +25,7 @@ def isValid(self, s: str) -> bool:
 ```
 
 ##### Alternatively
-```
+```python
 elif char in bracket_map.keys():
 	if not stack or bracket_map[char] != stack.pop():
 		return False
@@ -37,6 +34,6 @@ elif char in bracket_map.keys():
 ```
 
 ##### and Finally closing the for loop with
-```
+```python
 return not stack or Empty stack
 ```
