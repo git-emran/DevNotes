@@ -4,7 +4,7 @@
 #let name = "Emran Hossain"
 #let email = "emrn.hossn@gmail.com"
 #let github = "github.com/git-emran"
-#let linkedin = "https://www.linkedin.com/in/emran-hossain-80ab17190/"
+#let linkedin = "linkedin: " + "https://www.linkedin.com/in/emran-hossain-80ab17190/"
 #let personal-site = "https://www.designwithemran.com"
 
 #show: resume.with(
@@ -12,7 +12,6 @@
   // All the lines below are optional.
   // For example, if you want to to hide your phone number:
   // feel free to comment those lines out and they will not show.
-  location: location,
   email: email,
   github: github,
   linkedin: linkedin,
@@ -41,7 +40,6 @@
 
 #edu(
   institution: "University of Information and Technologies",
-  location: "Dhaka, Bangladesh",
   dates: dates-helper(start-date: "Aug 2013", end-date: "May 2017"),
   degree: "Bachelor's of Science, Computer Science",
 
@@ -62,25 +60,24 @@ Computer Science - UITS
 - Introduced a new collaboration style, design standards and documentation strategies with Storybook and Figma to eliminate design debt.
 
 #work(
-  title: "Total Office Dubai",
+  title: "Front-end Engineer, UX",
   location: "Silicon Mirage, CA",
   company: "Organic Stupidity Startup",
   dates: dates-helper(start-date: "Dec 2023", end-date: "Mar 2024"),
 )
-- Taught robots to predict when (and how much!) humans will empty their wallets at the doctor's office
-- Developed HIPAA-compliant digital signatures, because doctors' handwriting wasn't illegible enough already
-- Turned spaghetti code into a gourmet dish, making other interns drool with envy
+
+- Played a key role in addressing security vulnerabilities (CVEs), reducing their count from 411 to 3 through diligent analysis and mitigation measures.
+- Introduced ARIA attributes and customizable keyboard navigation, resulting in 98% user satisfaction from individuals with diverse abilities.
+- Optimized Core Web Vitals (LCP, CLS, FID) for a high-traﬃc e-commerce platform by implementing image lazy loading, code splitting, and service workers, improving conversion rates by 20% and page load speed from 3.4s to 1.2s.
 
 #work(
-  title: "Digital Playground Architect",
-  location: "The Cloud",
+  title: "Lead UX/UI Designer",
+  location: "MarketTime LLC",
   company: "Pixels & Profit Interactive",
   dates: dates-helper(start-date: "Jun 2020", end-date: "May 2023"),
 )
-- Scaled user base from 10 to 2000+, accidentally becoming a small wealthy nation in the process
-- Crafted Bash scripts so clever they occasionally made other engineers weep with joy
-- Automated support responses, reducing human interaction to a level that would make introverts proud
-- Built a documentation site that actually got read, breaking the ancient RTFM curse
+
+-Achieved WCAG compliance for an enterprise grade system in 2 months. Collaboratively designed a new payment processing feature named “mtPay” with a 95% user adoption rate. Ensured seamless migration from Angular 3 to Angular 10.
 
 #work(
   title: "Code Conjurer Intern",
@@ -88,6 +85,7 @@ Computer Science - UITS
   company: "Bits & Bytes Consulting",
   dates: dates-helper(start-date: "Jun 2022", end-date: "Aug 2022"),
 )
+
 - Developed a cross-platform mobile app that turned every user into a potential paparazzi
 - Led a security overhaul, heroically saving the company from the menace of "password123"
 

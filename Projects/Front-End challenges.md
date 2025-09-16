@@ -1,4 +1,4 @@
-### 🔹 **UI/Component Challenges**
+	### 🔹 **UI/Component Challenges**
 
 1. **Build a To-do App** – Add, edit, delete, and mark tasks as complete.
 2. **Accordion/FAQ Component** – Expand/collapse items with smooth animations.

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Typing Speed.md",
+                "file": "Leetcode-solutions/Easy/Valid Parenthesis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Typing Speed"
+              "title": "Valid Parenthesis"
             }
           }
         ],
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5024719238281
+    "width": 236.50247192382812
   },
   "right": {
     "id": "f5e580471bec1e06",
@@ -186,32 +186,32 @@
   },
   "active": "c77d02cc76048772",
   "lastOpenFiles": [
+    "Interview-Prep/SWE/JavaScript Questions.md",
     "Projects/Front-End challenges.md",
+    "Interview-Prep/SWE/General Questions.md",
+    "Interview-Prep/SWE/DSA notes.md",
+    "Leetcode-solutions/Easy/Merging Two sorted list.md",
+    "Leetcode-solutions/Easy/Longest Common Prefix.md",
+    "Leetcode-solutions/Easy/Maximum Subarray.md",
+    "Leetcode-solutions/Easy/MergeIntervals.md",
+    "Interview-Prep/rubylabs.md",
+    "Leetcode-solutions/Easy/Two Sum.md",
+    "Leetcode-solutions/Easy/Valid Parenthesis.md",
+    "Interview-Prep/SWE/Web Development Questions.md",
+    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
+    "Projects/Typing Speed.md",
     "Projects/Gopher-Social.md",
     "Projects/Http-from-TCP.md",
-    "Leetcode-solutions/Easy/MergeIntervals.md",
-    "Leetcode-solutions/Easy/Two Sum.md",
     "Projects/Learning-markdown.md",
     "Projects/PrepTalk.md",
-    "Projects/Typing Speed.md",
     "README.md",
     "www.linkedin.com.md",
     "Interview-Prep/SWE/Data structures & Algo.md",
     "Leetcode-solutions/Easy/LL - Reverse.md",
-    "Leetcode-solutions/Easy/Longest Common Prefix.md",
-    "Interview-Prep/SWE/JavaScript Questions.md",
-    "Interview-Prep/SWE/General Questions.md",
-    "Interview-Prep/SWE/DSA notes.md",
-    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
-    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
-    "Interview-Prep/rubylabs.md",
     "Ideas/Vault.md",
-    "Leetcode-solutions/Easy/Maximum Subarray.md",
-    "Interview-Prep/SWE/Web Development Questions.md",
     "Projects/Writer.md",
     "Leetcode-solutions/Easy/Roman to Integer.md",
-    "Leetcode-solutions/Easy/Palindrome.md",
-    "Leetcode-solutions/Easy/DLL - Reverse.md",
     "Ideas",
     "Leetcode Solutions/Easy",
     "Leetcode Solutions",
