@@ -6,7 +6,7 @@ The game is logic is divided into two parts. Game Engine and The game player act
 
 ## Game Engine
 
-Let's start with the deisgn of the board.
+Let's start with the design of the board.
 
 ```Python
 

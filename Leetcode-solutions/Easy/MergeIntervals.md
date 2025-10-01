@@ -41,7 +41,7 @@ var merge = function(intervals) {
 
 	// Edge case
     if (intervals.length === 0) return []
-	
+
 	// Sorting the first index of the both intervals
     intervals.sort((a,b) => a[0] - b[0])
 

@@ -7,6 +7,7 @@
 #let linkedin = "linkedin: " + "https://www.linkedin.com/in/emran-hossain-80ab17190/"
 #let personal-site = "https://www.designwithemran.com"
 
+
 #show: resume.with(
   author: name,
   // All the lines below are optional.
@@ -92,13 +93,13 @@ Computer Science - UITS
 == Projects
 
 #project(
-  name: "Hyperschedule",
+  name: "Writer",
   // Role is optional
-  role: "Maintainer",
+  role: "Creator",
   // Dates is optional
   dates: dates-helper(start-date: "Nov 2023", end-date: "Present"),
   // URL is also optional
-  url: "hyperschedule.io",
+  url: "www.github.com/git-emran/simple-notes/",
 )
 - Maintain open-source scheduler used by 7000+ users at the Claremont Consortium with TypeScript, React and MongoDB
   - Manage PR reviews, bug fixes, and coordinate with college for releasing scheduling data and over \$1500 of yearly funding

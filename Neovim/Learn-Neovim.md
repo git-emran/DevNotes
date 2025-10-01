@@ -192,6 +192,7 @@ return {
 
 ##### Craftzdog osaka color
 
+
 ```lua
 return {
 	{
@@ -206,5 +207,27 @@ return {
 		end,
 	},
 }
+
+```
+
+
+### Lua Debugging
+To find out where a message originates, here is the snippet to trace the location
+
+``` lua
+local original_require = require
+
+_G.require = function(name)
+    if name == "lspconfig" then
+        local info = debug.getinfo(2, "S")
+        local source = info and info.source
+        if source then
+            print("Tracing 'lspconfig' require call from:", source)
+        else
+            print("Tracing 'lspconfig' require call from unknown source.")
+        end
+    end
+    return original_require(name)
+end
 
 ```

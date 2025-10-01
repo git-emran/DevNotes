@@ -1,4 +1,3 @@
-
 | #   | Question                                                                      | Category              | Detailed Answer / Approach                                                                                                                                                                                                                                                                                                                              |
 | --- | ----------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | Explain the time and space complexity of quicksort.                           | Algorithms            | Average time complexity: O(n log n). Worst case: O(n²) if pivot is poorly chosen. Space complexity: O(log n) due to recursion stack. Key idea: Partition the array around a pivot, recursively sort partitions. Use randomized pivot to reduce worst case.                                                                                              |
@@ -102,10 +101,7 @@
 | 99  | Write code for breadth-first search on a graph.                               | Algorithms            | Use queue, mark visited nodes, enqueue neighbors. Time: O(V+E). Used for shortest path in unweighted graphs.                                                                                                                                                                                                                                            |
 | 100 | Describe CAP theorem. What trade-offs does it highlight?                      | Distributed Systems   | CAP theorem states that in distributed systems you can only have two out of Consistency, Availability, and Partition tolerance at the same time. It highlights trade-offs in system design choices.                                                                                                                                                     |
 
-
 ---
-
-
 
 ## 🐍 Python Deep Knowledge (25 Questions)
 

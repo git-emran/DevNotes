@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "10b393bc35d5fee3",
+        "id": "c4dd8372add505ef",
         "type": "tabs",
         "children": [
           {
-            "id": "3a30627e7dff11b4",
+            "id": "e0b043cf5c91e05c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Front-End challenges.md",
+                "file": "Interview-Prep/Coding exercises/Wanderlog.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Front-End challenges"
-            }
-          },
-          {
-            "id": "c77d02cc76048772",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode-solutions/Easy/Valid Parenthesis.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Valid Parenthesis"
+              "title": "Wanderlog"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 236.50247192382812
+    "width": 211.50312423706055
   },
   "right": {
     "id": "f5e580471bec1e06",
@@ -109,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode-solutions/Easy/Merging Two sorted list.md",
+                "file": "Language/Rust/Txt Editor in Rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Merging Two sorted list"
+              "title": "Backlinks for Txt Editor in Rust"
             }
           },
           {
@@ -184,43 +169,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "c77d02cc76048772",
+  "active": "e0b043cf5c91e05c",
   "lastOpenFiles": [
-    "Interview-Prep/SWE/JavaScript Questions.md",
-    "Projects/Front-End challenges.md",
-    "Interview-Prep/SWE/General Questions.md",
-    "Interview-Prep/SWE/DSA notes.md",
-    "Leetcode-solutions/Easy/Merging Two sorted list.md",
-    "Leetcode-solutions/Easy/Longest Common Prefix.md",
-    "Leetcode-solutions/Easy/Maximum Subarray.md",
-    "Leetcode-solutions/Easy/MergeIntervals.md",
-    "Interview-Prep/rubylabs.md",
-    "Leetcode-solutions/Easy/Two Sum.md",
-    "Leetcode-solutions/Easy/Valid Parenthesis.md",
-    "Interview-Prep/SWE/Web Development Questions.md",
+    "Projects/Typing Speed.md",
+    "Projects/Rest-API-in-Go.md",
+    "Projects/StatusCode.md",
+    "Interview-Prep/Coding exercises/Wanderlog.md",
+    "Projects/PrepTalk.md",
+    "Language/Golang/Web-servers in go.md",
+    "Interview-Prep/Coding exercises",
+    "Language/Golang/learning-go.md",
+    "Neovim/Learn-Neovim.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
-    "Projects/Typing Speed.md",
-    "Projects/Gopher-Social.md",
-    "Projects/Http-from-TCP.md",
-    "Projects/Learning-markdown.md",
-    "Projects/PrepTalk.md",
-    "README.md",
-    "www.linkedin.com.md",
+    "Interview-Prep/SWE/Web Development Questions.md",
+    "Interview-Prep/rubylabs.md",
+    "Neovim/Vim .vimrc.md",
+    "Neovim/LSP all configurations.md",
+    "Neovim/LSP Reference Manual.md",
+    "Neovim/Stash-Away Plugins.md",
+    "Learning/Learning-Manim.md",
+    "Learning/Learning-markdown.md",
+    "Interview-Prep/SWE/JavaScript Questions.md",
+    "Interview-Prep/SWE/General Questions.md",
+    "Interview-Prep/SWE/DSA notes.md",
     "Interview-Prep/SWE/Data structures & Algo.md",
-    "Leetcode-solutions/Easy/LL - Reverse.md",
-    "Ideas/Vault.md",
-    "Projects/Writer.md",
-    "Leetcode-solutions/Easy/Roman to Integer.md",
+    "Language/Rust/Txt Editor in Rust.md",
+    "Learning/Front-End challenges.md",
+    "Language/Rust",
+    "Language/Rust.md",
+    "Projects/Gopher-Social.md",
+    "Learning",
+    "Random",
     "Ideas",
     "Leetcode Solutions/Easy",
     "Leetcode Solutions",
     "🥋 Interview Prep/Design Interview",
     "🥋 Interview Prep/SWE",
-    "🥋 Interview Prep",
-    "Leetcode/Easy",
-    "Leetcode",
-    "Neovim",
-    "📂 Projects"
+    "🥋 Interview Prep"
   ]
 }

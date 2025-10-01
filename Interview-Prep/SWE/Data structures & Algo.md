@@ -105,13 +105,13 @@ This is a curated list of Data Structures & Algorithm problems for FAANG
 |     |                |                                                       |            |                                                                                                  |
 
 - Additional Problems
-    - [https://leetcode.com/problems/median-of-two-sorted-arrays/description/](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
-    - [https://leetcode.com/problems/rising-temperature/description/](https://leetcode.com/problems/rising-temperature/description/)
-    - [https://leetcode.com/problems/promise-time-limit/description/](https://leetcode.com/problems/promise-time-limit/description/)
-    - [https://leetcode.com/problems/rising-temperature/](https://leetcode.com/problems/rising-temperature/)
-    - [https://leetcode.com/problems/reverse-linked-list/](https://leetcode.com/problems/reverse-linked-list/)
-    - [https://leetcode.com/problems/number-of-employees-who-met-the-target/description/](https://leetcode.com/problems/number-of-employees-who-met-the-target/description/)
-    - [https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50](https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50)
-    - [https://leetcode.com/problems/cache-with-time-limit/description/](https://leetcode.com/problems/cache-with-time-limit/description/)
-    - [https://leetcode.com/problems/find-customer-referee/description/?envType=study-plan-v2&envId=top-sql-50](https://leetcode.com/problems/find-customer-referee/description/?envType=study-plan-v2&envId=top-sql-50)
-    - [https://leetcode.com/problems/employee-bonus/description/?envType=study-plan-v2&envId=top-sql-50](https://leetcode.com/problems/employee-bonus/description/?envType=study-plan-v2&envId=top-sql-50)
+  - [https://leetcode.com/problems/median-of-two-sorted-arrays/description/](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
+  - [https://leetcode.com/problems/rising-temperature/description/](https://leetcode.com/problems/rising-temperature/description/)
+  - [https://leetcode.com/problems/promise-time-limit/description/](https://leetcode.com/problems/promise-time-limit/description/)
+  - [https://leetcode.com/problems/rising-temperature/](https://leetcode.com/problems/rising-temperature/)
+  - [https://leetcode.com/problems/reverse-linked-list/](https://leetcode.com/problems/reverse-linked-list/)
+  - [https://leetcode.com/problems/number-of-employees-who-met-the-target/description/](https://leetcode.com/problems/number-of-employees-who-met-the-target/description/)
+  - [https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50](https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50)
+  - [https://leetcode.com/problems/cache-with-time-limit/description/](https://leetcode.com/problems/cache-with-time-limit/description/)
+  - [https://leetcode.com/problems/find-customer-referee/description/?envType=study-plan-v2&envId=top-sql-50](https://leetcode.com/problems/find-customer-referee/description/?envType=study-plan-v2&envId=top-sql-50)
+  - [https://leetcode.com/problems/employee-bonus/description/?envType=study-plan-v2&envId=top-sql-50](https://leetcode.com/problems/employee-bonus/description/?envType=study-plan-v2&envId=top-sql-50)

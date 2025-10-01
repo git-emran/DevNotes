@@ -101,6 +101,7 @@
 | 98  | How do you implement a custom Map implementation?                                              | Create a class with key-value storage. Example: `javascript class MyMap { constructor() { this.items = []; } set(key, value) { const index = this.items.findIndex(([k]) => k === key); if (index !== -1) this.items[index][1] = value; else this.items.push([key, value]); } get(key) { const pair = this.items.find(([k]) => k === key); return pair ? pair[1] : undefined; } } const map = new MyMap(); map.set('a', 1); console.log(map.get('a')); // 1`                                                                                                                                                                                                                                                                                                                                                                                                      | Edge cases: Object keys check references. Large maps impact performance.                                                                                                                  |     |
 | 99  | What is the purpose of `Array.prototype.toReversed`? Provide an example.                       | `toReversed` returns a new reversed array without mutating the original (proposed). Example: `javascript const arr = [1, 2, 3]; console.log(arr.toReversed()); // [3, 2, 1] console.log(arr); // [1, 2, 3]`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Edge cases: Requires modern JavaScript. Sparse arrays may skip empty slots.                                                                                                               |     |
 | 100 | Explain the concept of a Proxy trap for property access.                                       | The `get` trap intercepts property reads. Example: ```javascript const target = { a: 1 }; const proxy = new Proxy(target, { get(target, prop) { return target[prop]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                           |     |
+
 ## ⚙️ JavaScript Deep Knowledge (25 Questions)
 
 ### 1. **What is a closure in JavaScript?**
@@ -430,8 +431,17 @@ function userFactory(role) {
 }
 
 ```
+
 ### 25. **Explain immutability in JS.**
 
 **Answer:**
 
 Avoid modifying existing data — use spread, `map`, etc.
+
+<details>
+    <summary>Currying</summary>
+
+    Instead of passing all arguments at once, *currying* is passing all the functions one by one, returning
+    each of the function one by offline and
+
+</details>
