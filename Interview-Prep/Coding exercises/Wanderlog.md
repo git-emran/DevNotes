@@ -1,158 +1,132 @@
-# 🔹 Exercise Set 1: Practical Web & Data Manipulation
 
-### **1. JSON Transformation**
+## 🛒 **Problem — Group Transactions**
 
-You’re given an API response like this:
+### Problem Description
 
-`[   { "id": 1, "first_name": "Alice", "last_name": "Smith", "country": "US" },   { "id": 2, "first_name": "Bob", "last_name": "Lee", "country": "CA" },   { "id": 3, "first_name": "Charlie", "last_name": "Ng", "country": "US" } ]`
+You are given a list of transactions, where each transaction is represented by the **name of an item** that was purchased.  
+Your task is to count how many times each item appears, then return the list of items and their transaction counts — sorted by the following rules:
 
-Write code that:
+1. **Descending order of transaction count** (most transactions first).
+2. If two or more items have the same count, sort them in **alphabetical order (ascending)** by item name.
 
-- Combines `first_name` + `last_name` into `full_name`
-    
-- Groups users by `country`
-    
-- Returns this structure:
-    
+Each output line should show the item name followed by a space and then the transaction count.
 
-`{   "US": ["Alice Smith", "Charlie Ng"],   "CA": ["Bob Lee"] }`
 
-⏱ Expected: ~20 mins.  
-📌 Tests: JSON parsing, transformations, data structures.
+### Input Format
 
----
+- The first line contains an integer **n** — the number of transactions.
+- The next **n** lines each contain a string — the name of an item.
 
-### **2. File I/O Utility**
+Constraints:
+- 1≤n≤1051≤n≤105
+- Each item name consists only of lowercase English letters (`a`–`z`)
+- The length of each item name ≤ 10
+### Example
 
-Write a script that:
+transactions = ['notebook', 'notebook', 'mouse', 'keyboard', 'mouse']
+There are two items with 2 transactions each: 'notebook' and 'mouse'. In alphabetical order, they are 'mouse', 'notebook'.
+There is one item with 1 transaction: 'keyboard'.
+The return array, sorted as required, is ['mouse 2', 'notebook 2', 'keyboard 1'].
+### Function Description
+Complete the function **groupTransactions** in the editor below.
+**groupTransactions** has the following parameter(s):
+- `string transactions[n]`: each `transactions[i]` denotes the item name in the iᵗʰ transaction
+**Returns:**
+- `string[]`: an array of strings of `"item name[space]transaction count"` sorted as described
+### Constraints
 
-- Reads a `.csv` file with columns: `name,email,signup_date`
-    
-- Filters users who signed up in the **last 30 days**
-    
-- Saves them into a new `.csv` called `recent_users.csv`
-    
+`1 ≤ n ≤ 10^5 1 ≤ length of transactions[i] ≤ 10 transactions[i] contains only lowercase English letters, ascii[a-z]`
 
-⏱ Expected: ~30 mins.  
-📌 Tests: File I/O, working with libraries (e.g., `pandas` in Python, `csv` in Node/Go), handling dates.
+### Input Format for Custom Testing
 
----
+Input from stdin will be processed as follows and passed to the function.
 
-# 🔹 Exercise Set 2: Web / API Focus
+The first line contains a single integer, **n**, the size of transactions.  
+Each of the next **n** lines contains a string, the item name for `transactions[i]`.
+### Sample Case 1
 
-### **3. Simple REST API**
+**Sample Input**
 
-Build a tiny REST API with two endpoints:
+`4 bin can bin bin`
 
-- `GET /notes` → returns all notes (from in-memory array)
-    
-- `POST /notes` → creates a new note (`{title, body}`)
-    
+**Sample Output**
 
-Requirements:
+`bin 3 can 1`
 
-- Use any web framework (Express.js / Flask / FastAPI / Go net/http).
-    
-- Notes don’t need a DB — just keep them in memory.
-    
+**Explanation**
 
-⏱ Expected: ~25–30 mins.  
-📌 Tests: Web framework knowledge, clean API design, speed.
+There is one item `'bin'` with 3 transactions.  
+There is one item `'can'` with 1 transaction.  
+The return array sorted descending by transaction count, then ascending by name is `['bin 3', 'can 1']`.
 
----
+### Sample Case 2
 
-### **4. URL Shortener Lite**
+**Sample Input**
 
-Build a function:
+`3 banana pear apple`
 
-`shorten("https://wanderlog.com/about")  # → "http://sho.rt/abc123"`
+**Sample Output**
 
-- Store mappings in memory.
-    
-- If the same URL is shortened again, return the same short link.
-    
-- Implement a `resolve(short_url)` function that returns the original.
-    
+`apple 1 banana 1 pear 1`
 
-⏱ Expected: ~30–40 mins.  
-📌 Tests: Hashing/encoding, dictionaries/maps, practical utility function.
+**Explanation**
 
----
+There is one item `'apple'` with 1 transaction.  
+There is one item `'banana'` with 1 transaction.  
+There is one item `'pear'` with 1 transaction.  
+The return array sorted descending by transaction count, then ascending by name is `['apple 1', 'banana 1', 'pear 1']`.`
 
-# 🔹 Exercise Set 3: Real Product-Like
 
-### **5. Markdown to HTML Converter**
+## 💻 **Problem 2 — Application Log Analysis**
 
-Write a script that converts text with Markdown-style headers to HTML:
+### Problem Description
 
-`# Title ## Subtitle Normal text`
+You are given an unordered list of log entries from an application.  
+Each log entry has the format:
 
-Output:
+`"user_id timestamp action"`
+- **user_id**: A numeric string (no leading zeros).
+- **timestamp**: The time in seconds since the app was launched.
+- **action**: Either `"sign-in"` or `"sign-out"`.
+Your task is to find all users who **signed out within** `maxSpan` seconds of signing in.
 
-`<h1>Title</h1> <h2>Subtitle</h2> <p>Normal text</p>`
+You must return (and print) the list of such user IDs, sorted in **ascending numeric order**.
 
-⏱ Expected: ~25 mins.  
-📌 Tests: String parsing, regex, mapping formats.
+### Input Format
 
----
+- The first line contains an integer **n** — the number of log entries.
+- The next **n** lines each contain one log entry in the format `"user_id timestamp action"`.
+- The last line contains an integer **maxSpan**.
 
-### **6. Travel Itinerary Formatter (Wanderlog-flavored)**
+Constraints:
+- 1≤n≤1051≤n≤105
+- 1≤maxSpan≤1091≤maxSpan≤109
+- Each user:
+    - Signs in **at most once**
+    - Signs out **at most once**
+    - Has `sign-in timestamp < sign-out timestamp`
+- Logs may appear in **any order**.
+- The result will contain at least one user.
 
-Given input:
+### Output Format
 
-`[   { "city": "Paris", "days": 3 },   { "city": "Rome", "days": 2 },   { "city": "Barcelona", "days": 4 } ]`
+Print each user ID (as a string) that signed out within `maxSpan` seconds of signing in, in ascending numeric order — one per line.
 
-Write a function that outputs:
+### Example 1
 
-`Itinerary: - Paris (3 days) - Rome (2 days) - Barcelona (4 days) Total: 9 days`
+**Input**
 
-⏱ Expected: ~15–20 mins.  
-📌 Tests: Loops, formatting, summation, real-world style.
+`6 99 1 sign-in 100 10 sign-in 50 20 sign-in 100 15 sign-out 50 26 sign-out 99 2 sign-out 5`
 
----
+**Output**
 
-# 🔹 Exercise Set 4: Frontend / UI
+`99 100`
+### Example 2
 
-### **7. Search Bar Autocomplete**
+**Input**
 
-Build a function/component that:
+`4 60 12 sign-in 80 20 sign-out 10 20 sign-in 60 20 sign-out 100`
 
-- Takes a list of destinations: `["Paris", "Rome", "Barcelona", "Berlin"]`
-    
-- As the user types `"B"`, it shows `["Barcelona", "Berlin"]`
-    
-- Case-insensitive.
-    
+**Output**
 
-⏱ Expected: ~20–30 mins.  
-📌 Tests: Filtering, string handling, UI basics (React/Vue/Vanilla).
-
----
-
-### **8. Responsive Card Grid**
-
-Make a responsive UI:
-
-- Cards with `title`, `image`, `description`.
-    
-- On mobile → 1 column, tablet → 2 columns, desktop → 3+ columns.
-    
-
-⏱ Expected: ~30–40 mins.  
-📌 Tests: Frontend layout, CSS/Tailwind, quick component design.
-
----
-
-✅ These are the **most popular types of real-world coding exercises** (used in **Wanderlog-style take-homes, SaaS companies, and product startups**):
-
-- JSON/data transformations
-    
-- File parsing
-    
-- Small REST APIs
-    
-- Utilities like shorteners
-    
-- Markdown/formatting tasks
-    
-- UI tasks (search, grid layout)
+`60`

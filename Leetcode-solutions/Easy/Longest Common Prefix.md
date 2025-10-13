@@ -1,18 +1,18 @@
-	
 Find the longest common characters in a list of words
 
 ##### Edge case
-+ If there is no `strs` return an empty "" string.
+
+- If there is no `strs` return an empty "" string.
 
 ##### Solution
-+ For everything in range of length of the strings
 
+- For everything in range of length of the strings
 
 ```python
 class Solution:
 
 	def longestCommonPrefix(self, strs: List[str]) -> str:
-	
+
 		//edge cases first
 		if not strs
 			return "
@@ -22,6 +22,6 @@ class Solution:
 				if i >= len(word) or word[i] != char:
 					return strs[0][:i]
 		return strs[0]
-		
+
 
 ```

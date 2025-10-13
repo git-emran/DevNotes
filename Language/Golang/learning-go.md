@@ -2,8 +2,7 @@
 
 Comprehensive guide to learn Golang.
 
-Every go project starts with `go mod init project_name`. This command creates a file named go.mod, which is used to keep track of the packages a project
-depends on and can also be used to publish the project if required.
+Every go project starts with `go mod init project_name`. This command creates a file named go.mod, which is used to keep track of the packages a project depends on and can also be used to publish the project if required.
 
 ## Party Invite
 
@@ -16,7 +15,7 @@ Printing anything:
 package main
 import "fmt"
 func main() {
-fmt.Println("TODO: add some features")
+    fmt.Println("TODO: add some features")
 }
 
 ```
@@ -40,7 +39,7 @@ Name, Email, Phone string
 WillAttend bool
 }
 func main() {
-fmt.Println("TODO: add some features");
+    fmt.Println("TODO: add some features");
 }
 
 ```
