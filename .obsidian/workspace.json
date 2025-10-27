@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0be3506d6fcc4c17",
+        "id": "3726c16c0a50456f",
         "type": "tabs",
         "children": [
           {
-            "id": "141ec0bd68335272",
+            "id": "ffae06432724e56e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Interview-Prep/SWE/Data structures & Algo.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Data structures & Algo"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f5e580471bec1e06",
@@ -165,35 +170,35 @@
       "bases:Create new base": false
     }
   },
-  "active": "141ec0bd68335272",
+  "active": "ffae06432724e56e",
   "lastOpenFiles": [
+    "Interview-Prep/SWE/Data structures & Algo.md",
+    "Random/Vibe3.md",
+    "Leetcode-solutions/Easy/LL - Reverse.md",
+    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
+    "Interview-Prep/Coding exercises/Wanderlog.md",
+    "Interview-Prep/Coding exercises/Dash0.md",
+    "Leetcode-solutions/Easy/Palindrome.md",
+    "Leetcode-solutions/Hard/Trapping-rain-water.md",
+    "Interview-Prep/SWE/JavaScript Questions.md",
+    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "README.md",
+    "Neovim/Learn-Neovim.md",
+    "Neovim/Vim .vimrc.md",
+    "Neovim/Stash-Away Plugins.md",
+    "Interview-Prep/SWE/DSA notes.md",
+    "Interview-Prep/SWE/General Questions.md",
+    "interview-coding-challenges/zarla.md",
+    "Projects/Chatterbox.md",
     "Projects/Magic Streaming project - Go.md",
     "Projects/Tracker for Bodybuilders.md",
-    "Interview-Prep/Coding exercises/Dash0.md",
-    "Interview-Prep/Coding exercises/Wanderlog.md",
     "Untitled.md",
-    "Neovim/Learn-Neovim.md",
-    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
-    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
     "Projects/Typing Speed.md",
     "Projects/Rest-API-in-Go.md",
     "Projects/StatusCode.md",
     "Projects/PrepTalk.md",
     "Language/Golang/Web-servers in go.md",
     "Interview-Prep/Coding exercises",
-    "Language/Golang/learning-go.md",
-    "Interview-Prep/SWE/Web Development Questions.md",
-    "Interview-Prep/rubylabs.md",
-    "Neovim/Vim .vimrc.md",
-    "Neovim/LSP all configurations.md",
-    "Neovim/LSP Reference Manual.md",
-    "Neovim/Stash-Away Plugins.md",
-    "Learning/Learning-Manim.md",
-    "Learning/Learning-markdown.md",
-    "Interview-Prep/SWE/JavaScript Questions.md",
-    "Interview-Prep/SWE/General Questions.md",
-    "Interview-Prep/SWE/DSA notes.md",
-    "Interview-Prep/SWE/Data structures & Algo.md",
     "Language/Rust",
     "Learning",
     "Random",

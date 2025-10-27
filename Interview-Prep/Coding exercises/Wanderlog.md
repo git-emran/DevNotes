@@ -1,4 +1,3 @@
-
 ## 🛒 **Problem — Group Transactions**
 
 ### Problem Description
@@ -10,7 +9,6 @@ Your task is to count how many times each item appears, then return the list of 
 2. If two or more items have the same count, sort them in **alphabetical order (ascending)** by item name.
 
 Each output line should show the item name followed by a space and then the transaction count.
-
 
 ### Input Format
 

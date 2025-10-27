@@ -4,8 +4,9 @@
   I'm Emran Hossain, `a Product Designer and a Fullstack Developer` with over nine years of experience building on B2B and SaaS platforms -
   - Currently leading as a product lead
     Alternate Answer
-    I am Emran Hossain, a dedicated Software Deisgner and Engineer with over 9 years of experience, specializing in creating compelling and customer-centric solutions, especially for B2B & SaaS startups. Throughout my career, I've had the privilege of working in diverse markets including Dubai, the USA, the UK, Germany, India and Bangladesh which has given me a unique global perspective. Additionally, I am an Agile enthusiast, which means I thrive in environments that value collaboration, rapid iteration, and customer feedback. Beyond my professional life, I am a passionate gamer and am currently learning Jujitsu
-    Someone asked me the traits of the best individual contributer that I've seen at a startup.
+    I am Emran Hossain, a dedicated Software Designer and Engineer with over 9 years of experience, specializing in creating compelling and customer-centric solutions, especially for B2B & SaaS startups. Throughout my career, I've had the privilege of working in diverse markets including Dubai, the USA, the UK, Germany, India and Bangladesh which has given me a unique global perspective. Additionally, I am an Agile enthusiast, which means I thrive in environments that value collaboration, rapid iteration, and customer feedback. Beyond my professional life, I am a passionate gamer and am currently learning Jujitsu
+
+    Someone asked me the traits of the best individual contributor that I've seen at a startup.
     My answer:
   1. Made it through the messy (most ambiguous) part of team building without loosing enthusiasm or optimism
   2. Exceeded individual expectations WHILE also taking on special projects
@@ -16,10 +17,12 @@
   7. Bar raiser, made everyone on the team better.
      **`CONCEPT:`** _**Design Backwards**, Referring to Airbnb’s “**what if**” technique, and one user-story at a time technique to scale a product and ensure product led growth._
 
+
 - **Can you walk me through your design process? (Always include examples)**
   I am a firm believer of the `Atomic Design Process` - Where we create `atoms`, `molecules`, `organisms`, `Templates`, `pages` - Making sure the design is Scalable, technically feasible and efficient
   I am also a firm believer of the double diamond approach. Which is very similar to the Agile approach of product development. That is to Discover, Define, Design, Deliver.
-  I try to use these informations to help identify challenges consumers face so I can ideate how to solve them.
+  *I try to use these informations to help identify challenges consumers face so I can ideate how to solve them.*
+
 
 - **How do you test your Product design ?**
   💡 **A-**  My fundamental goal always stays the same and that is to empathize with the users and build a solution around it. Early stage SWOT analysis is very important part in a Product Journey. I also do Attitudinal and Behavioral testing - noticing “what people say vs what people do”. I also do Heuristic Evaluation. Using A certain list of best practices according to industry standards and identify where the product is not following those principles. Here are some examples of crucial OKRs (Objectives and Key Results) for product design:
@@ -40,6 +43,8 @@
   - Key Result 2: Launch two major product updates within the quarter, meeting predetermined release dates.
   - Key Result 3: Improve cross-functional collaboration by establishing clear communication channels, resulting in a 15% reduction in delays.
     **`Using tools like HotJar, UserZoom, Maze`**
+	
+	
 - **_When someone says, “I don’t like this design,” what do you do?_**
   - Disagreements are natural in design iteration.
   - Recently faced disagreements over product customization for a valued client.
@@ -48,6 +53,7 @@
   - Prioritized effectiveness in achieving objectives.
   - Collaborated with the client to find mutually satisfactory solutions.
   - Stayed open to feedback and presented alternatives when needed.
+  
 
 - **What are some of the biggest challenges you face as a product designer?**
   For me varies from sprint to sprint and quarterly each year. But last year at the total office my biggest challenge was market visibility and customer acquisition while we tackled that pretty smoothly, this year we are taking up the challenge of doubling our customer satisfaction rate. Data suggests it can boost our performance in the market by 5 0%
