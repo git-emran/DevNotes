@@ -1,7 +1,7 @@
 # Introductory Interview
 
 - **Tell me about yourself**
-  I'm Emran Hossain, `a Product Designer and a Fullstack Developer` with over nine years of experience building on B2B and SaaS platforms -
+  I'm Emran Hossain, `a Product Designer and a Fullstack Developer` with over eight years of experience building on B2B and SaaS platforms -
   - Currently leading as a product lead
     Alternate Answer
     I am Emran Hossain, a dedicated Software Designer and Engineer with over 9 years of experience, specializing in creating compelling and customer-centric solutions, especially for B2B & SaaS startups. Throughout my career, I've had the privilege of working in diverse markets including Dubai, the USA, the UK, Germany, India and Bangladesh which has given me a unique global perspective. Additionally, I am an Agile enthusiast, which means I thrive in environments that value collaboration, rapid iteration, and customer feedback. Beyond my professional life, I am a passionate gamer and am currently learning Jujitsu
@@ -56,7 +56,7 @@
   
 
 - **What are some of the biggest challenges you face as a product designer?**
-  For me varies from sprint to sprint and quarterly each year. But last year at the total office my biggest challenge was market visibility and customer acquisition while we tackled that pretty smoothly, this year we are taking up the challenge of doubling our customer satisfaction rate. Data suggests it can boost our performance in the market by 5 0%
+  For me varies from sprint to sprint and quarterly each year. But last year at the total office my biggest challenge was market visibility and customer acquisition while we tackled that pretty smoothly, this year we are taking up the challenge of doubling our customer satisfaction rate. Data suggests it can boost our performance in the market by 50%
 
 ---
 
