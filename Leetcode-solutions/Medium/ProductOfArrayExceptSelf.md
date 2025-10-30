@@ -25,7 +25,7 @@ Constraints:
 
 lets start with the brute force:
 
-```py
+```python
 
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
@@ -48,7 +48,7 @@ Initializing the result array with 1's. An outerloop to iterate over the value o
 
 ##### Optimized Solution - Prefix and suffix product
 
-```py
+```python
 
 
 class Solution:
@@ -63,7 +63,7 @@ class Solution:
 
         right = 1
 
-        for i in range(n):
+        for i in range(n -1, -1 ,-1):
 
             result[i] *= right
             right *= nums[i]

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview-Prep/SWE/Data structures & Algo.md",
+                "file": "Leetcode-solutions/Medium/ProductOfArrayExceptSelf.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data structures & Algo"
+              "title": "ProductOfArrayExceptSelf"
             }
           },
           {
@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
+                "file": "Interview-Prep/SWE/Data structures & Algo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2️⃣ Design - Phase 2"
+              "title": "Data structures & Algo"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f5e580471bec1e06",
@@ -184,16 +184,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "ffae06432724e56e",
+  "active": "d754e4f07c769623",
   "lastOpenFiles": [
+    "Leetcode-solutions/Medium/MaximumSubArray.md",
+    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
     "Leetcode-solutions/Medium/ProductOfArrayExceptSelf.md",
+    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
     "Leetcode-solutions/Medium",
     "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
     "2025-10-29.md",
     "Untitled.canvas",
-    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
-    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
-    "Interview-Prep/SWE/Data structures & Algo.md",
     "Random/Vibe3.md",
     "Leetcode-solutions/Easy/LL - Reverse.md",
     "Interview-Prep/Coding exercises/Wanderlog.md",
@@ -213,7 +214,6 @@
     "Projects/Tracker for Bodybuilders.md",
     "Untitled.md",
     "Projects/Typing Speed.md",
-    "Projects/Rest-API-in-Go.md",
     "Interview-Prep/Coding exercises",
     "Language/Rust",
     "Learning",
