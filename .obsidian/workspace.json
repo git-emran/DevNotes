@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode-solutions/Medium/Word Search.md",
+                "file": "Interview-Prep/SWE/Data structures & Algo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Word Search"
+              "title": "Data structures & Algo"
             }
           }
         ]
@@ -171,8 +171,8 @@
   },
   "active": "ffae06432724e56e",
   "lastOpenFiles": [
-    "Interview-Prep/SWE/Data structures & Algo.md",
     "Leetcode-solutions/Medium/Word Search.md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Interview-Prep/Coding exercises/Wanderlog.md",
     "Interview-Prep/Coding exercises/Dash0.md",
