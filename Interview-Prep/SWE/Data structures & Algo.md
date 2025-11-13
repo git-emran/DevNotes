@@ -13,7 +13,7 @@ This is a curated list of Data Structures & Algorithm problems for FAANG
 | ~~9~~  | ~~Array~~      | ~~Set Matrix Zeroes~~                                 | Medium     | [Link](https://leetcode.com/problems/set-matrix-zeroes/)                                         |
 | 10     | Array          | Spiral Matrix                                         | Medium     | [Link](https://leetcode.com/problems/spiral-matrix/)                                             |
 | ~~11~~ | ~~Array~~      | ~~Rotate Image~~                                      | Medium     | [Link](https://leetcode.com/problems/rotate-image/)                                              |
-| 12     | Hash Table     | Group Anagrams                                        | Medium     | [Link](https://leetcode.com/problems/group-anagrams/)                                            |
+| ~~12~~ | ~~Hash Table~~ | ~~Group Anagrams~~                                    | Medium     | [Link](https://leetcode.com/problems/group-anagrams/)                                            |
 | 13     | Hash Table     | Top K Frequent Elements                               | Medium     | [Link](https://leetcode.com/problems/top-k-frequent-elements/)                                   |
 | 14     | String         | Valid Anagram                                         | Easy       | [Link](https://leetcode.com/problems/valid-anagram/)                                             |
 | 15     | String         | Longest Substring Without Repeating Characters        | Medium     | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)            |
