@@ -35,6 +35,4 @@ class Solution:
 
         return water
 
-
-
 ```
