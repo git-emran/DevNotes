@@ -16,7 +16,7 @@ This is a curated list of Data Structures & Algorithm problems for FAANG
 | ~~12~~ | ~~Hash Table~~ | ~~Group Anagrams~~                                    | Medium     | [Link](https://leetcode.com/problems/group-anagrams/)                                            |
 | ~~13~~ | ~~Hash Table~~ | ~~Top K Frequent Elements~~                           | ~~Medium~~ | [Link](https://leetcode.com/problems/top-k-frequent-elements/)                                   |
 | 14     | ~~String~~     | ~~Valid Anagram~~                                     | ~~Easy~~   | [Link](https://leetcode.com/problems/valid-anagram/)                                             |
-| 15     | String         | Longest Substring Without Repeating Characters        | Medium     | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)            |
+| 15     | ~~String~~     | ~~Longest Substring Without Repeating Characters~~    | Medium     | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)            |
 | 16     | String         | Longest Palindromic Substring                         | Medium     | [Link](https://leetcode.com/problems/longest-palindromic-substring/)                             |
 | 17     | String         | Palindromic Substrings                                | Medium     | [Link](https://leetcode.com/problems/palindromic-substrings/)                                    |
 | 18     | String         | Encode and Decode Strings                             | Medium     | [Link](https://leetcode.com/problems/encode-and-decode-strings/)                                 |
