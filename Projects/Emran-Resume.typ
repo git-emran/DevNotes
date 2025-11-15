@@ -3,9 +3,8 @@
 // Put your personal information here, replacing mine
 #let name = "Emran Hossain"
 #let email = "emrn.hossn@gmail.com"
-#let github = "github.com/git-emran"
-#let linkedin = "linkedin: " + "https://www.linkedin.com/in/emran-hossain-80ab17190/"
-#let personal-site = "https://www.designwithemran.com"
+#let linkedin = "www.linkedin.com/in/emran-hossain-80ab17190/"
+#let personal-site = "www.designwithemran.com"
 
 
 #show: resume.with(
@@ -14,7 +13,6 @@
   // For example, if you want to to hide your phone number:
   // feel free to comment those lines out and they will not show.
   email: email,
-  github: github,
   linkedin: linkedin,
   personal-site: personal-site,
   accent-color: "#26428b",
@@ -56,14 +54,14 @@ Computer Science - UITS
   company: "Tiblo Digital",
   dates: dates-helper(start-date: "Dec 2023", end-date: "Present"),
 )
-- Proudly Launched over 25 successful products in the agency
+- Proudly Launched over 25 successful products in the agency as a Product lead.
 - Designed and Launched WheelLog, a New innovative product in collboration with TyreProf resulting in a 80% customer converted in the first quarter. Implemented support for real time collaboration and presence detection in React using conflict free replicated data (CRDT).
 - Introduced a new collaboration style, design standards and documentation strategies with Storybook and Figma to eliminate design debt.
 
 #work(
   title: "Front-end Engineer, UX",
-  location: "Silicon Mirage, CA",
-  company: "Organic Stupidity Startup",
+  location: "Dubai, UAE",
+  company: "The Total Office",
   dates: dates-helper(start-date: "Dec 2023", end-date: "Mar 2024"),
 )
 
@@ -73,63 +71,32 @@ Computer Science - UITS
 
 #work(
   title: "Lead UX/UI Designer",
-  location: "MarketTime LLC",
-  company: "Pixels & Profit Interactive",
+  location: "Austin, Texas, USA",
+  company: "MarketTime LLC",
   dates: dates-helper(start-date: "Jun 2020", end-date: "May 2023"),
 )
 
--Achieved WCAG compliance for an enterprise grade system in 2 months. Collaboratively designed a new payment processing feature named “mtPay” with a 95% user adoption rate. Ensured seamless migration from Angular 3 to Angular 10.
+- Achieved WCAG compliance for an enterprise grade system in 2 months. Collaboratively designed a new payment processing feature named “mtPay” with a 95% user adoption rate. Ensured seamless migration from Angular 3 to Angular 10.
+- Implemented a design system, saving 60% on system upgrades, 50% increase in design deliver y and simplifying developer project transitions.
+- Ensured seamless migration from Angular 3 to Angular 10.
+- Boosted customer conversion rate from 20% to 88% and reduced drop off rate by 32% and Significantly reduced load time by 34% by redesigning and refactoring the website.
 
-#work(
-  title: "Code Conjurer Intern",
-  location: "Silicon Suburb, CA",
-  company: "Bits & Bytes Consulting",
-  dates: dates-helper(start-date: "Jun 2022", end-date: "Aug 2022"),
-)
-
-- Developed a cross-platform mobile app that turned every user into a potential paparazzi
-- Led a security overhaul, heroically saving the company from the menace of "password123"
 
 == Projects
 
 #project(
   name: "Writer",
   // Role is optional
-  role: "Creator",
+  role: "",
   // Dates is optional
   dates: dates-helper(start-date: "Nov 2023", end-date: "Present"),
   // URL is also optional
   url: "www.github.com/git-emran/simple-notes/",
 )
-- Maintain open-source scheduler used by 7000+ users at the Claremont Consortium with TypeScript, React and MongoDB
-  - Manage PR reviews, bug fixes, and coordinate with college for releasing scheduling data and over \$1500 of yearly funding
-- Ensure 99.99% uptime during peak loads of 1M daily requests during course registration through redundant servers
+- A Markdown Text editor(Cross Platform Desktop app) with built in LSP (language server protocol), Syntax highlighting and completions you can build your coding documentation, as a student or a learner practice your DSA, or document your workflow in general using the markdown syntax and Vim motions.
 
-== Extracurricular Activities
-
-#extracurriculars(
-  activity: "Capture The Flag Competitions",
-  dates: dates-helper(start-date: "Jan 2021", end-date: "Present"),
-)
-- Founder of Les Amateurs (#link("https://amateurs.team")[amateurs.team]), currently ranked \#4 US, \#33 global on CTFTime (2023: \#4 US, \#42 global)
-- Organized AmateursCTF 2023 and 2024, with 1000+ teams solving at least one challenge and \$2000+ in cash prizes
-  - Scaled infrastructure using GCP, Digital Ocean with Kubernetes and Docker; deployed custom software on fly.io
-- Qualified for DEFCON CTF 32 and CSAW CTF 2023, two of the most prestigious cybersecurity competitions globally
-
-// #extracurriculars(
-//   activity: "Science Olympiad Volunteering",
-//   dates: "Sep 2023 --- Present"
-// )
-// - Volunteer and write tests for tournaments, including LA Regionals and SoCal State \@ Caltech
-
-// #certificates(
-//   name: "OSCP",
-//   issuer: "Offensive Security",
-//   // url: "",
-//   date: "Oct 2024",
-// )
 
 == Skills
-- *Programming Languages*: JavaScript, Python, C/C++, HTML/CSS, Java, Bash, R, Flutter, Dart
-- *Technologies*: React, Astro, Svelte, Tailwind CSS, Git, UNIX, Docker, Caddy, NGINX, Google Cloud Platform
+- *Programming Languages*: JavaScript, Typescript, Python, C/C++, HTML/CSS, Java, Bash, R, Lua.
+- *Technologies*: React, Astro, Angular, SolidJS, Svelte, Tailwind CSS, LangChain, Git, Linux, UNIX, Docker, Caddy, NGINX, Google Cloud Platform.
 
