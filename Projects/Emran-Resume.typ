@@ -73,13 +73,22 @@ Computer Science - UITS
   title: "Lead UX/UI Designer",
   location: "Austin, Texas, USA",
   company: "MarketTime LLC",
-  dates: dates-helper(start-date: "Jun 2020", end-date: "May 2023"),
+  dates: dates-helper(start-date: "Jan 2022", end-date: "May 2023"),
 )
 
 - Achieved WCAG compliance for an enterprise grade system in 2 months. Collaboratively designed a new payment processing feature named “mtPay” with a 95% user adoption rate. Ensured seamless migration from Angular 3 to Angular 10.
 - Implemented a design system, saving 60% on system upgrades, 50% increase in design deliver y and simplifying developer project transitions.
 - Ensured seamless migration from Angular 3 to Angular 10.
 - Boosted customer conversion rate from 20% to 88% and reduced drop off rate by 32% and Significantly reduced load time by 34% by redesigning and refactoring the website.
+
+#work(
+  title: "Lead Product Designer, Front-end Developer",
+  location: "Dhaka, Bangladesh",
+  company: "Roxnor",
+  dates: dates-helper(start-date: "Jan 2022", end-date: "May 2023"),
+)
+
+- Worked on Node JS and Apollo GraphQL to develop a GraphQL backend server, Implemented a robust que system using Bull MQ for processing heavy background jobs, Reduced Reporting API endpoint response from minutes to seconds by rewriting API using Nest JS
 
 
 == Projects
