@@ -172,6 +172,8 @@
   },
   "active": "e9746529e19af5ec",
   "lastOpenFiles": [
+    "front-end-interview/min-by.md",
+    "front-end-interview",
     "Leetcode-solutions/Hard/Trapping-rain-water.md",
     "Leetcode-solutions/Medium/Longest Substring without repeating characters.md",
     "Interview-Prep/SWE/Data structures & Algo.md",
@@ -199,7 +201,6 @@
     "Neovim/Stash-Away Plugins.md",
     "Interview-Prep/SWE/General Questions.md",
     "interview-coding-challenges/zarla.md",
-    "Projects/Chatterbox.md",
     "Interview-Prep/Coding exercises",
     "Language/Rust",
     "Learning",
@@ -207,7 +208,6 @@
     "Ideas",
     "Leetcode Solutions/Easy",
     "Leetcode Solutions",
-    "🥋 Interview Prep/Design Interview",
-    "🥋 Interview Prep/SWE"
+    "🥋 Interview Prep/Design Interview"
   ]
 }
