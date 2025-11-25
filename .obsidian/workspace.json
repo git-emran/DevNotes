@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview-Prep/SWE/Data structures & Algo.md",
+                "file": "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data structures & Algo"
+              "title": "1️⃣ Design - Phase 1"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f5e580471bec1e06",
@@ -172,15 +171,27 @@
   },
   "active": "e9746529e19af5ec",
   "lastOpenFiles": [
+    "Projects/Gopher-Social.md",
+    "Projects/Http-from-TCP.md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
+    "Interview-Prep/rubylabs.md",
+    "Learning/ReactAtScale.md",
+    "Learning/Learning-Manim.md",
+    "Learning/Learning-markdown.md",
+    "Random/Tab Component.md",
+    "Projects/Typing Speed.md",
+    "interview-coding-challenges/zarla.md",
+    "Ideas/Vault.md",
+    "Learning/DotNet Development.md",
+    "Projects/Social Share Scheduler Python.md",
+    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "front-end-interview/min-by.md",
     "front-end-interview",
     "Leetcode-solutions/Hard/Trapping-rain-water.md",
     "Leetcode-solutions/Medium/Longest Substring without repeating characters.md",
-    "Interview-Prep/SWE/Data structures & Algo.md",
     "Leetcode-solutions/Easy/Valid Anagram.md",
     "Leetcode-solutions/Medium/Top K frequent elements.md",
     "Interview-Prep/SWE/DSA notes.md",
-    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Leetcode-solutions/Medium/Word Search.md",
     "Interview-Prep/Coding exercises/Wanderlog.md",
     "Interview-Prep/Coding exercises/Dash0.md",
@@ -188,19 +199,7 @@
     "Leetcode-solutions/Medium/MaximumSubArray.md",
     "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
     "Leetcode-solutions/Medium",
-    "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
-    "2025-10-29.md",
     "Untitled.canvas",
-    "Random/Vibe3.md",
-    "Leetcode-solutions/Easy/LL - Reverse.md",
-    "Leetcode-solutions/Easy/Palindrome.md",
-    "Interview-Prep/SWE/JavaScript Questions.md",
-    "README.md",
-    "Neovim/Learn-Neovim.md",
-    "Neovim/Vim .vimrc.md",
-    "Neovim/Stash-Away Plugins.md",
-    "Interview-Prep/SWE/General Questions.md",
-    "interview-coding-challenges/zarla.md",
     "Interview-Prep/Coding exercises",
     "Language/Rust",
     "Learning",
