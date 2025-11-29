@@ -1,4 +1,5 @@
-#### Folke-noice 
+#### Folke-noice
+
 Custom noice to show recording @q. Previously it was swallowed by the noice UI
 
 ```lua
@@ -197,4 +198,3 @@ return {
 }
 
 ```
-
