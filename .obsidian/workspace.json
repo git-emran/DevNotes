@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+                "file": "Interview-Prep/SWE/Data structures & Algo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1️⃣ Design - Phase 1"
+              "title": "Data structures & Algo"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Social Share Scheduler Python.md",
+                "file": "Neovim/Learn-Neovim.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Social Share Scheduler Python"
+              "title": "Learn-Neovim"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,11 +183,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "d819247c40db779c",
+  "active": "e9746529e19af5ec",
   "lastOpenFiles": [
+    "Projects/Emran-Resume.pdf",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
-    "Interview-Prep/SWE/Data structures & Algo.md",
+    "Dynamic Resume/Emran_resume.typ",
+    "Dynamic Resume/Emran-Resume 2.typ",
+    "Dynamic Resume/Emran-Resume.typ",
+    "Dynamic Resume",
+    "untitled folder",
+    "Neovim/Learn-Neovim.md",
     "Projects/Social Share Scheduler Python.md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
     "Projects/Gopher-Social.md",
     "Projects/Http-from-TCP.md",
     "Interview-Prep/rubylabs.md",
@@ -211,17 +217,10 @@
     "Interview-Prep/Coding exercises/Wanderlog.md",
     "Interview-Prep/Coding exercises/Dash0.md",
     "Leetcode-solutions/Medium/ProductOfArrayExceptSelf.md",
-    "Leetcode-solutions/Medium/MaximumSubArray.md",
-    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
     "Leetcode-solutions/Medium",
     "Untitled.canvas",
     "Interview-Prep/Coding exercises",
     "Language/Rust",
-    "Learning",
-    "Random",
-    "Ideas",
-    "Leetcode Solutions/Easy",
-    "Leetcode Solutions",
-    "🥋 Interview Prep/Design Interview"
+    "Learning"
   ]
 }

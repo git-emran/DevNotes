@@ -1,7 +1,8 @@
 ##### Navigation:
 
-- Moving `<-` with B - to backward word by word
-- `v a w ` to select around a around
+- Moving backward with `B` - Move around a sentence backward with b 
+- `v a w ` to select around a word + command to execute around a word.
+- Similarly `v i w` + command to execute inside the word
 - Shift + v to select the entire line
 - ` v a t` to select around a `<tag>`
 
@@ -76,9 +77,11 @@
 
 ## replace
 
-Replace the word globally on the whole file
-
+Replace the word globally on the whole file:
 `:%s/\<oldword\>/newword/g`
+
+Replace word on the selected line:
+`:s/oldword/newword/g`
 
 ## Notes
 
