@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview-Prep/SWE/Data structures & Algo.md",
+                "file": "Leetcode-solutions/Easy/Reversing LinkedList.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data structures & Algo"
+              "title": "Reversing LinkedList"
             }
           },
           {
@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Neovim/Learn-Neovim.md",
+                "file": "Interview-Prep/SWE/Data structures & Algo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Learn-Neovim"
+              "title": "Data structures & Algo"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,18 +184,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "e9746529e19af5ec",
+  "active": "d819247c40db779c",
   "lastOpenFiles": [
-    "Projects/Emran-Resume.pdf",
+    "Neovim/Learn-Neovim.md",
+    "Leetcode-solutions/Easy/Reversing LinkedList.md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "Projects/Emran-Resume.pdf",
     "Dynamic Resume/Emran_resume.typ",
     "Dynamic Resume/Emran-Resume 2.typ",
     "Dynamic Resume/Emran-Resume.typ",
     "Dynamic Resume",
     "untitled folder",
-    "Neovim/Learn-Neovim.md",
     "Projects/Social Share Scheduler Python.md",
-    "Interview-Prep/SWE/Data structures & Algo.md",
     "Projects/Gopher-Social.md",
     "Projects/Http-from-TCP.md",
     "Interview-Prep/rubylabs.md",
@@ -220,7 +222,6 @@
     "Leetcode-solutions/Medium",
     "Untitled.canvas",
     "Interview-Prep/Coding exercises",
-    "Language/Rust",
-    "Learning"
+    "Language/Rust"
   ]
 }

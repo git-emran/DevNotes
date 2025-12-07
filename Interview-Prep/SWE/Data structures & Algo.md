@@ -26,7 +26,7 @@ This is a curated list of Data Structures & Algorithm problems for FAANG
 | 22     | Matrix         | Pacific Atlantic Water Flow                           | Medium     | [Link](https://leetcode.com/problems/pacific-atlantic-water-flow/)                               |
 | 23     | DFS/BFS        | Surrounded Regions                                    | Medium     | [Link](https://leetcode.com/problems/surrounded-regions/)                                        |
 | 24     | DFS/BFS        | Walls and Gates                                       | Medium     | [Link](https://leetcode.com/problems/walls-and-gates/)                                           |
-| 25     | Linked List    | Reverse Linked List                                   | Easy       | [Link](https://leetcode.com/problems/reverse-linked-list/)                                       |
+| ~~25~~     | ~~Linked List~~    | ~~Reverse Linked List~~                                   | ~~Easy~~       | [Link](https://leetcode.com/problems/reverse-linked-list/)                                       |
 | 26     | Linked List    | Merge Two Sorted Lists                                | Easy       | [Link](https://leetcode.com/problems/merge-two-sorted-lists/)                                    |
 | 27     | Linked List    | Linked List Cycle                                     | Easy       | [Link](https://leetcode.com/problems/linked-list-cycle/)                                         |
 | 28     | Linked List    | Remove Nth Node From End of List                      | Medium     | [Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)                          |
