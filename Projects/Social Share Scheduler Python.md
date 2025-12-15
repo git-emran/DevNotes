@@ -44,3 +44,18 @@ scripts:
 ```
 then running `pip install -r requirements.txt` to install
 Run the notebook with `rav run notebook`
+
+
+##### Inside the Notebook:
+
+Importing `setup` library and initializing the library with `setup.init()`
+
+Endpoint for making linkedin post: `"https://api.linkedin.com/v2/sampletext"` is something like that.
+There are some things to remember when posting through api calls, according to the api docs, all post must have a header with Authorization that has a Bearer of social_tokens, and a Payload. 
+
++ Posts are structured as
+  `response = requests.post(endpoint, json=payload, headers=headers)`
+  `response.raise_for_status()`
+- Adding python helper functions for better error handling.
+
+##### Storing Social Posts in Database through Django:
