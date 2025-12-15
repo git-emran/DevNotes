@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "Data structures & Algo"
             }
+          },
+          {
+            "id": "0c5c62a422a4d41c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1️⃣ Design - Phase 1"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -184,11 +198,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "d819247c40db779c",
+  "active": "0c5c62a422a4d41c",
   "lastOpenFiles": [
+    "Projects/Social Share Scheduler Python.md",
+    "Leetcode-solutions/Easy/Longest Common Prefix.md",
+    "Leetcode-solutions/Easy/LL - Reverse.md",
+    "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
+    "Job Search.md",
     "Neovim/Learn-Neovim.md",
     "Leetcode-solutions/Easy/Reversing LinkedList.md",
-    "Interview-Prep/SWE/Data structures & Algo.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Projects/Emran-Resume.pdf",
     "Dynamic Resume/Emran_resume.typ",
@@ -196,7 +215,6 @@
     "Dynamic Resume/Emran-Resume.typ",
     "Dynamic Resume",
     "untitled folder",
-    "Projects/Social Share Scheduler Python.md",
     "Projects/Gopher-Social.md",
     "Projects/Http-from-TCP.md",
     "Interview-Prep/rubylabs.md",
@@ -215,10 +233,6 @@
     "Leetcode-solutions/Easy/Valid Anagram.md",
     "Leetcode-solutions/Medium/Top K frequent elements.md",
     "Interview-Prep/SWE/DSA notes.md",
-    "Leetcode-solutions/Medium/Word Search.md",
-    "Interview-Prep/Coding exercises/Wanderlog.md",
-    "Interview-Prep/Coding exercises/Dash0.md",
-    "Leetcode-solutions/Medium/ProductOfArrayExceptSelf.md",
     "Leetcode-solutions/Medium",
     "Untitled.canvas",
     "Interview-Prep/Coding exercises",
