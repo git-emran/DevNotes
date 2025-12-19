@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode-solutions/Easy/Reversing LinkedList.md",
+                "file": "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reversing LinkedList"
+              "title": "1️⃣ Design - Phase 1"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview-Prep/SWE/Data structures & Algo.md",
+                "file": "Interview-Prep/SWE/Web Development Questions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data structures & Algo"
+              "title": "Web Development Questions"
             }
           },
           {
@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,10 +198,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "0c5c62a422a4d41c",
+  "active": "d819247c40db779c",
   "lastOpenFiles": [
-    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "Interview-Prep/SWE/JavaScript Questions.md",
+    "Interview-Prep/SWE/General Questions.md",
     "Interview-Prep/SWE/Data structures & Algo.md",
+    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
     "Leetcode-solutions/Easy/Reversing LinkedList.md",
     "Projects/Social Share Scheduler Python.md",
     "Leetcode-solutions/Easy/Longest Common Prefix.md",
@@ -230,9 +233,6 @@
     "front-end-interview",
     "Leetcode-solutions/Hard/Trapping-rain-water.md",
     "Leetcode-solutions/Medium/Longest Substring without repeating characters.md",
-    "Leetcode-solutions/Easy/Valid Anagram.md",
-    "Leetcode-solutions/Medium/Top K frequent elements.md",
-    "Interview-Prep/SWE/DSA notes.md",
     "Leetcode-solutions/Medium",
     "Untitled.canvas",
     "Interview-Prep/Coding exercises",

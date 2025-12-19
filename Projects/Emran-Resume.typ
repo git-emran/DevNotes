@@ -2,7 +2,7 @@
 
 // Put your personal information here, replacing mine
 #let name = "Emran Hossain"
-#let email = "emrn.hossn@gmail.com"
+#let email = "clearlybestemran@gmail.com"
 #let linkedin = "www.linkedin.com/in/emran-hossain-80ab17190/"
 #let personal-site = "www.designwithemran.com"
 
