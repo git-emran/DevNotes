@@ -58,6 +58,28 @@
 - **What are some of the biggest challenges you face as a product designer?**
   For me varies from sprint to sprint and quarterly each year. But last year at the total office my biggest challenge was market visibility and customer acquisition while we tackled that pretty smoothly, this year we are taking up the challenge of doubling our customer satisfaction rate. Data suggests it can boost our performance in the market by 50%
 
+* How Do you design a website: 
+  #### Short, high-impact answer (ideal for first response)
+
+> “I start by understanding the problem, not the pages. I clarify the goal, the users, and the constraints. From there, I define the information architecture, sketch flows, design iteratively with feedback, and validate through testing. Once the design is solid, I collaborate closely with engineers to ensure the final website matches both the intent and the execution.”
+
+This shows **senior-level thinking** immediately.
+### Expanded answer (when they ask you to go deeper)
+
+> “I usually break it into five phases.
+> 
+> First is **discovery**. I try to understand the business goal, success metrics, target users, and constraints like timeline or tech stack.
+> 
+> Second is **structure**. I define the information architecture, user flows, and content hierarchy before touching visuals.
+> 
+> Third is **design**. I start with low-fidelity wireframes, iterate quickly, then move to high-fidelity designs once the structure is validated. I focus on usability, accessibility, and consistency with the design system.
+> 
+> Fourth is **validation**. I test designs with users or stakeholders, refine based on feedback, and make sure edge cases are covered.
+> 
+> Finally is **handoff and build collaboration**. I work closely with engineers during implementation to ensure the experience translates correctly, adjusting designs when real-world constraints appear.”
+
+This shows **process, maturity, and collaboration**.
+
 ---
 
 - **How do you collaborate with a cross-functional team ?**

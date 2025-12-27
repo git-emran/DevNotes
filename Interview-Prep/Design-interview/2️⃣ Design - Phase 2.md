@@ -12,6 +12,8 @@ This is the next phase of the interview. Safe to assume the interviewer is an ma
     - AI-powered design tools automate tasks like generating layout suggestions, color palettes, or typography choices, speeding up the design process and providing inspiration.
     - Leverage machine learning algorithms for personalized experiences, including content recommendations, adaptive interfaces, and dynamic user journeys.
     - Integration of AI streamlines design processes, leverages data-driven insights, and enhances user experiences through personalization.
+    - Leveraging Big Data analysis: Qualitative analysis, After gathering information form the users end, filtering them again through LLM's brings a solid starting point rather than traditional wireframes, iterative prototyping etc. 
+	
 
 
 - **Let's dive deeper into your understanding of user experience (UX) design. Can you discuss your approach to conducting user research, creating user personas, and mapping user journeys in previous projects?**
