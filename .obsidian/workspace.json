@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5675f274be8365e4",
+        "id": "c253ed7ff78508e6",
         "type": "tabs",
         "children": [
           {
-            "id": "b7ab0312512368f9",
+            "id": "1a862e34fde5a40e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -165,16 +165,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "b7ab0312512368f9",
+  "active": "0d11c6fc68efc03b",
   "lastOpenFiles": [
+    "Interview-Prep/SWE/Data structures & Algo.md",
+    "Interview-Prep/SWE/DSA notes.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Job Search.md",
-    "Interview-Prep/SWE/DSA notes.md",
     "Random/Daily.md",
     "Random/Tab Component.md",
     "Random/Vibe3.md",
     "Interview-Prep/Coding exercises/Wanderlog.md",
-    "Interview-Prep/SWE/Data structures & Algo.md",
     "Projects/Writer.md",
     "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
     "interview-coding-challenges/zarla.md",
