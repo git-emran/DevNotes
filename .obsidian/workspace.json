@@ -11,10 +11,14 @@
             "id": "1a862e34fde5a40e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2️⃣ Design - Phase 2"
             }
           }
         ]
@@ -165,18 +169,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "0d11c6fc68efc03b",
+  "active": "1a862e34fde5a40e",
   "lastOpenFiles": [
+    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
+    "Interview-Prep/Coding exercises/Wanderlog.md",
+    "Interview-Prep/Coding exercises/Dash0.md",
+    "Interview-Prep/Coding exercises",
     "Interview-Prep/SWE/Data structures & Algo.md",
     "Interview-Prep/SWE/DSA notes.md",
-    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Job Search.md",
     "Random/Daily.md",
     "Random/Tab Component.md",
     "Random/Vibe3.md",
-    "Interview-Prep/Coding exercises/Wanderlog.md",
     "Projects/Writer.md",
-    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
     "interview-coding-challenges/zarla.md",
     "Interview-Prep/SWE/JavaScript Questions.md",
     "Leetcode-solutions/Medium/Longest-Palindromic-Substring.md",
@@ -198,11 +204,8 @@
     "Dynamic Resume",
     "untitled folder",
     "Projects/Gopher-Social.md",
-    "Projects/Http-from-TCP.md",
-    "Interview-Prep/rubylabs.md",
     "front-end-interview",
     "Leetcode-solutions/Medium",
-    "Untitled.canvas",
-    "Interview-Prep/Coding exercises"
+    "Untitled.canvas"
   ]
 }
