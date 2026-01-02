@@ -11,7 +11,7 @@
   1. Made it through the messy (most ambiguous) part of team building without loosing enthusiasm or optimism
   2. Exceeded individual expectations WHILE also taking on special projects
   3. Nearly instantly was the go-to guy for in depth company knowledge
-  4. Exceptional "finishliner"
+  4. Exceptional "finish liner"
   5. Leader attributes very early and well before actually leading
   6. Craftsman (deeply studied and perfected their domain)
   7. Bar raiser, made everyone on the team better.
@@ -23,38 +23,7 @@
   I am also a firm believer of the double diamond approach. Which is very similar to the Agile approach of product development. That is to Discover, Define, Design, Deliver.
   *I try to use these informations to help identify challenges consumers face so I can ideate how to solve them.*
 
-
-- **How do you test your Product design ?**
-  💡 **A-**  My fundamental goal always stays the same and that is to empathize with the users and build a solution around it. Early stage SWOT analysis is very important part in a Product Journey. I also do Attitudinal and Behavioral testing - noticing “what people say vs what people do”. I also do Heuristic Evaluation. Using A certain list of best practices according to industry standards and identify where the product is not following those principles. Here are some examples of crucial OKRs (Objectives and Key Results) for product design:
-  **`Improve User Experience`**
-  - Key Result 1: Increase user satisfaction scores by 10% through usability testing and iterative design improvements.
-  - Key Result 2: Reduce user onboarding time by 20% by optimizing the user interface and streamlining the user flow.
-  - Key Result 3: Decrease the number of user-reported issues by 15% through proactive bug tracking and fixing.
-    **`Enhance Product Accessibility`**
-  - Key Result 1: Achieve WCAG 2.1 compliance level AA by conducting an accessibility audit and implementing necessary design changes.
-  - Key Result 2: Increase the accessibility score in third-party accessibility tools by 20% through inclusive design practices.
-  - Key Result 3: Conduct user testing with individuals with disabilities and incorporate their feedback to improve accessibility features.
-    **`Drive User Engagement`**
-  - Key Result 1: Increase daily active users by 15% through the introduction of new engaging features.
-  - Key Result 2: Improve user retention rate by 10% by identifying pain points and optimizing the user experience accordingly.
-  - Key Result 3: Enhance social sharing capabilities and measure an increase in the number of shared content by 25%.
-    **`Accelerate Time-to-Market`**
-  - Key Result 1: Decrease the average design iteration time by 20% by streamlining the design review and feedback process.
-  - Key Result 2: Launch two major product updates within the quarter, meeting predetermined release dates.
-  - Key Result 3: Improve cross-functional collaboration by establishing clear communication channels, resulting in a 15% reduction in delays.
-    **`Using tools like HotJar, UserZoom, Maze`**
-	
-	
-- **_When someone says, “I don’t like this design,” what do you do?_**
-  - Disagreements are natural in design iteration.
-  - Recently faced disagreements over product customization for a valued client.
-  - Focus on understanding project goals and user needs.
-  - Went back to refine solutions, considering feedback.
-  - Prioritized effectiveness in achieving objectives.
-  - Collaborated with the client to find mutually satisfactory solutions.
-  - Stayed open to feedback and presented alternatives when needed.
   
-
 - **What are some of the biggest challenges you face as a product designer?**
   For me varies from sprint to sprint and quarterly each year. But last year at the total office my biggest challenge was market visibility and customer acquisition while we tackled that pretty smoothly, this year we are taking up the challenge of doubling our customer satisfaction rate. Data suggests it can boost our performance in the market by 50%
 
@@ -64,6 +33,7 @@
 > “I start by understanding the problem, not the pages. I clarify the goal, the users, and the constraints. From there, I define the information architecture, sketch flows, design iteratively with feedback, and validate through testing. Once the design is solid, I collaborate closely with engineers to ensure the final website matches both the intent and the execution.”
 
 This shows **senior-level thinking** immediately.
+
 ### Expanded answer (when they ask you to go deeper)
 
 > “I usually break it into five phases.
@@ -81,6 +51,7 @@ This shows **senior-level thinking** immediately.
 This shows **process, maturity, and collaboration**.
 
 ---
+# Behavioral Questions
 
 - **How do you collaborate with a cross-functional team ?**
   IF Synchronous -
@@ -88,7 +59,29 @@ This shows **process, maturity, and collaboration**.
   - If detailed design discussions are needed, **I include Engineers, Marketing Dept. early** on to **calculate technical feasibility.**
 
   IF Asynchronous and something went wrong -
-  - I usually have a format - Discuss the issue → Share the current understanding (to be on the same page) → What I think went wrong → Possible solutions.
+  - I usually have a format - Discuss the issue → Share the current understanding (to be on the same page) → What I think went wrong → Possible solutions. 
+
+- **How do you test your Product design ?**
+  💡 **A-**  My fundamental goal always stays the same and that is to empathize with the users and build a solution around it. Early stage SWOT analysis is very important part in a Product Journey. I also do Attitudinal and Behavioral testing - noticing “what people say vs what people do”. I also do Heuristic Evaluation. Using A certain list of best practices according to industry standards and identify where the product is not following those principles. Here are some examples of crucial OKRs (Objectives and Key Results) for product design:
+  
+  **`Improve User Experience`**
+  - Key Result 1: Increase user satisfaction scores by 10% through usability testing and iterative design improvements.
+  - Key Result 2: Reduce user onboarding time by 20% by optimizing the user interface and streamlining the user flow.
+  - Key Result 3: Decrease the number of user-reported issues by 15% through proactive bug tracking and fixing.
+    **`Enhance Product Accessibility`**
+  - Key Result 1: Achieve WCAG 2.1 compliance level AA by conducting an accessibility audit and implementing necessary design changes.
+  - Key Result 2: Increase the accessibility score in third-party accessibility tools by 20% through inclusive design practices.
+  - Key Result 3: Conduct user testing with individuals with disabilities and incorporate their feedback to improve accessibility features.
+    **`Drive User Engagement`**
+  - Key Result 1: Increase daily active users by 15% through the introduction of new engaging features.
+  - Key Result 2: Improve user retention rate by 10% by identifying pain points and optimizing the user experience accordingly.
+  - Key Result 3: Enhance social sharing capabilities and measure an increase in the number of shared content by 25%.
+    **`Accelerate Time-to-Market`**
+  - Key Result 1: Decrease the average design iteration time by 20% by streamlining the design review and feedback process.
+  - Key Result 2: Launch two major product updates within the quarter, meeting predetermined release dates.
+  - Key Result 3: Improve cross-functional collaboration by establishing clear communication channels, resulting in a 15% reduction in delays.
+    **`Using tools like HotJar, UserZoom, Maze`**
+
 
 - **Walk me through a product design example where you set out to solve a business problem.**
   - Talking about the discovery/problem definition phase, where we carried out comprehensive research to uncover insights into the source of the problem.
@@ -97,6 +90,15 @@ This shows **process, maturity, and collaboration**.
 
   For Example : While Designing The Content Generator AI, the initial idea from the stakeholders was that they were not gonna include content customization on an early stage, this decision was made from directly observing the competitions. But I after I joined the team, my research findings were different from what they expected. I surveyed 100 content writers and found out that 91% of the writers would love to have some type of customization. So I fought for it, my idea was implemented in the MVP and after the launch it was an instant hit on the Wordpress blog writers community.
   I was set out to solve a critical business problem (trying to save money on each session an API is called)
+	
+- **_When someone says, “I don’t like this design,” what do you do?_**
+  - Disagreements are natural in design iteration.
+  - Recently faced disagreements over product customization for a valued client.
+  - Focus on understanding project goals and user needs.
+  - Went back to refine solutions, considering feedback.
+  - Prioritized effectiveness in achieving objectives.
+  - Collaborated with the client to find mutually satisfactory solutions.
+  - Stayed open to feedback and presented alternatives when needed.
 
 - **Describe your most challenging Project ?**
   Get Genie AI, This product had the worst deadline and almost zero budget to go with. There were only 4 team members and the product had no roadmap or customer base. So we had to improvise through out the launch.
