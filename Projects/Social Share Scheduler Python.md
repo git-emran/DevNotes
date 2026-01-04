@@ -59,3 +59,79 @@ There are some things to remember when posting through api calls, according to t
 - Adding python helper functions for better error handling.
 
 ##### Storing Social Posts in Database through Django:
+Lets run `python manage.py startapp posts` this command **creates a new Django app named `posts`** inside your project.
+
+Think of a Django **project** as the whole website, and an **app** as one feature or module inside it, like posts, users, payments, comments, etc.
+
+```markdown
+
+posts/
+├── __init__.py
+├── admin.py
+├── apps.py
+├── migrations/
+│   └── __init__.py
+├── models.py
+├── tests.py
+└── views.py
+```
+
+### What each file is for
+
+- **`models.py`**  
+    Define your database models here. For example, a `Post` model with title, body, author.
+    
+- **`views.py`**  
+    Handles request logic. This is where you decide what happens when someone visits a URL.
+    
+- **`admin.py`**  
+    Register your models so they appear in Django’s admin panel.
+    
+- **`apps.py`**  
+    App configuration. Usually you never touch this early on.
+    
+- **`migrations/`**  
+    Stores database migration files when you change models.
+    
+- **`tests.py`**  
+    Write unit tests for this app.
+
+Inside `models.py` we can create our structure like this:
+```python
+from django.db import models
+from django.conf import settings
+
+
+User = settings.AUTH_USER_MODEL
+print(User)
+
+
+# Create your models here.
+class Post(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    content = models.TextField()
+    share_on_linkedin = models.BooleanField(default=False)
+    shared_at_linkedin = models.DateTimeField(
+        auto_now=False, auto_now_add=False, null=True, blank=True
+    )
+
+    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+```
+
+Now inside `admin.py`:
+import the .models from Posts and initialize the post section on the dashboard 
+
+```python
+
+from .models import Posts
+
+admin.site.register(Posts)
+```
+
+
+this creates a admin dashboard like this. 
+![[django dashboard Ui.png]]
+#### Using the Django Model save method:
+

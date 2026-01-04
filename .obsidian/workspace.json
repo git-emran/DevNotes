@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+                "file": "Projects/Social Share Scheduler Python.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1️⃣ Design - Phase 1"
+              "title": "Social Share Scheduler Python"
             }
           }
         ]
@@ -171,12 +171,15 @@
   },
   "active": "1a862e34fde5a40e",
   "lastOpenFiles": [
-    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
+    "django dashboard Ui.png",
+    "Projects/Gopher-Social.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "Projects/IELTS practice (Let's IELTS).md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
+    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
     "Interview-Prep/Coding exercises/Wanderlog.md",
     "Interview-Prep/Coding exercises/Dash0.md",
     "Interview-Prep/Coding exercises",
-    "Interview-Prep/SWE/Data structures & Algo.md",
     "Interview-Prep/SWE/DSA notes.md",
     "Job Search.md",
     "Random/Daily.md",
@@ -196,14 +199,12 @@
     "Leetcode-solutions/Easy/Longest Common Prefix.md",
     "Leetcode-solutions/Easy/LL - Reverse.md",
     "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
-    "Neovim/Learn-Neovim.md",
     "Projects/Emran-Resume.pdf",
     "Dynamic Resume/Emran_resume.typ",
     "Dynamic Resume/Emran-Resume 2.typ",
     "Dynamic Resume/Emran-Resume.typ",
     "Dynamic Resume",
     "untitled folder",
-    "Projects/Gopher-Social.md",
     "front-end-interview",
     "Leetcode-solutions/Medium",
     "Untitled.canvas"
