@@ -49,3 +49,67 @@ class Solution:
                     resLen = j-i+1
         return res
 ```
+
+Dynamic Programming:
+
+Intution:
+### Intuition
+
+Instead of re-checking the same substrings again and again, we **remember** whether a substring is a palindrome.
+
+Let:
+
+- `dp[i][j] = true` if the substring `s[i..j]` is a palindrome.
+
+A substring `s[i..j]` is a palindrome when:
+
+1. The end characters match: `s[i] == s[j]`
+2. And the inside part is also a palindrome: `dp[i+1][j-1]`
+    - **Special small cases:** if the length is 1, 2, or 3 (`j - i <= 2`), then matching ends is enough because the middle is empty or a single char.
+
+We fill `dp` from **bottom to top** (i from n-1 down to 0) so that when we compute `dp[i][j]`, the value `dp[i+1][j-1]` is already known.
+
+While filling, we keep track of the **best (longest) palindrome** seen so far.
+
+### Algorithm
+
+1. Let `n = len(s)`. Create a 2D table `dp[n][n]` initialized to `false`.
+2. Keep `resIdx = 0` and `resLen = 0` for the best answer.
+3. For `i` from `n-1` down to `0`:
+    - For `j` from `i` up to `n-1`:
+        - If `s[i] == s[j]` and (`j - i <= 2` OR `dp[i+1][j-1]` is true):
+            - Mark `dp[i][j] = true`
+            - If `(j - i + 1)` is bigger than `resLen`, update `resIdx` and `resLen`.
+4. Return `s[resIdx : resIdx + resLen]`.
+```python
+class Solution:
+
+	def longestPalindrome(self, s: str) -> str:
+
+		resIndex, resLen = 0, 0
+
+		n = len(s)
+
+  
+
+		dp = [[False] * n for _ in range(n)]
+
+  
+
+		for i in range(n-1, -1, -1):
+
+			for j in range(i, n):
+
+				if s[i] == s[j] and (j -i <= 2 or dp[i+1][j-1]):
+
+					dp[i][j] = True
+
+				if resLen < (j - i + 1):
+
+					resIdx = i
+
+					resLen = j - i + 1
+
+		return s[resIdx : resIdx + resLen]
+```
+
