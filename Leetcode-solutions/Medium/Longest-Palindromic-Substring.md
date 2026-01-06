@@ -54,7 +54,7 @@ Dynamic Programming:
 
 Intution:
 ### Intuition
-
+---
 Instead of re-checking the same substrings again and again, we **remember** whether a substring is a palindrome.
 
 Let:
@@ -71,8 +71,6 @@ We fill `dp` from **bottom to top** (i from n-1 down to 0) so that when we c
 
 While filling, we keep track of the **best (longest) palindrome** seen so far.
 
-### Algorithm
-
 1. Let `n = len(s)`. Create a 2D table `dp[n][n]` initialized to `false`.
 2. Keep `resIdx = 0` and `resLen = 0` for the best answer.
 3. For `i` from `n-1` down to `0`:
@@ -81,6 +79,7 @@ While filling, we keep track of the **best (longest) palindrome** seen so far.
             - Mark `dp[i][j] = true`
             - If `(j - i + 1)` is bigger than `resLen`, update `resIdx` and `resLen`.
 4. Return `s[resIdx : resIdx + resLen]`.
+
 ```python
 class Solution:
 
