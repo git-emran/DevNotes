@@ -1,12 +1,8 @@
-#show title: set text(size: 22pt)
-#show title: set align(center)
-
-
-
-#title[
-  Emran Hossain
+#align(center)[
+  #text(size: 22pt)[
+    Emran Hossain
+  ]
 ]
-
 
 #align(center)[
   #stack(
