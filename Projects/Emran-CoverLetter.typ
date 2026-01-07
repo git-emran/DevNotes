@@ -11,6 +11,8 @@
     link("https://github.com/git-emran")[Github],
     "|",
     link("https://www.linkedin.com/in/emran-hossain-80ab17190/")[LinkedIn],
+    "|",
+    link("https://www.designwithemran.com/")[Portfolio],
   )
 ]
 #align(center)[
