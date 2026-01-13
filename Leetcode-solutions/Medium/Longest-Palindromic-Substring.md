@@ -84,31 +84,63 @@ While filling, we keep track of the **best (longest) palindrome** seen so far.
 class Solution:
 
 	def longestPalindrome(self, s: str) -> str:
-
 		resIndex, resLen = 0, 0
-
 		n = len(s)
-
-  
-
+		
 		dp = [[False] * n for _ in range(n)]
-
-  
-
 		for i in range(n-1, -1, -1):
-
 			for j in range(i, n):
-
 				if s[i] == s[j] and (j -i <= 2 or dp[i+1][j-1]):
-
 					dp[i][j] = True
-
 				if resLen < (j - i + 1):
-
 					resIdx = i
-
 					resLen = j - i + 1
 
 		return s[resIdx : resIdx + resLen]
 ```
 
+
+### Two Pointer:
+
+1. Initialize:
+    - `resIdx = 0` - starting index of best palindrome
+    - `resLen = 0` - length of best palindrome
+2. For each index `i` in the string:
+    - **Odd-length palindrome**
+        - Set `l = i`, `r = i`
+        - Expand while `l >= 0`, `r < n`, and `s[l] == s[r]`
+    - **Even-length palindrome**
+        - Set `l = i`, `r = i + 1`
+        - Expand while `l >= 0`, `r < n`, and `s[l] == s[r]`
+    - During each expansion, update `resIdx` and `resLen` if a longer palindrome is found
+3. Return substring `s[resIdx : resIdx + resLen]`
+
+```python
+
+class Solution:
+	def LongestPalindrome(self, s: str) -> str:
+		resIdx = 0
+		resLen = 0
+		
+		l , r = i, i
+		
+		while l >= 0 and r < len(s) and s[l] == s[r]:
+			if (r - l + 1) > resLen :
+				resIndex = l
+				resLen = r - l + 1
+				
+			l -= 1
+			r += 1
+		
+		l, r = i, i + 1	
+		
+		while l >= 0 and r < len(s) and s[l] == s[r]:
+			if (r- l + 1) > resLen:
+				resIndex = l
+				resLen = r - l + 1
+			l -= 1
+			r += 1
+
+	return s[resIndex: resIndex + resLen]
+
+```

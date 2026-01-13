@@ -66,3 +66,7 @@ migrate/migrations -seq create_attendees_table
 
 ```
 
+
+What I learned about Rest API :
+
+RESTful APIs can be consumed by either javascript, jquery, or http rest client. 
