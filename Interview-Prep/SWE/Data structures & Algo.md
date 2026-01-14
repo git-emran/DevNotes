@@ -2,22 +2,22 @@ This is a curated list of Data Structures & Algorithm problems for FAANG
 
 | #      | Category        | Problem                                               | Difficulty | Link                                                                                             |
 | ------ | --------------- | ----------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------------ |
-| ~~1~~  | ~~Array~~       | ~~Two Sum~~                                           | Easy       | [Link](https://leetcode.com/problems/two-sum/)                                                   |
-| ~~2~~  | ~~Array~~       | ~~Best Time to Buy and Sell Stock~~                   | Easy       | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                           |
-| ~~3~~  | ~~Array~~       | ~~Product of Array Except Self~~                      | Medium     | [Link](https://leetcode.com/problems/product-of-array-except-self/)                              |
-| ~~4~~  | ~~Array~~       | ~~Maximum Subarray~~                                  | Medium     | [Link](https://leetcode.com/problems/maximum-subarray/)                                          |
-| ~~5~~  | ~~Array~~       | ~~Merge Intervals~~                                   | Medium     | [Link](https://leetcode.com/problems/merge-intervals/)                                           |
-| ~~6~~  | ~~Array~~       | ~~Contains Duplicate~~                                | Easy       | [Link](https://leetcode.com/problems/contains-duplicate/)                                        |
-| ~~7~~  | ~~Array~~       | ~~Maximum Product Subarray~~                          | Medium     | [Link](https://leetcode.com/problems/maximum-product-subarray/)                                  |
-| ~~8~~  | ~~Array~~       | ~~3Sum~~                                              | Medium     | [Link](https://leetcode.com/problems/3sum/)                                                      |
-| ~~9~~  | ~~Array~~       | ~~Set Matrix Zeroes~~                                 | Medium     | [Link](https://leetcode.com/problems/set-matrix-zeroes/)                                         |
+| ==1==  | ==Array==       | ==Two Sum==                                           | ==Easy==   | [Link](https://leetcode.com/problems/two-sum/)                                                   |
+| ==2==  | ==Array==       | ==Best Time to Buy and Sell Stock==                   | ==Easy==   | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                           |
+| ==3==  | ==Array==       | ==Product of Array Except Self==                      | ==Medium== | [Link](https://leetcode.com/problems/product-of-array-except-self/)                              |
+| ==4==  | ==Array==       | ==Maximum Subarray==                                  | ==Medium== | [Link](https://leetcode.com/problems/maximum-subarray/)                                          |
+| ==5==  | ==Array==       | ==Merge Intervals==                                   | ==Medium== | [Link](https://leetcode.com/problems/merge-intervals/)                                           |
+| ==6==  | ==Array==       | ==Contains Duplicate==                                | ==Easy==   | [Link](https://leetcode.com/problems/contains-duplicate/)                                        |
+| ==7==  | ==Array==       | ==Maximum Product Subarray==                          | ==Medium== | [Link](https://leetcode.com/problems/maximum-product-subarray/)                                  |
+| ==8==  | ==Array==       | ==3Sum==                                              | ==Medium== | [Link](https://leetcode.com/problems/3sum/)                                                      |
+| ==9==  | ==Array==       | ==Set Matrix Zeroes==                                 | ==Medium== | [Link](https://leetcode.com/problems/set-matrix-zeroes/)                                         |
 | 10     | Array           | Spiral Matrix                                         | Medium     | [Link](https://leetcode.com/problems/spiral-matrix/)                                             |
-| ~~11~~ | ~~Array~~       | ~~Rotate Image~~                                      | Medium     | [Link](https://leetcode.com/problems/rotate-image/)                                              |
-| ~~12~~ | ~~Hash Table~~  | ~~Group Anagrams~~                                    | Medium     | [Link](https://leetcode.com/problems/group-anagrams/)                                            |
-| ~~13~~ | ~~Hash Table~~  | ~~Top K Frequent Elements~~                           | ~~Medium~~ | [Link](https://leetcode.com/problems/top-k-frequent-elements/)                                   |
-| 14     | ~~String~~      | ~~Valid Anagram~~                                     | ~~Easy~~   | [Link](https://leetcode.com/problems/valid-anagram/)                                             |
-| 15     | ~~String~~      | ~~Longest Substring Without Repeating Characters~~    | Medium     | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)            |
-| 16     | String          | Longest Palindromic Substring                         | Medium     | [Link](https://leetcode.com/problems/longest-palindromic-substring/)                             |
+| ==11== | ==Array==       | ==Rotate Image==                                      | ==Medium==     | [Link](https://leetcode.com/problems/rotate-image/)                                              |
+| ==12== | ==Hash Table==  | ==Group Anagrams==                                    | ==Medium==     | [Link](https://leetcode.com/problems/group-anagrams/)                                            |
+| ==13== | ==Hash Table==  | ==Top K Frequent Elements==                           | ==Medium==     | [Link](https://leetcode.com/problems/top-k-frequent-elements/)                                   |
+| ==14== | ==String==      | ==Valid Anagram==                                     | ==Easy==       | [Link](https://leetcode.com/problems/valid-anagram/)                                             |
+| ==15== | ==String==      | ==Longest Substring Without Repeating Characters==    | ==Medium==     | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)            |
+| ==16== | ==String==      | ==Longest Palindromic Substring==                     | ==Medium== | [Link](https://leetcode.com/problems/longest-palindromic-substring/)                             |
 | 17     | String          | Palindromic Substrings                                | Medium     | [Link](https://leetcode.com/problems/palindromic-substrings/)                                    |
 | 18     | String          | Encode and Decode Strings                             | Medium     | [Link](https://leetcode.com/problems/encode-and-decode-strings/)                                 |
 | 19     | Matrix          | Word Search                                           | Medium     | [Link](https://leetcode.com/problems/word-search/)                                               |
