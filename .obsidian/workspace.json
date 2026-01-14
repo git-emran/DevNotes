@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode-solutions/Medium/Palindromic Substring.md",
+                "file": "Leetcode-solutions/Medium/MaximumSubArray.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Palindromic Substring"
+              "title": "MaximumSubArray"
             }
           }
         ],
@@ -186,10 +186,12 @@
   },
   "active": "1cd7969060ba53a1",
   "lastOpenFiles": [
-    "Interview-Prep/SWE/Data structures & Algo.md",
+    "Leetcode-solutions/Medium/ProductOfArrayExceptSelf.md",
     "Leetcode-solutions/Medium/Palindromic Substring.md",
-    "Leetcode-solutions/Easy/Longest Common Prefix.md",
     "Leetcode-solutions/Medium/Longest-Palindromic-Substring.md",
+    "Leetcode-solutions/Medium/MaximumSubArray.md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
+    "Leetcode-solutions/Easy/Longest Common Prefix.md",
     "Projects/Rest-API-in-Go.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Projects/Social Share Scheduler Python.md",
@@ -213,8 +215,6 @@
     "README.md",
     "Interview-Prep/SWE/Web Development Questions.md",
     "Interview-Prep/SWE/General Questions.md",
-    "Leetcode-solutions/Easy/Reversing LinkedList.md",
-    "Leetcode-solutions/Easy/LL - Reverse.md",
     "Projects/Emran-Resume.pdf",
     "Dynamic Resume/Emran_resume.typ",
     "Dynamic Resume/Emran-Resume 2.typ",

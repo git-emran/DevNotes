@@ -22,7 +22,21 @@ A **substring** is a contiguous sequence of characters within the string.
 - `s` consists of lowercase English letters.o
 
 ### Two Pointers ( Brute):
-### Algorithm
+##### Intuition
+
+Every palindrome has a **center**:
+
+- For **odd-length** palindromes, the center is a single character
+- For **even-length** palindromes, the center is between two characters
+
+Instead of checking all substrings, we:
+
+- Fix a center
+- Expand **outwards** as long as characters match
+- Each successful expansion forms **one palindrome**
+
+This way, we count palindromes directly while expanding
+##### Algorithm
 
 1. Initialize `res = 0`
 2. For each index `i` in the string:
@@ -61,8 +75,8 @@ class Solution:
 ```
 
 
-### Two pointers optimal
-### Intuition
+### Two pointers (optimal)
+##### Intuition
 
 Every palindromic substring can be identified by **expanding from its center**.
 
@@ -81,7 +95,7 @@ For each index `i`, we:
 
 Each successful expansion corresponds to **one valid palindrome**.
 
-### Algorithm
+##### Algorithm
 
 1. Initialize `res = 0`
 2. For each index `i` in the string:
