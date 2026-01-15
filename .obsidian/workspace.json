@@ -35,8 +35,7 @@
               "title": "MaximumSubArray"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,15 +183,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "1cd7969060ba53a1",
+  "active": "4ac0c567abd4a278",
   "lastOpenFiles": [
+    "Leetcode-solutions/Medium/MaximumSubArray.md",
+    "Projects/Rest-API-in-Go.md",
     "Leetcode-solutions/Medium/ProductOfArrayExceptSelf.md",
     "Leetcode-solutions/Medium/Palindromic Substring.md",
     "Leetcode-solutions/Medium/Longest-Palindromic-Substring.md",
-    "Leetcode-solutions/Medium/MaximumSubArray.md",
     "Interview-Prep/SWE/Data structures & Algo.md",
     "Leetcode-solutions/Easy/Longest Common Prefix.md",
-    "Projects/Rest-API-in-Go.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Projects/Social Share Scheduler Python.md",
     "django dashboard Ui.png",
