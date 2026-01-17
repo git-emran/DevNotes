@@ -134,4 +134,17 @@ admin.site.register(Posts)
 this creates a admin dashboard like this. 
 ![[django dashboard Ui.png]]
 #### Using the Django Model save method:
+With django `    def save(self, *args, **kwargs):` method we can prevent our program from stop sharing if there is any error
+```python
+
+ def save(self, *args, **kwargs):
+        # pre-save
+        if self.share_on_linkedin and self.can_share_on_linkedin:
+            print("sharing on linked")
+            self.shared_at_linkedin = timezone.now()
+        else:
+            print("not sharing on linkedin")
+        super().save(*args, **kwargs)
+```
+
 

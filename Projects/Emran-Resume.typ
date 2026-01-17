@@ -62,7 +62,7 @@ Computer Science - UITS
   title: "Front-end Engineer, UX",
   location: "Dubai, UAE",
   company: "The Total Office",
-  dates: dates-helper(start-date: "Dec 2023", end-date: "Mar 2024"),
+  dates: dates-helper(start-date: "April 2023", end-date: "Dec 2023"),
 )
 
 - Played a key role in addressing security vulnerabilities (CVEs), reducing their count from 411 to 3 through diligent analysis and mitigation measures.
@@ -73,7 +73,7 @@ Computer Science - UITS
   title: "Lead UX/UI Designer",
   location: "Austin, Texas, USA",
   company: "MarketTime LLC",
-  dates: dates-helper(start-date: "Jan 2022", end-date: "May 2023"),
+  dates: dates-helper(start-date: "May 2022", end-date: "April 2023"),
 )
 
 - Achieved WCAG compliance for an enterprise grade system in 2 months. Collaboratively designed a new payment processing feature named “mtPay” with a 95% user adoption rate. Ensured seamless migration from Angular 3 to Angular 10.
@@ -85,7 +85,7 @@ Computer Science - UITS
   title: "Lead Product Designer, Front-end Developer",
   location: "Dhaka, Bangladesh",
   company: "Roxnor",
-  dates: dates-helper(start-date: "Jan 2022", end-date: "May 2023"),
+  dates: dates-helper(start-date: "Jan 2021", end-date: "May 2022"),
 )
 
 - Worked on Node JS and Apollo GraphQL to develop a GraphQL backend server, Implemented a robust que system using Bull MQ for processing heavy background jobs, Reduced Reporting API endpoint response from minutes to seconds by rewriting API using Nest JS
