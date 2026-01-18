@@ -88,22 +88,13 @@ Computer Science - UITS
   dates: dates-helper(start-date: "Jan 2021", end-date: "May 2022"),
 )
 
-- Worked on Node JS and Apollo GraphQL to develop a GraphQL backend server, Implemented a robust que system using Bull MQ for processing heavy background jobs, Reduced Reporting API endpoint response from minutes to seconds by rewriting API using Nest JS
+- Worked on Node JS and Apollo GraphQL to develop a GraphQL backend server, Implemented a robust que system using Bull MQ for processing heavy background jobs, Reduced Reporting API endpoint response from minutes to seconds by rewriting API using Nest JS.
 
+- Implemented a Large scale design system, ensured WCAG standards, Standardized the design to dev workflow resulting in faster design delivery and almost 100% increase in User Adoption rate.
 
-== Personal Project
-
-#project(
-  name: "Writer",
-  // Role is optional
-  role: "",
-  // URL is also optional
-  url: "www.github.com/git-emran/simple-notes/",
-)
-- An Open-Source Markdown Text Editor(Cross Platform Desktop app) with built in LSP (language server protocol), Syntax highlighting and completions you can build your coding documentation, as a student or a learner practice your DSA, or document your workflow in general using the markdown syntax and Vim motions.
 
 
 == Skills
-- *Programming Languages*: JavaScript, Typescript, Python, C/C++, HTML/CSS, Java, Bash, R, Lua.
-- *Technologies*: React, Astro, Angular, SolidJS, Svelte, Tailwind CSS, LangChain, Git, Linux, UNIX, Docker, Caddy, NGINX, Google Cloud Platform.
-
+- *Programming Languages*: JavaScript, Typescript, Python, C/C++, HTML/CSS, Java, Bash, Rust, Lua, SQL.
+- *Technologies*: React, Astro, Angular, SolidJS, Svelte, Artificial-Intelligence, Tailwind CSS, LangChain, Git, Linux, UNIX, Docker, Caddy, NGINX, Google Cloud Platform.
+- *Design Skills*: User Experience Design, Product Design, Accessibility Design, Human Centered Design, Interaction Design, UI Design, 2D Animation, Graphics Design.
