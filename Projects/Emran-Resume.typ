@@ -59,7 +59,7 @@ Computer Science - UITS
 - Introduced a new collaboration style, design standards and documentation strategies with Storybook and Figma to eliminate design debt.
 
 #work(
-  title: "Front-end Engineer, UX",
+  title: "Front-end Engineer, UX Designer",
   location: "Dubai, UAE",
   company: "The Total Office",
   dates: dates-helper(start-date: "April 2023", end-date: "Dec 2023"),
