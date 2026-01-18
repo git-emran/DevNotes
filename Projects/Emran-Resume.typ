@@ -91,18 +91,16 @@ Computer Science - UITS
 - Worked on Node JS and Apollo GraphQL to develop a GraphQL backend server, Implemented a robust que system using Bull MQ for processing heavy background jobs, Reduced Reporting API endpoint response from minutes to seconds by rewriting API using Nest JS
 
 
-== Projects
+== Personal Project
 
 #project(
   name: "Writer",
   // Role is optional
   role: "",
-  // Dates is optional
-  dates: dates-helper(start-date: "Nov 2023", end-date: "Present"),
   // URL is also optional
   url: "www.github.com/git-emran/simple-notes/",
 )
-- A Markdown Text editor(Cross Platform Desktop app) with built in LSP (language server protocol), Syntax highlighting and completions you can build your coding documentation, as a student or a learner practice your DSA, or document your workflow in general using the markdown syntax and Vim motions.
+- An Open-Source Markdown Text Editor(Cross Platform Desktop app) with built in LSP (language server protocol), Syntax highlighting and completions you can build your coding documentation, as a student or a learner practice your DSA, or document your workflow in general using the markdown syntax and Vim motions.
 
 
 == Skills
