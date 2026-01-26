@@ -233,3 +233,17 @@ This shows **process, maturity, and collaboration**.
 | How do you use Google Tag Manager effectively?                           | By managing tracking scripts without modifying the website code.                   |
 | What is cohort analysis in user analytics?                               | It groups users by shared characteristics to analyze behavior over time.           |
 | How does bounce rate impact website performance?                         | A high bounce rate may indicate poor UX or irrelevant content.                     |
+
+
+## Stripe Product / UX-UI Designer Questions:
+
+Walk me through a recent payment or fintech product you designed. What problem mattered most?  
+How would you define success metrics for a checkout or payment experience?  
+Design a checkout flow — what would you clarify before starting?  
+Tell me about a time you balanced security with usability. What trade-offs did you make?  
+How would you simplify a complex financial workflow for non-technical users?  
+Describe a project where data or constraints changed your design direction.  
+How do you approach designing for global users with different currencies, languages, and regulations?  
+If payments fail frequently, how would you diagnose the UX problem before redesigning?  
+How do you collaborate with PMs and engineers on high-risk features like payments?  
+Walk me through how you’d evaluate and iterate on a live, revenue-critical flow.
