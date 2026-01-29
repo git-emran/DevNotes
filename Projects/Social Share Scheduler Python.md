@@ -147,4 +147,15 @@ With django `    def save(self, *args, **kwargs):` method we can prevent our pro
         super().save(*args, **kwargs)
 ```
 
+### Human readable errors 
+
+With `fstring` I can validate errors in a clear manner. IN this case a function to validate that the post must be atleast more than 5 characters long
+
+```python
+
+def validate_share(value):
+    if len(value) < 5:
+        raise ValidationError("Content must be longer")
+
+```
 

@@ -4,11 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "abe7acf57d0e1369",
+        "id": "1e92ec1c03bb82d9",
         "type": "tabs",
         "children": [
           {
-            "id": "4ac0c567abd4a278",
+            "id": "54d025294fef0bd2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Chess-Engine.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chess-Engine"
+            }
+          },
+          {
+            "id": "6594f2e2d7381d72",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,20 +33,6 @@
               },
               "icon": "lucide-file",
               "title": "Social Share Scheduler Python"
-            }
-          },
-          {
-            "id": "1cd7969060ba53a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1️⃣ Design - Phase 1"
             }
           }
         ],
@@ -184,17 +184,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "1cd7969060ba53a1",
+  "active": "6594f2e2d7381d72",
   "lastOpenFiles": [
-    "Leetcode-solutions/Medium/MaximumSubArray.md",
+    "Projects/Chess-Engine.md",
     "Projects/Social Share Scheduler Python.md",
+    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "Leetcode-solutions/Medium/MaximumSubArray.md",
     "Projects/Rest-API-in-Go.md",
     "Leetcode-solutions/Medium/ProductOfArrayExceptSelf.md",
     "Leetcode-solutions/Medium/Palindromic Substring.md",
     "Leetcode-solutions/Medium/Longest-Palindromic-Substring.md",
     "Interview-Prep/SWE/Data structures & Algo.md",
     "Leetcode-solutions/Easy/Longest Common Prefix.md",
-    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "django dashboard Ui.png",
     "Projects/Gopher-Social.md",
     "Projects/IELTS practice (Let's IELTS).md",
@@ -214,7 +215,6 @@
     "Untitled",
     "README.md",
     "Interview-Prep/SWE/Web Development Questions.md",
-    "Interview-Prep/SWE/General Questions.md",
     "Projects/Emran-Resume.pdf",
     "Dynamic Resume/Emran_resume.typ",
     "Dynamic Resume/Emran-Resume 2.typ",
