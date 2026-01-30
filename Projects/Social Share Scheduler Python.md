@@ -159,3 +159,26 @@ def validate_share(value):
 
 ```
 
+### Ensure Linkedin Oauth is connected
+By adding a try except block on the `can_share_on_linkedin` function, we check if the user is logged in via the `get_linkedin_user_details` from the `helper functions`
+
+```python
+    def can_share_on_linkedin(self):
+        try:
+            linkedin.get_linkedin_user_details(self.user)
+        # except linkedin.UserNotConnectedLinkedin:
+        #     raise ValidationError({"user": "you must connect linkedin before sharing "})
+        except Exception as e:
+            print(e)
+            raise ValidationError({"user": f"{e}"})
+            # return False
+
+        return not self.share_on_linkedin
+
+```
+
+Of course we can cache the whole thing and we will do it later down the road. 
+
+
+### Share to linkedin via Database entry
+
