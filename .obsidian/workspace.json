@@ -11,14 +11,12 @@
             "id": "e0864073aa572ea1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Projects/Social Share Scheduler Python.md",
-                "mode": "source",
-                "source": false
+                "file": "Projects/Emran-Resume.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Social Share Scheduler Python"
+              "icon": "lucide-file-text",
+              "title": "Emran-Resume"
             }
           }
         ]
@@ -171,6 +169,7 @@
   },
   "active": "e0864073aa572ea1",
   "lastOpenFiles": [
+    "Projects/Social Share Scheduler Python.md",
     "Projects/Parser.md",
     "Projects/Magic Streaming project - Go.md",
     "Projects/IELTS practice (Let's IELTS).md",
@@ -180,7 +179,6 @@
     "Projects/Emran-CoverLetter.pdf",
     "Projects/Chatterbox.md",
     "Projects/Chess-Engine.md",
-    "Projects/Social Share Scheduler Python.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Leetcode-solutions/Medium/MaximumSubArray.md",
     "Projects/Rest-API-in-Go.md",

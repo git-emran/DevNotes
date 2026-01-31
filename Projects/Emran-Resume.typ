@@ -38,28 +38,28 @@
 == Education
 
 #edu(
-  institution: "University of Information and Technologies",
+  institution: "University of Information Technologies and Sciences",
   dates: dates-helper(start-date: "Aug 2013", end-date: "May 2017"),
   degree: "Bachelor's of Science, Computer Science",
 
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
-Computer Science - UITS
+CGPA 3.6/4, Computer Science
 == Work Experience
 
 #work(
-  title: "Product Lead, Software Engineer",
+  title: "Product Lead and Software Engineer",
   location: "Copenhagen, Denmark",
   company: "Tiblo Digital",
   dates: dates-helper(start-date: "Dec 2023", end-date: "Present"),
 )
-- Proudly Launched over 25 successful products in the agency as a Product lead.
-- Designed and Launched WheelLog, a New innovative product in collboration with TyreProf resulting in a 80% customer converted in the first quarter. Implemented support for real time collaboration and presence detection in React using conflict free replicated data (CRDT).
-- Introduced a new collaboration style, design standards and documentation strategies with Storybook and Figma to eliminate design debt.
+- As a Team lead I streamlined the client on-boarding by Introducing new Framework for Requirement Analysis resulting in faster design delivery.
+- Designed and Launched a B2B web application, a New innovative product in collboration with TyreProf resulting in a 90% new customers converted in the first quarter. Implemented a feature that supports real time collaboration and presence detection in React using conflict free replicated data (CRDT).
+- Introduced a new collaboration style, design standards and documentation strategies with Storybook and Figma to simplify front end development.
 
 #work(
-  title: "Front-end Engineer, UX Designer",
+  title: "Front-end Engineer, UX Lead",
   location: "Dubai, UAE",
   company: "The Total Office",
   dates: dates-helper(start-date: "April 2023", end-date: "Dec 2023"),
@@ -79,7 +79,7 @@ Computer Science - UITS
 - Achieved WCAG compliance for an enterprise grade system in 2 months. Collaboratively designed a new payment processing feature named “mtPay” with a 95% user adoption rate. Ensured seamless migration from Angular 3 to Angular 10.
 - Implemented a design system, saving 60% on system upgrades, 50% increase in design delivery and simplifying developer project transitions.
 - Ensured seamless migration from Angular 3 to Angular 10.
-- Boosted customer conversion rate from 20% to 88% and reduced drop off rate by 32% and Significantly reduced load time by 34% by redesigning and refactoring the website.
+- Boosted customer conversion rate from 20% to 88% and reduced drop off rate by 32% and Significantly reduced load time by 34% by redesigning and refactoring the website layout and artifacts.
 
 #work(
   title: "Lead Product Designer, Front-end Developer",
@@ -89,8 +89,9 @@ Computer Science - UITS
 )
 
 - Worked on Node JS and Apollo GraphQL to develop a GraphQL backend server, Implemented a robust que system using Bull MQ for processing heavy background jobs, Reduced Reporting API endpoint response from minutes to seconds by rewriting API using Nest JS.
-
 - Implemented a Large scale design system, ensured WCAG standards, Standardized the design to dev workflow resulting in faster design delivery and almost 100% increase in User Adoption rate.
+- As a Team lead I designed, developed and launched an AI Content Generator and Manager GetGenieAI from 0 to 1 which resulted in 98% user sign ups, 100% activation rate, 20k MAU and increased session depth.
+
 
 
 
