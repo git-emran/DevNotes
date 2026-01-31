@@ -61,7 +61,7 @@ CGPA 3.6/4, Computer Science
 #work(
   title: "Front-end Engineer, UX Lead",
   location: "Dubai, UAE",
-  company: "The Total Office",
+  company: "The Total Office (Contract)",
   dates: dates-helper(start-date: "April 2023", end-date: "Dec 2023"),
 )
 
@@ -76,9 +76,8 @@ CGPA 3.6/4, Computer Science
   dates: dates-helper(start-date: "May 2022", end-date: "April 2023"),
 )
 
-- Achieved WCAG compliance for an enterprise grade system in 2 months. Collaboratively designed a new payment processing feature named “mtPay” with a 95% user adoption rate. Ensured seamless migration from Angular 3 to Angular 10.
-- Implemented a design system, saving 60% on system upgrades, 50% increase in design delivery and simplifying developer project transitions.
-- Ensured seamless migration from Angular 3 to Angular 10.
+- Achieved WCAG compliance for an enterprise grade system in 2 months. Collaboratively designed a new payment processing feature named “mtPay” with a 95% user adoption rate and Ensured seamless migration from Angular 3 to Angular 10.
+- Implemented enterprise Design System, saving 60% time on system upgrades, 50% increase in design delivery and simplifying developer project transitions.
 - Boosted customer conversion rate from 20% to 88% and reduced drop off rate by 32% and Significantly reduced load time by 34% by redesigning and refactoring the website layout and artifacts.
 
 #work(
@@ -91,8 +90,6 @@ CGPA 3.6/4, Computer Science
 - Worked on Node JS and Apollo GraphQL to develop a GraphQL backend server, Implemented a robust que system using Bull MQ for processing heavy background jobs, Reduced Reporting API endpoint response from minutes to seconds by rewriting API using Nest JS.
 - Implemented a Large scale design system, ensured WCAG standards, Standardized the design to dev workflow resulting in faster design delivery and almost 100% increase in User Adoption rate.
 - As a Team lead I designed, developed and launched an AI Content Generator and Manager GetGenieAI from 0 to 1 which resulted in 98% user sign ups, 100% activation rate, 20k MAU and increased session depth.
-
-
 
 
 == Skills
