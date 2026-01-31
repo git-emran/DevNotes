@@ -52,7 +52,7 @@ CGPA 3.6/4, Computer Science
   title: "Product Lead and Software Engineer",
   location: "Copenhagen, Denmark",
   company: "Tiblo Digital",
-  dates: dates-helper(start-date: "Dec 2023", end-date: "Present"),
+  dates: dates-helper(start-date: "Jan 2024", end-date: "Present"),
 )
 - As a Team lead I streamlined the client on-boarding by Introducing new Framework for Requirement Analysis resulting in faster design delivery.
 - Designed and Launched a B2B web application, a New innovative product in collboration with TyreProf resulting in a 90% new customers converted in the first quarter. Implemented a feature that supports real time collaboration and presence detection in React using conflict free replicated data (CRDT).
@@ -62,7 +62,7 @@ CGPA 3.6/4, Computer Science
   title: "Front-end Engineer, UX Lead",
   location: "Dubai, UAE",
   company: "The Total Office (Contract)",
-  dates: dates-helper(start-date: "April 2023", end-date: "Dec 2023"),
+  dates: dates-helper(start-date: "Apr 2023", end-date: "May 2024"),
 )
 
 - Played a key role in addressing security vulnerabilities (CVEs), reducing their count from 411 to 3 through diligent analysis and mitigation measures.
@@ -72,8 +72,8 @@ CGPA 3.6/4, Computer Science
 #work(
   title: "Lead UX/UI Designer",
   location: "Austin, Texas, USA",
-  company: "MarketTime LLC",
-  dates: dates-helper(start-date: "May 2022", end-date: "April 2023"),
+  company: "MarketTime LLC (Contract)",
+  dates: dates-helper(start-date: "May 2022", end-date: "Apr 2023"),
 )
 
 - Achieved WCAG compliance for an enterprise grade system in 2 months. Collaboratively designed a new payment processing feature named “mtPay” with a 95% user adoption rate and Ensured seamless migration from Angular 3 to Angular 10.

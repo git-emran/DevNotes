@@ -11,12 +11,14 @@
             "id": "e0864073aa572ea1",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Projects/Emran-Resume.pdf"
+                "file": "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Emran-Resume"
+              "icon": "lucide-file",
+              "title": "1️⃣ Design - Phase 1"
             }
           }
         ]
@@ -169,8 +171,9 @@
   },
   "active": "e0864073aa572ea1",
   "lastOpenFiles": [
-    "Leetcode-solutions/Medium/MaximumSubArray.md",
+    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
     "Projects/Emran-Resume.pdf",
+    "Leetcode-solutions/Medium/MaximumSubArray.md",
     "Projects/Social Share Scheduler Python.md",
     "Projects/Parser.md",
     "Projects/Magic Streaming project - Go.md",
@@ -188,7 +191,6 @@
     "Interview-Prep/SWE/Data structures & Algo.md",
     "Leetcode-solutions/Easy/Longest Common Prefix.md",
     "django dashboard Ui.png",
-    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
     "Interview-Prep/Coding exercises/Wanderlog.md",
     "Interview-Prep/Coding exercises/Dash0.md",
     "Interview-Prep/Coding exercises",
