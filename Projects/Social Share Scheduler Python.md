@@ -181,4 +181,4 @@ Of course we can cache the whole thing and we will do it later down the road.
 
 
 ### Share to linkedin via Database entry
-
+just raising an try exception block using `post_to_linkedin` function.

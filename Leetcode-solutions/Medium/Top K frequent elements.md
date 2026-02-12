@@ -1,23 +1,22 @@
-Given an integer array `nums` and an integer `k`, return _the_ `k` _most frequent elements_. You may return the answer in **any order**.
+Given an integer array `nums` and an integer `k`, return *the* `k` *most frequent elements*. You may return the answer in **any order**.
 
-	**Example 1:**
-	
-	**Input:** nums = [1,1,1,2,2,3], k = 2
-	
-	**Output:** [1,2]
-	
-	**Example 2:**
-	
-	**Input:** nums = [1], k = 1
-	
-	**Output:** [1]
-	
-	**Example 3:**
-	
-	**Input:** nums = [1,2,1,2,1,2,3,1,3,2], k = 2
-	
-	**Output:** [1,2]
+    **Example 1:**
 
+    **Input:** nums = [1,1,1,2,2,3], k = 2
+
+    **Output:** [1,2]
+
+    **Example 2:**
+
+    **Input:** nums = [1], k = 1
+
+    **Output:** [1]
+
+    **Example 3:**
+
+    **Input:** nums = [1,2,1,2,1,2,3,1,3,2], k = 2
+
+    **Output:** [1,2]
 
 **Constraints:**
 
@@ -28,26 +27,25 @@ Given an integer array `nums` and an integer `k`, return _the_ `k` _most f
 
 **Follow up:** Your algorithm's time complexity must be better than `O(n log n)`, where n is the array's size.
 
-
 ```c++
 
 class Solution  {
 	public :
-	
+
 	vector<int> topKFrequent(vector<int>& nums, int k) {
-	
+
 		unordered_map<int, int> count;
-		
+
 		for (int n :nums){
 			count[n]++;
 		}
-		
+
 		vector<vector<int>> freq(nums.size()+1);
-		
+
 		for(const auto& entry: count){
 			freq[entry.second].push_back(entry.first)
 		}
-		
+
 		vector<int> res;
 		for(int i = freq.size() - 1; i>0; --i){
 			for(int n: freq[i]){
@@ -58,8 +56,35 @@ class Solution  {
 			}
 		}
 		return res;
-	
+
 	}
 }
 
 ```
+
+## Sorting
+
+##### Intuition
+
+- To find the `k` most frequent elements, we first need to know how often each number appears.
+- Once we count the frequencies, we can sort the unique numbers based on how many times they occur.
+- After sorting, the numbers with the highest frequencies will naturally appear at the end of the list.
+- By taking the last `k` entries, we get the `k` most frequent elements.
+
+This approach is easy to reason about:  
+**count the frequencies → sort by frequency → take the top `k`.**
+
+##### Algorithm
+
+1. Create a hash map to store the frequency of each number.
+2. Build a list of `[frequency, number]` pairs from the map.
+3. Sort this list in ascending order based on frequency.
+4. Create an empty result list.
+5. Repeatedly pop from the end of the sorted list (highest frequency) and append the number to the result.
+6. Stop when the result contains `k` elements.
+7. Return the result list.
+
+```python
+
+```
+
