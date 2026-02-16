@@ -90,3 +90,4 @@ Replace word on the selected line:
 - **LSP Integration**: Diagnostics (`]d`, `[d`, `<leader>xx`) rely on `nvim-lspconfig`. Ensure LSP is active (`:LspInfo`).
 - **Troubleshooting**: If a shortcut fails, check for conflicts with `:map <shortcut>` or ensure plugins (e.g., `trouble.nvim`, `treesitter`) are installed via `:checkhealth`.
 - **Cursor Placement**: Most motions (e.g., `ciw`, `vaf`) work anywhere within the target (word, function, etc.). Precise placement noted where required.
+
