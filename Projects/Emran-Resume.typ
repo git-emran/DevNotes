@@ -80,6 +80,7 @@ CGPA 3.6/4, Computer Science
 - Implemented enterprise Design System, saving 60% time on system upgrades, 50% increase in design delivery and simplifying developer project transitions.
 - Boosted customer conversion rate from 20% to 88% and reduced drop off rate by 32% and Significantly reduced load time by 34% by redesigning and refactoring the website layout and artifacts.
 
+
 #work(
   title: "Lead Product Designer, Front-end Developer",
   location: "Dhaka, Bangladesh",

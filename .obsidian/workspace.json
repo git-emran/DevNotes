@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Neovim/Learn-Neovim.md",
+                "file": "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Learn-Neovim"
+              "title": "BestTimeToBuyStock"
+            }
+          },
+          {
+            "id": "0c2e556bf9990d1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leetcode-solutions/Easy/Merging Two sorted list.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Merging Two sorted list"
             }
           }
         ]
@@ -171,34 +185,34 @@
   },
   "active": "b3b1a64892cae153",
   "lastOpenFiles": [
+    "Learning/ReactAtScale.md",
+    "Learning/Learning-markdown.md",
+    "Learning/Learning-Manim.md",
+    "Learning/Front-End challenges.md",
+    "Learning/DotNet Development.md",
+    "Leetcode-solutions/Easy/MergeIntervals.md",
+    "Leetcode-solutions/Easy/LL - Reverse.md",
+    "Leetcode-solutions/Easy/Merging Two sorted list.md",
+    "Interview-Prep/Coding exercises/Wanderlog.md",
+    "Interview-Prep/SWE/JavaScript Questions.md",
+    "Leetcode-solutions/Medium/Palindromic Substring.md",
+    "Leetcode-solutions/Medium/MaximumSubArray.md",
+    "Leetcode-solutions/Medium/Longest-Palindromic-Substring.md",
+    "Leetcode-solutions/Easy/Roman to Integer.md",
+    "Leetcode-solutions/Easy/Valid Anagram.md",
+    "Neovim/Learn-Neovim.md",
     "Neovim/Vim .vimrc.md",
     "Neovim/Stash-Away Plugins.md",
     "Neovim/Old LSP onfig.md",
-    "Neovim/Learn-Neovim.md",
-    "Learning/Learning-markdown.md",
-    "Learning/Learning-Manim.md",
     "Leetcode-solutions/Medium/Top K frequent elements.md",
-    "Interview-Prep/Coding exercises/Wanderlog.md",
     "Interview-Prep/SWE/General Questions.md",
     "Interview-Prep/SWE/Web Development Questions.md",
     "Projects/Social Share Scheduler Python.md",
-    "Interview-Prep/SWE/JavaScript Questions.md",
     "Interview-Prep/SWE/Data structures & Algo.md",
     "Leetcode-solutions/Medium/Course Schedule.md",
-    "Leetcode-solutions/Easy/LL - Reverse.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
-    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
     "Projects/Emran-Resume.pdf",
-    "Leetcode-solutions/Medium/MaximumSubArray.md",
-    "Projects/Parser.md",
-    "Projects/Magic Streaming project - Go.md",
-    "Projects/IELTS practice (Let's IELTS).md",
-    "Projects/Gopher-Social.md",
-    "Projects/Http-from-TCP.md",
     "Projects/Emran-CoverLetter.pdf",
-    "Projects/Chatterbox.md",
-    "Projects/Chess-Engine.md",
-    "Projects/Rest-API-in-Go.md",
     "django dashboard Ui.png",
     "Interview-Prep/Coding exercises",
     "Untitled",

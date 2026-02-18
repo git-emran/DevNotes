@@ -18,7 +18,7 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
     Output: 0
     Explanation: In this case, no transactions are done and the max profit = 0.
 
-```py
+```python
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
@@ -35,3 +35,5 @@ class Solution:
 
 
 ```
+
+![cats](https://en.wikipedia.org/wiki/Tabby_cat#/media/File:Cat_November_2010-1a.jpg)
