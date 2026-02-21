@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
+                "file": "Projects/Realtime Sports Broadcast - Websockets.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BestTimeToBuyStock"
+              "title": "Realtime Sports Broadcast - Websockets"
             }
           },
           {
@@ -185,6 +185,11 @@
   },
   "active": "b3b1a64892cae153",
   "lastOpenFiles": [
+    "websocket.png",
+    "DB_schema_sportz.png",
+    "Language/Golang/Web-servers in go.md",
+    "Projects/Realtime Sports Broadcast - Websockets.md",
+    "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
     "Learning/ReactAtScale.md",
     "Learning/Learning-markdown.md",
     "Learning/Learning-Manim.md",
@@ -207,10 +212,6 @@
     "Leetcode-solutions/Medium/Top K frequent elements.md",
     "Interview-Prep/SWE/General Questions.md",
     "Interview-Prep/SWE/Web Development Questions.md",
-    "Projects/Social Share Scheduler Python.md",
-    "Interview-Prep/SWE/Data structures & Algo.md",
-    "Leetcode-solutions/Medium/Course Schedule.md",
-    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Projects/Emran-Resume.pdf",
     "Projects/Emran-CoverLetter.pdf",
     "django dashboard Ui.png",
