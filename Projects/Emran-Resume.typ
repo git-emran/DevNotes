@@ -52,14 +52,14 @@ CGPA 3.6/4, Computer Science
   title: "Product Lead and Software Engineer",
   location: "Copenhagen, Denmark",
   company: "Tiblo Digital",
-  dates: dates-helper(start-date: "Jan 2024", end-date: "Present"),
+  dates: dates-helper(start-date: "May 2024", end-date: "Present"),
 )
 - As a Team lead I streamlined the client on-boarding by Introducing new Framework for Requirement Analysis resulting in faster design delivery.
 - Designed and Launched a B2B web application, a New innovative product in collboration with TyreProf resulting in a 90% new customers converted in the first quarter. Implemented a feature that supports real time collaboration and presence detection in React using conflict free replicated data (CRDT).
 - Introduced a new collaboration style, design standards and documentation strategies with Storybook and Figma to simplify front end development.
 
 #work(
-  title: "Front-end Engineer, UX Lead",
+  title: "Front-end Engineer, Product Lead",
   location: "Dubai, UAE",
   company: "The Total Office (Contract)",
   dates: dates-helper(start-date: "Apr 2023", end-date: "May 2024"),
@@ -76,22 +76,19 @@ CGPA 3.6/4, Computer Science
   dates: dates-helper(start-date: "May 2022", end-date: "Apr 2023"),
 )
 
-- Achieved WCAG compliance for an enterprise grade system in 2 months. Collaboratively designed a new payment processing feature named “mtPay” with a 95% user adoption rate and Ensured seamless migration from Angular 3 to Angular 10.
-- Implemented enterprise Design System, saving 60% time on system upgrades, 50% increase in design delivery and simplifying developer project transitions.
-- Boosted customer conversion rate from 20% to 88% and reduced drop off rate by 32% and Significantly reduced load time by 34% by redesigning and refactoring the website layout and artifacts.
-
+- Documented and implemented core design requirements under the Lead UX Designer and Head of Design to ensure brand consistency across all digital touchpoints.
+- Performed daily design tasks and iterative improvements, moving concepts through the approval pipeline to final implementation.
+- Established a standardized UI component library that reduced front-end development time by 30% and ensured a unified visual language across multiple product versions.
 
 #work(
-  title: "Lead Product Designer, Front-end Developer",
-  location: "Dhaka, Bangladesh",
-  company: "Roxnor",
-  dates: dates-helper(start-date: "Jan 2021", end-date: "May 2022"),
+  title: "Product Designer",
+  location: "Silicon Valley, USA, Hybrid",
+  company: "Insidemaps Inc.",
+  dates: dates-helper(start-date: "Mar 2019", end-date: "Jan 2022"),
 )
 
-- Worked on Node JS and Apollo GraphQL to develop a GraphQL backend server, Implemented a robust que system using Bull MQ for processing heavy background jobs, Reduced Reporting API endpoint response from minutes to seconds by rewriting API using Nest JS.
-- Implemented a Large scale design system, ensured WCAG standards, Standardized the design to dev workflow resulting in faster design delivery and almost 100% increase in User Adoption rate.
-- As a Team lead I designed, developed and launched an AI Content Generator and Manager GetGenieAI from 0 to 1 which resulted in 98% user sign ups, 100% activation rate, 20k MAU and increased session depth.
-
+- Directed the end-to-end design and front-end development of an iOS-exclusive mobile app, corporate website, and comprehensive web app, resulting in a 25% increase in cross-platform user engagement.
+- Collaborated with the Senior Product Manager and Marketing teams to define the product vision, contributing to a 15% growth in monthly active users (MAU) through data-driven feature prioritization.
 
 == Skills
 - *Programming Languages*: JavaScript, Typescript, Python, C/C++, HTML/CSS, Java, Bash, Rust, Lua, SQL.

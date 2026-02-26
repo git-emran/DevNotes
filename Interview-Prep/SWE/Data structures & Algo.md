@@ -116,8 +116,6 @@ This is a curated list of Data Structures & Algorithm problems for FAANG
   - [https://leetcode.com/problems/find-customer-referee/description/?envType=study-plan-v2&envId=top-sql-50](https://leetcode.com/problems/find-customer-referee/description/?envType=study-plan-v2&envId=top-sql-50)
   - [https://leetcode.com/problems/employee-bonus/description/?envType=study-plan-v2&envId=top-sql-50](https://leetcode.com/problems/employee-bonus/description/?envType=study-plan-v2&envId=top-sql-50)
 
-
-
 ### Top15 Questions :
 
 | Difficulty | Title                               | Frequency | Acceptance rate     | Link                                                              | Topics                                                                                                    |
