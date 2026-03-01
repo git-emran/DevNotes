@@ -35,5 +35,3 @@ class Solution:
 
 
 ```
-
-![cats](https://en.wikipedia.org/wiki/Tabby_cat#/media/File:Cat_November_2010-1a.jpg)

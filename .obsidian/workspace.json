@@ -4,20 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "ed93bee563a022bd",
+        "id": "c74af762a9a2600a",
         "type": "tabs",
         "children": [
           {
-            "id": "00f55adbbf006957",
+            "id": "c3b815cc953b7f6d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Typing Speed.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Typing Speed"
+            }
+          },
+          {
+            "id": "1dc63e3a806e561c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Writer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Writer"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -165,37 +184,41 @@
       "bases:Create new base": false
     }
   },
-  "active": "00f55adbbf006957",
+  "active": "1dc63e3a806e561c",
   "lastOpenFiles": [
+    "Leetcode-solutions/Hard/Trapping-rain-water.md",
+    "Projects/Typing Speed.md",
+    "Projects/Writer.md",
+    "Untitled.base",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Projects/Chatterbox.md",
+    "Projects/Http-from-TCP.md",
     "Projects/Realtime Sports Broadcast - Websockets.md",
+    "Projects/Emran-Resume.pdf",
+    "Learning/Front-End challenges.md",
+    "Learning/ReactAtScale.md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
+    "Interview-Prep/SWE/JavaScript Questions.md",
+    "Learning/DotNet Development.md",
+    "Projects/Gopher-Social.md",
+    "Projects/IELTS practice (Let's IELTS).md",
+    "2026-02-27.md",
+    "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
+    "Language/Typst/basic-typst.md",
+    "Interview-Prep/SWE/General Questions.md",
+    "Projects/Rest-API-in-Go.md",
+    "Projects/Social Share Scheduler Python.md",
+    "Leetcode-solutions/Medium/Palindromic Substring.md",
     "DB_schema_sportz.png",
     "Job Search.md",
     "README.md",
     "websocket.png",
-    "Interview-Prep/SWE/JavaScript Questions.md",
     "Interview-Prep/SWE/Web Development Questions.md",
-    "Interview-Prep/SWE/General Questions.md",
     "django dashboard Ui.png",
     "Leetcode-solutions/Easy/Merging Two sorted list.md",
     "Language/Golang/Web-servers in go.md",
-    "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
-    "Learning/ReactAtScale.md",
     "Learning/Learning-markdown.md",
-    "Learning/Learning-Manim.md",
-    "Learning/Front-End challenges.md",
-    "Learning/DotNet Development.md",
-    "Leetcode-solutions/Easy/MergeIntervals.md",
-    "Leetcode-solutions/Easy/LL - Reverse.md",
-    "Interview-Prep/Coding exercises/Wanderlog.md",
-    "Leetcode-solutions/Medium/Palindromic Substring.md",
-    "Leetcode-solutions/Medium/MaximumSubArray.md",
-    "Leetcode-solutions/Medium/Longest-Palindromic-Substring.md",
-    "Leetcode-solutions/Easy/Roman to Integer.md",
-    "Leetcode-solutions/Easy/Valid Anagram.md",
-    "Neovim/Learn-Neovim.md",
-    "Neovim/Vim .vimrc.md",
-    "Neovim/Stash-Away Plugins.md",
-    "Projects/Emran-Resume.pdf",
     "Projects/Emran-CoverLetter.pdf",
     "Interview-Prep/Coding exercises",
     "Untitled",
@@ -203,8 +226,6 @@
     "Dynamic Resume/Emran-Resume 2.typ",
     "Dynamic Resume/Emran-Resume.typ",
     "Dynamic Resume",
-    "untitled folder",
-    "front-end-interview",
-    "Untitled.canvas"
+    "untitled folder"
   ]
 }
