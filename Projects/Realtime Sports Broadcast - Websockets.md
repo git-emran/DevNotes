@@ -42,3 +42,9 @@ Then Migrating the table with `drizzle-kit migrate` to finally connect NEON (A f
 
 #### Matches REST API
 
+- Starting with typical get and post route
+
+#### WebSocket Server
+- 
+
+

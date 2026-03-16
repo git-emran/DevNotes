@@ -4,7 +4,7 @@
 #let name = "Emran Hossain"
 #let email = "clearlybestemran@gmail.com"
 #let linkedin = "www.linkedin.com/in/emran-hossain-80ab17190/"
-#let personal-site = "www.designwithemran.com"
+#let personal-site = "www.github.com/git-emran"
 
 
 #show: resume.with(

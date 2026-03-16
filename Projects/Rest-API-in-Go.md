@@ -2,7 +2,7 @@
 Creating tables using migration 
 #golang #restAPI
 
-```
+```go
 package main
 
 import (

@@ -2,8 +2,14 @@
 
 
 Current Worklog:
- - Table should be responsive in preview mode, meaning a certain minimum width set for each cell and the height should be responsive, also the whole table should fit into the window size in a responsive way. 
- - Whenever any folder opens in the file tree, the expand all button should switch to collapse all button.
+
+* Inline code must be rendered with a text weight of medium in preview mode
+* When "/" is pressed, a context menu should appear right above the cursor , the context menu is exactly the menu that appears when I right click on the mouse in the editor. 
+* Kanban:
+  When clicked on "add task" input field, the input field expands and should have additional options
+   Tasks in the  board when clicked should open a left panel where there is a header with task name , flag and priority level, description of the task 
+
+62042
 
 
 
@@ -68,3 +74,5 @@ To make this app a viable platform for agents, we must implement:
 1. **Headless Mode / CLI**: Allow agents to interact with the workspace without the GUI.
 2. **Semantic Search**: Vector indexing of all markdown content for RAG (Retrieval-Augmented Generation).
 3. **Agentic Logging**: Moving beyond "logs" to "traces"—visualizing the step-by-step reasoning of an agent within the note it's working on.
+
+
