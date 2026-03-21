@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode-solutions/Medium/Valid Sudoku.md",
+                "file": "Projects/Social Share Scheduler Python.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Valid Sudoku"
+              "title": "Social Share Scheduler Python"
             }
           }
         ]
@@ -171,21 +171,21 @@
   },
   "active": "c3b815cc953b7f6d",
   "lastOpenFiles": [
+    "Neovim/Vim .vimrc.md",
+    "Neovim/Stash-Away Plugins.md",
+    "Neovim/Learn-Neovim.md",
+    "CodeForces/Writer Changelogs.md",
+    "Leetcode-solutions/Medium/Valid Sudoku.md",
     "Leetcode-solutions/Medium/Top K frequent elements.md",
     "Projects/IELTS practice (Let's IELTS).md",
     "Projects/Realtime Sports Broadcast - Websockets.md",
-    "CodeForces/Writer Changelogs.md",
     "Projects/Writer.md",
     "Interview-Prep/SWE/General Questions.md",
-    "Leetcode-solutions/Medium/Valid Sudoku.md",
     "Learning/DotNet Development.md",
     "Language/Typst/basic-typst.md",
     "Language/C++/learning-c++.md",
-    "Neovim/Vim .vimrc.md",
     "front-end-interview/min-by.md",
-    "Neovim/Stash-Away Plugins.md",
     "Neovim/Old LSP onfig.md",
-    "Neovim/Learn-Neovim.md",
     "Leetcode-solutions/Easy/Merging Two sorted list.md",
     "Leetcode-solutions/Easy/MergeIntervals.md",
     "Leetcode-solutions/Easy/Maximum Subarray.md",

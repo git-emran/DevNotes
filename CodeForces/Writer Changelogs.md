@@ -20,6 +20,15 @@
 
 
 
+# Writer API key
 
+
+This is an open router API key
+
+```bash
+
+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
+
+```
 
 
