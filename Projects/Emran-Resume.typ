@@ -64,7 +64,6 @@ CGPA 3.6/4, Computer Science
   company: "The Total Office (Contract)",
   dates: dates-helper(start-date: "Apr 2023", end-date: "May 2024"),
 )
-
 - Played a key role in addressing security vulnerabilities (CVEs), reducing their count from 411 to 3 through diligent analysis and mitigation measures.
 - Introduced ARIA attributes and customizable keyboard navigation, resulting in 98% user satisfaction from individuals with diverse abilities.
 - Optimized Core Web Vitals (LCP, CLS, FID) for a high-traﬃc e-commerce platform by implementing image lazy loading, code splitting, and service workers, improving conversion rates by 20% and page load speed from 3.4s to 1.2s.
@@ -75,20 +74,29 @@ CGPA 3.6/4, Computer Science
   company: "MarketTime LLC (Contract)",
   dates: dates-helper(start-date: "May 2022", end-date: "Apr 2023"),
 )
-
 - Documented and implemented core design requirements under the Lead UX Designer and Head of Design to ensure brand consistency across all digital touchpoints.
 - Performed daily design tasks and iterative improvements, moving concepts through the approval pipeline to final implementation.
 - Established a standardized UI component library that reduced front-end development time by 30% and ensured a unified visual language across multiple product versions.
 
 #work(
-  title: "Product Designer",
+  title: "Front-end Engineer",
+  location: "Dhaka, Bangladesh",
+  company: "Roxnor (Contract)",
+  dates: dates-helper(start-date: "Feb 2022", end-date: "May 2022"),
+)
+- Built a Gutenberg block-based interface for an AI-powered content generation plugin (GetGenieAI) using React.
+- Integrated frontend with AI services via REST APIs, handling async data flows, loading states, and error fallbacks to ensure a smooth user experience.
+
+
+#work(
+  title: "Lead Product Designer",
   location: "Silicon Valley, USA, Hybrid",
   company: "Insidemaps Inc.",
   dates: dates-helper(start-date: "Mar 2019", end-date: "Jan 2022"),
 )
-
 - Directed the end-to-end design and front-end development of an iOS-exclusive mobile app, corporate website, and comprehensive web app, resulting in a 25% increase in cross-platform user engagement.
 - Collaborated with the Senior Product Manager and Marketing teams to define the product vision, contributing to a 15% growth in monthly active users (MAU) through data-driven feature prioritization.
+
 
 == Skills
 - *Programming Languages*: JavaScript, Typescript, Python, C/C++, HTML/CSS, Java, Bash, Rust, Lua, SQL.
