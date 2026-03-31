@@ -45,6 +45,10 @@ Then Migrating the table with `drizzle-kit migrate` to finally connect NEON (A f
 - Starting with typical get and post route
 
 #### WebSocket Server
-- 
+- Using `wss` library to connect to establish a web-socket server
+
+Doing a test 
+
+` for i in {1..60}; do curl -s -o /dev/null -w "%{http_code}\n"`
 
 

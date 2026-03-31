@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c74af762a9a2600a",
+        "id": "73502d38b0fa72a3",
         "type": "tabs",
         "children": [
           {
-            "id": "c3b815cc953b7f6d",
+            "id": "079fdef074364de7",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "websocket.png"
+                "file": "Projects/Wordle React.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "websocket"
+              "icon": "lucide-file",
+              "title": "Wordle React"
             }
           }
         ]
@@ -167,20 +169,27 @@
       "bases:Create new base": false
     }
   },
-  "active": "c3b815cc953b7f6d",
+  "active": "079fdef074364de7",
   "lastOpenFiles": [
+    "Interview-Prep/🐦‍🔥 Optimizely Prep.md",
+    "Projects/Wordle React.md",
+    "Projects/Realtime Sports Broadcast - Websockets.md",
+    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "CodeForces/Probabilistic Card game.md",
+    "CodeForces/Writer Changelogs.md",
+    "Interview-Prep/SWE/General Questions.md",
+    "Interview-Prep/SWE/Web Development Questions.md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
+    "websocket.png",
     "DB_schema_sportz.png",
     "django dashboard Ui.png",
-    "CodeForces/Writer Changelogs.md",
     "Projects/Magic Streaming project - Go.md",
-    "Projects/Realtime Sports Broadcast - Websockets.md",
     "Projects/Social Share Scheduler Python.md",
     "Projects/Writer.md",
     "Projects/Typing Speed.md",
     "Projects/Rest-API-in-Go.md",
     "2026-03-02.md",
     "Job Search.md",
-    "websocket.png",
     "README.md",
     "Untitled.canvas",
     "Random/Daily.md",
@@ -190,14 +199,8 @@
     "Leetcode-solutions/Medium/Valid Sudoku.md",
     "Leetcode-solutions/Medium/Top K frequent elements.md",
     "Projects/IELTS practice (Let's IELTS).md",
-    "Interview-Prep/SWE/General Questions.md",
     "Learning/DotNet Development.md",
     "Language/Typst/basic-typst.md",
-    "Language/C++/learning-c++.md",
-    "front-end-interview/min-by.md",
-    "Neovim/Old LSP onfig.md",
-    "Leetcode-solutions/Easy/Merging Two sorted list.md",
-    "Leetcode-solutions/Easy/MergeIntervals.md",
     "CodeForces",
     "Projects/Emran-CoverLetter.pdf",
     "Projects/Emran-Resume.pdf",

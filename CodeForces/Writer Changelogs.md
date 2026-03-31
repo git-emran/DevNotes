@@ -15,6 +15,6 @@
 
 - [x] Make sure each board's tasks are vertically scrollable while the board header remains sticky, and make sure to hide the scrollbar too
 
-- [ ] In the add column input field, make the place holder text " Add board name", instead of add column.
+- [x] In the add column input field, make the place holder text " Add board name", instead of add column.
 - [x] Copy and paste doesnt seem to be working
 
