@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "73502d38b0fa72a3",
+        "id": "0ed49f875033ce33",
         "type": "tabs",
         "children": [
           {
-            "id": "079fdef074364de7",
+            "id": "c3ab629c6033a8de",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Wordle React.md",
+                "file": "Interview-Prep/🐦‍🔥 Optimizely Prep.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wordle React"
+              "title": "🐦‍🔥 Optimizely Prep"
             }
           }
         ]
@@ -169,12 +169,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "079fdef074364de7",
+  "active": "c3ab629c6033a8de",
   "lastOpenFiles": [
+    "Projects/Http-from-TCP.md",
     "Interview-Prep/🐦‍🔥 Optimizely Prep.md",
-    "Projects/Wordle React.md",
-    "Projects/Realtime Sports Broadcast - Websockets.md",
+    "Random/Daily.md",
+    "Projects/Gopher-Social.md",
+    "Projects/Rest-API-in-Go.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
+    "Projects/Realtime Sports Broadcast - Websockets.md",
+    "Projects/Wordle React.md",
     "CodeForces/Probabilistic Card game.md",
     "CodeForces/Writer Changelogs.md",
     "Interview-Prep/SWE/General Questions.md",
@@ -187,20 +192,15 @@
     "Projects/Social Share Scheduler Python.md",
     "Projects/Writer.md",
     "Projects/Typing Speed.md",
-    "Projects/Rest-API-in-Go.md",
     "2026-03-02.md",
     "Job Search.md",
     "README.md",
     "Untitled.canvas",
-    "Random/Daily.md",
     "Neovim/Vim .vimrc.md",
     "Neovim/Stash-Away Plugins.md",
     "Neovim/Learn-Neovim.md",
     "Leetcode-solutions/Medium/Valid Sudoku.md",
     "Leetcode-solutions/Medium/Top K frequent elements.md",
-    "Projects/IELTS practice (Let's IELTS).md",
-    "Learning/DotNet Development.md",
-    "Language/Typst/basic-typst.md",
     "CodeForces",
     "Projects/Emran-CoverLetter.pdf",
     "Projects/Emran-Resume.pdf",

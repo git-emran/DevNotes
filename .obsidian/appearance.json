@@ -1,5 +1,6 @@
 {
   "interfaceFontFamily": "",
   "textFontFamily": "Helvetica",
-  "monospaceFontFamily": "JetBrains Mono"
+  "monospaceFontFamily": "JetBrains Mono",
+  "translucency": true
 }
