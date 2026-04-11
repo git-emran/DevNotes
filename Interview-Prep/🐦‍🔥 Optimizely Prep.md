@@ -1100,4 +1100,143 @@ Here’s a prep pack tailored for a Principal Solutions Architect (PreSales, AI/
 - Slow GraphQL → show skeleton/loading; cached branches used for fast paint.
 
 ---
+CHEATSHEET
 
+**One‑Page Interview Cheat Sheet (Keep Next to You)**
+
+**Positioning (10s)**
+
+- “Branch Finder SPA using real Optimizely Graph data (GraphQL) with enterprise-feel search, filters, map, details panel, and in-app directions—styled to match Brightstream’s design system.”
+
+**Demo Flow (5–7 min)**
+
+- Search: type → show suggestions dropdown + keyboard nav.
+- Filters: select country/city → chips appear → Clear filters.
+- Selection: click list item → map highlights + panel opens; click map marker → panel opens.
+- Directions: switch tab → show route + steps; switch tabs → prove cached (no refetch).
+- Locate me: click locate icon → input becomes “My location” + map focuses nearest branches.
+- Mobile: resize → map top, list below, panel becomes modal.
+
+**Architecture (30s)**
+
+- SPA (Vite + React + TS), feature-sliced module design.
+- Orchestrator + presentational components:
+    - Orchestrator: /Users/emranhossain/brightstream-branch-finder/src/shared/branch-finder/BranchFinder.tsx
+    - Components: components/BranchFilters.tsx, BranchList.tsx, BranchMap.tsx, BranchSidePanel.tsx
+    - Hooks: hooks/useBranches.ts, useGeolocation.ts, useDirections.ts
+- Unidirectional data flow: parent state → props down → callbacks up.
+
+**Optimizely Graph (what/where/why)**
+
+- GraphQL client: /Users/emranhossain/brightstream-branch-finder/src/shared/optimizelyGraphClient.ts
+    - Simple fetch, explicit error handling, env-based endpoint.
+- Paging: /Users/emranhossain/brightstream-branch-finder/src/shared/branch-finder/optimizelyGraph.ts
+    - Loop limit/skip because Graph max limit is enforced (100).
+- Branch fetch+cache hook: /Users/emranhossain/brightstream-branch-finder/src/shared/branch-finder/hooks/useBranches.ts
+
+**Performance (key talking points)**
+
+- Local input state + debounced parent updates:
+    - /Users/emranhossain/brightstream-branch-finder/src/shared/branch-finder/components/BranchFilters.tsx
+- Derived lists memoized + search index map:
+    - /Users/emranhossain/brightstream-branch-finder/src/shared/branch-finder/BranchFinder.tsx
+- Leaflet markers throttled with deferred rendering:
+    - useDeferredValue in /Users/emranhossain/brightstream-branch-finder/src/shared/branch-finder/BranchFinder.tsx
+- “Near Me” limits to top 50 results to keep map localized.
+
+**Search / Suggestions (enterprise UX)**
+
+- Debounce “as-you-type” + stable dropdown behavior.
+- Scored suggestions (prefix > contains) using precomputed normalized strings.
+- ARIA combobox/listbox + keyboard support in BranchFilters.tsx.
+
+**Map (Leaflet)**
+
+- Why Leaflet: no keys/billing/referrer failures; demo reliability.
+- Custom markers (default gray, selected green+gold):
+    - /Users/emranhossain/brightstream-branch-finder/src/shared/branch-finder/markerIcons.ts
+- Camera rules centralized:
+    - /Users/emranhossain/brightstream-branch-finder/src/shared/branch-finder/components/BranchMap.tsx (MapEffects)
+
+**Directions (routing + caching)**
+
+- Routing/geocoding: /Users/emranhossain/brightstream-branch-finder/src/shared/branch-finder/routing.ts
+    - OSRM for route/steps; Nominatim for geocoding typed origin.
+- Hook for routing state machine:
+    - /Users/emranhossain/brightstream-branch-finder/src/shared/branch-finder/hooks/useDirections.ts
+    - Cache per (branchId + origin), abort + dedupe in-flight, debounce typed origin.
+
+**Geolocation**
+
+- /Users/emranhossain/brightstream-branch-finder/src/shared/branch-finder/hooks/useGeolocation.ts
+    - Uses browser geolocation; falls back to IP-based geo; handles insecure contexts.
+- “Locate me” focuses map on nearest branches (not just user dot).
+
+**Design System**
+
+- Tokens + core components:
+    - /Users/emranhossain/brightstream-branch-finder/src/styles/brightstream.css
+- Branch-finder layout:
+    - /Users/emranhossain/brightstream-branch-finder/src/styles/branch-finder.css
+- Hero & nav: /Users/emranhossain/brightstream-branch-finder/src/pages/BranchFinderPage.tsx, /Users/emranhossain/brightstream-branch-finder/src/ui/Header.tsx
+
+**Deployment / Netlify**
+
+- Env var required: VITE_OPTIMIZELY_GRAPH_ENDPOINT
+- Secrets scan omit (because Vite embeds VITE_* into client bundle):
+    - /Users/emranhossain/brightstream-branch-finder/netlify.toml
+- Production story: proxy Graph behind server/edge for real security.
+
+**Known Limitations (say confidently)**
+
+- Public OSRM/Nominatim can rate-limit; production would use managed provider + keys + quotas.
+- 1,000 markers is OK for demo; production would add clustering + viewport queries.
+- No tests yet; production would add unit tests for utils/directions and a smoke test for Graph connectivity.
+
+**Top “Production Next Steps”**
+
+- Add backend/edge proxy for GraphQL + routing, rotate/scoped tokens, rate limiting.
+- Marker clustering + viewport rendering.
+- Add deep links (/branches/:id), analytics events, stronger a11y (focus trap + Esc close).
+- Observability: logs + error reporting (Sentry), performance monitoring.
+
+---
+
+**Principal Rapid‑Fire Q&A (Likely Questions + Answers)**
+
+1. “Why no Apollo/Relay?”
+    - “Single dataset + simple query shape; fetch keeps bundle small and logic explicit. If Graph needs caching/normalization later, Apollo becomes a justified dependency.”
+2. “How do you prevent rerender storms while typing?”
+    - “Input has local state; parent update is debounced. Suggestions are computed from prebuilt normalized strings and limited to a small top set.”
+3. “How do you avoid repeated directions calls?”
+    - “useDirections caches per routeKey and dedupes in-flight requests; it aborts stale requests when key changes.”
+4. “What happens if a branch has bad coordinates?”
+    - “It still appears in list; map marker is skipped; directions show a clear error (‘No coordinates available’).”
+5. “Why is the token visible in production bundle?”
+    - “Because the architecture is direct-from-browser GraphQL. For production, I’d proxy Graph behind an API/edge function so credentials never ship to the client.”
+6. “How would you make it demo-ready across regions?”
+    - “Region presets, deterministic seeds, feature flags, offline fallback dataset, and smoke checks for Graph connectivity.”
+7. “Explain how map camera decisions work.”
+    - “Priority: route fitBounds → selected branch flyTo → active filter fitBounds → geolocation focus nearest branches; centralized in one effect to prevent jumpiness.”
+8. “What would you improve with more time?”
+    - “A11y focus management for the modal, deep linking, marker clustering, tests for directions/state logic, and observability.”
+9. “How would you handle 100k branches?”
+    - “Server-side geo + search (bounding box, nearest), pagination from server, and render only viewport markers.”
+
+10. “How does this connect to Optimizely’s value?”
+
+- “Real content from Graph; same structure could be CMS-managed Branch entries. Then layer personalization/experimentation: show nearest branches by segment/geo; A/B test search UI; measure conversion.”
+
+---
+
+If you want, I can also draft a **2-minute opening pitch** and a **2-minute closing pitch** tailored to Optimizely Demo
+
+---
+
+What does growth look like from Demo Engineer II to the next level — is it depth in a specialization, broader ownership of the demo library, or movement into a more customer-facing presales role?
+
+Opal seems to be a major part of Optimizely's current go-to-market story. How central is demonstrating Opal's AI capabilities to the demos you are building right now, and how is that evolving over the next two quarters?
+
+What is the biggest pain point that the demo team  hasn't been able to solve ? Do you have any roadmap to tackle that if there are any serious blockers
+
+What is the time frame to expect a feedback ?
