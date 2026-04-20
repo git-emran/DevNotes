@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0ed49f875033ce33",
+        "id": "af231ed3e4a67561",
         "type": "tabs",
         "children": [
           {
-            "id": "c3ab629c6033a8de",
+            "id": "6d38d3d5d16dd757",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview-Prep/🐦‍🔥 Optimizely Prep.md",
+                "file": "Leetcode-solutions/Medium/Valid Sudoku.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "🐦‍🔥 Optimizely Prep"
+              "title": "Valid Sudoku"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f5e580471bec1e06",
@@ -170,14 +169,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "c3ab629c6033a8de",
+  "active": "0d11c6fc68efc03b",
   "lastOpenFiles": [
-    "Projects/Http-from-TCP.md",
+    "Leetcode-solutions/Medium/Untitled.md",
+    "Leetcode-solutions/Medium/Valid Sudoku.md",
+    "Neovim/Learn-Neovim.md",
+    "Interview-Prep/SWE/Data structures & Algo.md",
+    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Interview-Prep/🐦‍🔥 Optimizely Prep.md",
+    "Projects/Http-from-TCP.md",
     "Random/Daily.md",
     "Projects/Gopher-Social.md",
     "Projects/Rest-API-in-Go.md",
-    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
     "Projects/Realtime Sports Broadcast - Websockets.md",
     "Projects/Wordle React.md",
@@ -185,7 +188,6 @@
     "CodeForces/Writer Changelogs.md",
     "Interview-Prep/SWE/General Questions.md",
     "Interview-Prep/SWE/Web Development Questions.md",
-    "Interview-Prep/SWE/Data structures & Algo.md",
     "websocket.png",
     "DB_schema_sportz.png",
     "django dashboard Ui.png",
@@ -199,9 +201,6 @@
     "Untitled.canvas",
     "Neovim/Vim .vimrc.md",
     "Neovim/Stash-Away Plugins.md",
-    "Neovim/Learn-Neovim.md",
-    "Leetcode-solutions/Medium/Valid Sudoku.md",
-    "Leetcode-solutions/Medium/Top K frequent elements.md",
     "CodeForces",
     "Projects/Emran-CoverLetter.pdf",
     "Projects/Emran-Resume.pdf",

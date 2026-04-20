@@ -1,4 +1,4 @@
-MediumTopicsCompany TagsHints
+#hash-set
 
 You are given a `9 x 9` Sudoku board `board`. A Sudoku board is valid if the following rules are followed:
 
