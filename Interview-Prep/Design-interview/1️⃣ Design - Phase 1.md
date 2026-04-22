@@ -17,6 +17,19 @@
   7. Bar raiser, made everyone on the team better.
      **`CONCEPT:`** _**Design Backwards**, Referring to Airbnb’s “**what if**” technique, and one user-story at a time technique to scale a product and ensure product led growth._
 
+## Tell me About urself p2:
+
+I have over 7 years of combined experience in Product Design and Software Engineering. I have deep experience in B2b, B2c SaaS and AI applications. My superpower is that I navigate very well in ambiguous spaces meaning I can work very efficiently with very minimal instructions. Currently I am working with Tiblo Digital, an Agency where I lead a team of 4. 
+Aside from work, I love to mentor on ADPlist, I am one of their top 1% mentors. 
+
+* Experience - Over 7 years
+* Industry - b2b, b2c, saas, AI
+* Navigate well in ambiguous spaces. 
+* Currently @Tiblo leading 4 people. 
+* Adplist, top 1% mentor.
+
+
+---
 
 - **Can you walk me through your design process? (Always include examples)**
   I am a firm believer of the `Atomic Design Process` - Where we create `atoms`, `molecules`, `organisms`, `Templates`, `pages` - Making sure the design is Scalable, technically feasible and efficient

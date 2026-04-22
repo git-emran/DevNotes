@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode-solutions/Medium/Valid Sudoku.md",
+                "file": "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Valid Sudoku"
+              "title": "1️⃣ Design - Phase 1"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 236.50247192382812
   },
   "right": {
     "id": "f5e580471bec1e06",
@@ -169,10 +169,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "0d11c6fc68efc03b",
+  "active": "6d38d3d5d16dd757",
   "lastOpenFiles": [
-    "Leetcode-solutions/Medium/Untitled.md",
+    "Leetcode-solutions/Medium/Longest-Palindromic-Substring.md",
     "Leetcode-solutions/Medium/Valid Sudoku.md",
+    "Leetcode-solutions/Medium/Untitled.md",
     "Neovim/Learn-Neovim.md",
     "Interview-Prep/SWE/Data structures & Algo.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
@@ -200,7 +201,6 @@
     "README.md",
     "Untitled.canvas",
     "Neovim/Vim .vimrc.md",
-    "Neovim/Stash-Away Plugins.md",
     "CodeForces",
     "Projects/Emran-CoverLetter.pdf",
     "Projects/Emran-Resume.pdf",
