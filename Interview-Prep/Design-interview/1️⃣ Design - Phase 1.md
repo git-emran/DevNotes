@@ -28,7 +28,6 @@ Aside from work, I love to mentor on ADPlist, I am one of their top 1% mentors.
 * Currently @Tiblo leading 4 people. 
 * Adplist, top 1% mentor.
 
-
 ---
 
 - **Can you walk me through your design process? (Always include examples)**

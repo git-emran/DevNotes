@@ -16,21 +16,27 @@ Each output line should show the item name followed by a space and then the tran
 - The next **n** lines each contain a string — the name of an item.
 
 Constraints:
+
 - 1≤n≤1051≤n≤105
 - Each item name consists only of lowercase English letters (`a`–`z`)
 - The length of each item name ≤ 10
+
 ### Example
 
 transactions = ['notebook', 'notebook', 'mouse', 'keyboard', 'mouse']
 There are two items with 2 transactions each: 'notebook' and 'mouse'. In alphabetical order, they are 'mouse', 'notebook'.
 There is one item with 1 transaction: 'keyboard'.
 The return array, sorted as required, is ['mouse 2', 'notebook 2', 'keyboard 1'].
+
 ### Function Description
+
 Complete the function **groupTransactions** in the editor below.
 **groupTransactions** has the following parameter(s):
+
 - `string transactions[n]`: each `transactions[i]` denotes the item name in the iᵗʰ transaction
-**Returns:**
+  **Returns:**
 - `string[]`: an array of strings of `"item name[space]transaction count"` sorted as described
+
 ### Constraints
 
 `1 ≤ n ≤ 10^5 1 ≤ length of transactions[i] ≤ 10 transactions[i] contains only lowercase English letters, ascii[a-z]`
@@ -41,6 +47,7 @@ Input from stdin will be processed as follows and passed to the function.
 
 The first line contains a single integer, **n**, the size of transactions.  
 Each of the next **n** lines contains a string, the item name for `transactions[i]`.
+
 ### Sample Case 1
 
 **Sample Input**
@@ -74,7 +81,6 @@ There is one item `'banana'` with 1 transaction.
 There is one item `'pear'` with 1 transaction.  
 The return array sorted descending by transaction count, then ascending by name is `['apple 1', 'banana 1', 'pear 1']`.`
 
-
 ## 💻 **Problem 2 — Application Log Analysis**
 
 ### Problem Description
@@ -83,10 +89,11 @@ You are given an unordered list of log entries from an application.
 Each log entry has the format:
 
 `"user_id timestamp action"`
+
 - **user_id**: A numeric string (no leading zeros).
 - **timestamp**: The time in seconds since the app was launched.
 - **action**: Either `"sign-in"` or `"sign-out"`.
-Your task is to find all users who **signed out within** `maxSpan` seconds of signing in.
+  Your task is to find all users who **signed out within** `maxSpan` seconds of signing in.
 
 You must return (and print) the list of such user IDs, sorted in **ascending numeric order**.
 
@@ -97,12 +104,13 @@ You must return (and print) the list of such user IDs, sorted in **ascending nu
 - The last line contains an integer **maxSpan**.
 
 Constraints:
+
 - 1≤n≤1051≤n≤105
 - 1≤maxSpan≤1091≤maxSpan≤109
 - Each user:
-    - Signs in **at most once**
-    - Signs out **at most once**
-    - Has `sign-in timestamp < sign-out timestamp`
+  - Signs in **at most once**
+  - Signs out **at most once**
+  - Has `sign-in timestamp < sign-out timestamp`
 - Logs may appear in **any order**.
 - The result will contain at least one user.
 
@@ -119,6 +127,7 @@ Print each user ID (as a string) that signed out within `maxSpan` seconds of s
 **Output**
 
 `99 100`
+
 ### Example 2
 
 **Input**
@@ -128,3 +137,4 @@ Print each user ID (as a string) that signed out within `maxSpan` seconds of s
 **Output**
 
 `60`
+
