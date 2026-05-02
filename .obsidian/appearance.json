@@ -2,5 +2,7 @@
   "interfaceFontFamily": "",
   "textFontFamily": "Helvetica",
   "monospaceFontFamily": "JetBrains Mono",
-  "translucency": true
+  "translucency": true,
+  "theme": "system",
+  "accentColor": "#c755dd"
 }

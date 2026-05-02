@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c3a41aa327289e2e",
+        "id": "e6ac79b1e5793d25",
         "type": "tabs",
         "children": [
           {
-            "id": "cf300f1425856dcc",
+            "id": "e843f4153ed31bc7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode-solutions/Hard/Trapping-rain-water.md",
+                "file": "Leetcode-solutions/Hard/Minimum Window Substring.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Trapping-rain-water"
+              "title": "Minimum Window Substring"
             }
           }
         ]
@@ -169,9 +169,23 @@
       "bases:Create new base": false
     }
   },
-  "active": "cf300f1425856dcc",
+  "active": "e843f4153ed31bc7",
   "lastOpenFiles": [
+    "Language/Golang/learning-go.md",
+    "Language/Golang/Web-servers in go.md",
+    "Leetcode-solutions/Hard/Minimum Window Substring.md",
+    "Leetcode-solutions/Medium/Permutation in String.md",
+    "Neovim/Learn-Neovim.md",
+    "Language/C++/learning-c++.md",
+    "Videos/Tech Videos.md",
+    "Leetcode-solutions/Medium/Encoding & Decoding String.md",
+    "Videos",
+    "Leetcode-solutions/Medium/Longest Repeating Character Replacement.md",
+    "Leetcode-solutions/Medium/Longest Substring without repeating characters.md",
     "Leetcode-solutions/Medium/Container with Most Water.md",
+    "Neovim/Stash-Away Plugins.md",
+    "Neovim/Old LSP onfig.md",
+    "Leetcode-solutions/Hard/Trapping-rain-water.md",
     "Learning/Learning-Manim.md",
     "Learning/Front-End challenges.md",
     "Interview-Prep/🐦‍🔥 Optimizely Prep.md",
@@ -185,21 +199,8 @@
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
     "Leetcode-solutions/Medium/Longest-Palindromic-Substring.md",
     "Leetcode-solutions/Medium/Valid Sudoku.md",
-    "Neovim/Learn-Neovim.md",
     "Projects/Http-from-TCP.md",
-    "Projects/Gopher-Social.md",
-    "Projects/Rest-API-in-Go.md",
-    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
-    "Projects/Realtime Sports Broadcast - Websockets.md",
-    "Projects/Wordle React.md",
-    "CodeForces/Probabilistic Card game.md",
-    "CodeForces/Writer Changelogs.md",
-    "Interview-Prep/SWE/General Questions.md",
-    "Interview-Prep/SWE/Web Development Questions.md",
     "django dashboard Ui.png",
-    "Projects/Magic Streaming project - Go.md",
-    "Projects/Social Share Scheduler Python.md",
-    "Projects/Writer.md",
     "Untitled.canvas",
     "CodeForces",
     "Projects/Emran-CoverLetter.pdf",
@@ -210,7 +211,6 @@
     "Dynamic Resume/Emran_resume.typ",
     "Dynamic Resume/Emran-Resume 2.typ",
     "Dynamic Resume/Emran-Resume.typ",
-    "Dynamic Resume",
-    "untitled folder"
+    "Dynamic Resume"
   ]
 }

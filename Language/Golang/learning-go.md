@@ -138,3 +138,29 @@ To create the template that will allow the user to give their response to the RS
 </form>
 {{ end }}
 ```
+
+
+# Creating a Protocol Buffer 
+
+
+ 1. Update submodules (crucial for Protobuf) git submodule update --init --recursive
+ 2. Configure the build cmake -S . -B build -DCMAKE_BUILD_TYPE=Release 
+ 3. Build (using 8 cores for speed) cmake --build build --parallel 8
+ 4. Install sudo cmake --install build
+
+
+```bash
+
+protoc --proto_path=. \
+       --go_out=. --go_opt=paths=source_relative \
+       --go-grpc_out=. --go-grpc_opt=paths=source_relative \
+       hello.proto
+```
+
+### Why we use these flags:
+
+- **`--go_out=.`**: Generates the standard Go types (the structs for your Request/Response).
+    
+- **`--go-grpc_out=.`**: Generates the gRPC client and server interfaces.
+    
+- **`paths=source_relative`**: This is the "new way" trick. It tells `protoc` to output the files in the same directory as the input file, rather than creating a massive nested folder structure based on the `go_package` path.
