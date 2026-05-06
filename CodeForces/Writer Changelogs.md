@@ -8,7 +8,6 @@
 6. Adding a terminal in the editor.
 
 
-
 # Current Changes
 
 - [x] Currently in the kanban board when there are too many tasks in a board, and I click on the add task, the task description and other things go outside the window, make sure that it always appears in side the window based on the cursor.
