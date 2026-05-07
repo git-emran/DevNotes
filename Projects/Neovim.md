@@ -1,3 +1,4 @@
+[[Neovim issues]]
 
 Neovim contribution guidelines quickstart:
 
@@ -123,3 +124,6 @@ git push origin your-branch                       # push changes
 ```
 
 The most important thing Neovim maintainers care about is: a clear problem statement, tests for your change, and clean commit messages.
+
+
+

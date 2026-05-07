@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Neovim.md",
+                "file": "Projects/Neovim issues.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Neovim"
+              "title": "Neovim issues"
             }
           }
         ]
@@ -171,15 +171,16 @@
   },
   "active": "e843f4153ed31bc7",
   "lastOpenFiles": [
-    "Neovim/Stash-Away Plugins.md",
+    "Projects/Parser.md",
     "Projects/Neovim.md",
-    "Projects/Terminal Emulator.md",
+    "Projects/Neovim issues.md",
     "Neovim/Opencode.md",
+    "Neovim/Stash-Away Plugins.md",
+    "Projects/Terminal Emulator.md",
     "Projects/Qutebrowser.md",
     "Leetcode-solutions/Hard/Sliding window maximum.md",
     "Projects/Social Share Scheduler Python.md",
     "Projects/Rest-API-in-Go.md",
-    "Projects/Parser.md",
     "Projects/Emran-Resume.pdf",
     "Projects/Emran-CoverLetter.pdf",
     "Projects/Wordle React.md",
@@ -199,7 +200,6 @@
     "Videos/Tech Videos.md",
     "Leetcode-solutions/Medium/Encoding & Decoding String.md",
     "Videos",
-    "Leetcode-solutions/Medium/Longest Repeating Character Replacement.md",
     "DB_schema_sportz.png",
     "websocket.png",
     "django dashboard Ui.png",
