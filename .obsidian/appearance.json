@@ -3,6 +3,6 @@
   "textFontFamily": "Helvetica",
   "monospaceFontFamily": "JetBrains Mono",
   "translucency": true,
-  "theme": "system",
+  "theme": "moonstone",
   "accentColor": "#c755dd"
 }

@@ -86,6 +86,10 @@ Replace the word globally on the whole file:
 Replace word on the selected line:
 `:s/oldword/newword/g`
 
+Replace normal lines of text into a numbered list:
+`:'<, '>!nl`
+	Here `'<, '>` means you have selected something. 
+
 ## Notes
 
 - **LazyVim Defaults**: Most shortcuts are core Neovim commands. LazyVim adds LSP and plugin-specific bindings (e.g., `<leader>xx` for `trouble.nvim`). Check `:map` for custom mappings in `~/.config/nvim/lua/config/keymaps.lua`.

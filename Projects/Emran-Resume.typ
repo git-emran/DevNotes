@@ -7,6 +7,8 @@
 #let personal-site = "www.github.com/git-emran"
 
 
+
+
 #show: resume.with(
   author: name,
   // All the lines below are optional.
@@ -86,7 +88,6 @@ CGPA 3.6/4, Computer Science
 )
 - Built a Gutenberg block-based interface for an AI-powered content generation plugin (GetGenieAI) using React.
 - Integrated frontend with AI services via REST APIs, handling async data flows, loading states, and error fallbacks to ensure a smooth user experience.
-
 
 #work(
   title: "Lead Product Designer",

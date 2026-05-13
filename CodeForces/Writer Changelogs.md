@@ -17,3 +17,4 @@
 - [x] In the add column input field, make the place holder text " Add board name", instead of add column.
 - [x] Copy and paste doesnt seem to be working
 
+
