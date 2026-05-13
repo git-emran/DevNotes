@@ -22,6 +22,7 @@
 I have over 7 years of combined experience in Product Design and Software Engineering. I have deep experience in B2b, B2c SaaS and AI applications. My superpower is that I navigate very well in ambiguous spaces meaning I can work very efficiently with very minimal instructions. Currently I am working with Tiblo Digital, an Agency where I lead a team of 4. 
 Aside from work, I love to mentor on ADPlist, I am one of their top 1% mentors. 
 
+
 * Experience - Over 7 years
 * Industry - b2b, b2c, saas, AI
 * Navigate well in ambiguous spaces. 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Neovim/Neovim-Contribution.md",
+                "file": "Leetcode-solutions/Medium/Daily Temperatures.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Neovim-Contribution"
+              "title": "Daily Temperatures"
             }
           }
         ]
@@ -171,8 +171,11 @@
   },
   "active": "9494ea3957ccf1fe",
   "lastOpenFiles": [
-    "Neovim/Learn-Neovim.md",
     "Neovim/Neovim-Contribution.md",
+    "Leetcode-solutions/Medium/Daily Temperatures.md",
+    "Neovim/Learn-Neovim.md",
+    "Leetcode-solutions/Medium/Valid Sudoku.md",
+    "Neovim/Vim .vimrc.md",
     "Neovim/Old LSP onfig.md",
     "Leetcode-solutions/Medium/Min Stack.md",
     "Projects/PyQT.md",
@@ -196,9 +199,6 @@
     "Projects/Realtime Sports Broadcast - Websockets.md",
     "Projects/Http-from-TCP.md",
     "Projects/IELTS practice (Let's IELTS).md",
-    "README.md",
-    "Leetcode-solutions/Hard/Minimum Window Substring.md",
-    "Language/Golang/learning-go.md",
     "Videos",
     "DB_schema_sportz.png",
     "websocket.png",
