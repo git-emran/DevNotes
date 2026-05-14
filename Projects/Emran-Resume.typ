@@ -7,8 +7,6 @@
 #let personal-site = "www.github.com/git-emran"
 
 
-
-
 #show: resume.with(
   author: name,
   // All the lines below are optional.
@@ -51,7 +49,7 @@ CGPA 3.6/4, Computer Science
 == Work Experience
 
 #work(
-  title: "Product Lead and Software Engineer",
+  title: "Product Lead",
   location: "Copenhagen, Denmark",
   company: "Tiblo Digital",
   dates: dates-helper(start-date: "May 2024", end-date: "Present"),
@@ -61,7 +59,7 @@ CGPA 3.6/4, Computer Science
 - Introduced a new collaboration style, design standards and documentation strategies with Storybook and Figma to simplify front end development.
 
 #work(
-  title: "Front-end Engineer, Product Lead",
+  title: "Front-end Engineer",
   location: "Dubai, UAE",
   company: "The Total Office (Contract)",
   dates: dates-helper(start-date: "Apr 2023", end-date: "May 2024"),
@@ -71,7 +69,7 @@ CGPA 3.6/4, Computer Science
 - Optimized Core Web Vitals (LCP, CLS, FID) for a high-traﬃc e-commerce platform by implementing image lazy loading, code splitting, and service workers, improving conversion rates by 20% and page load speed from 3.4s to 1.2s.
 
 #work(
-  title: "Lead UX/UI Designer",
+  title: "Lead UX/UI Developer",
   location: "Austin, Texas, USA",
   company: "MarketTime LLC (Contract)",
   dates: dates-helper(start-date: "May 2022", end-date: "Apr 2023"),
