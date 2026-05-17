@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode-solutions/Medium/Daily Temperatures.md",
+                "file": "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily Temperatures"
+              "title": "1️⃣ Design - Phase 1"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 236.50247192382812
+    "width": 236.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "f5e580471bec1e06",
@@ -171,9 +172,18 @@
   },
   "active": "9494ea3957ccf1fe",
   "lastOpenFiles": [
-    "Neovim/Neovim-Contribution.md",
-    "Leetcode-solutions/Medium/Daily Temperatures.md",
+    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
+    "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
+    "Interview-Prep/🐦‍🔥 Optimizely Prep.md",
+    "Projects/Global-UI.md",
+    "Projects/TTY.md",
+    "Leetcode-solutions/Hard/Largest Area of a Histogram.md",
+    "README.md",
+    "Leetcode-solutions/Medium/Untitled.md",
+    "test table.md",
     "Neovim/Learn-Neovim.md",
+    "Leetcode-solutions/Medium/Daily Temperatures.md",
+    "Neovim/Neovim-Contribution.md",
     "Leetcode-solutions/Medium/Valid Sudoku.md",
     "Neovim/Vim .vimrc.md",
     "Neovim/Old LSP onfig.md",
@@ -189,16 +199,7 @@
     "Projects/Parser.md",
     "Neovim/Opencode.md",
     "Projects/Terminal Emulator.md",
-    "Projects/Social Share Scheduler Python.md",
-    "Projects/Rest-API-in-Go.md",
     "Projects/Emran-CoverLetter.pdf",
-    "Projects/Wordle React.md",
-    "Projects/Tracker for Bodybuilders.md",
-    "Projects/Writer.md",
-    "Projects/Typing Speed.md",
-    "Projects/Realtime Sports Broadcast - Websockets.md",
-    "Projects/Http-from-TCP.md",
-    "Projects/IELTS practice (Let's IELTS).md",
     "Videos",
     "DB_schema_sportz.png",
     "websocket.png",

@@ -23,9 +23,9 @@ I have over 7 years of combined experience in Product Design and Software Engine
 Aside from work, I love to mentor on ADPlist, I am one of their top 1% mentors. 
 
 
-* Experience - Over 7 years
-* Industry - b2b, b2c, saas, AI
-* Navigate well in ambiguous spaces. 
+* Experience - Over 7 years combined Product design & engineering.
+* Industry - b2b, b2c, saas, AI.
+* Super power: Navigate well in ambiguous spaces. 
 * Currently @Tiblo leading 4 people. 
 * Adplist, top 1% mentor.
 
