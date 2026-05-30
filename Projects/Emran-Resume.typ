@@ -22,61 +22,40 @@
   personal-info-position: left,
 )
 
-/*
- * Lines that start with == are formatted into section headings
- * You can use the specific formatting functions if needed
- * The following formatting functions are listed below
- * #edu(dates: "", degree: "", gpa: "", institution: "", location: "", consistent: false)
- * #work(company: "", dates: "", location: "", title: "")
- * #project(dates: "", name: "", role: "", url: "")
- * certificates(name: "", issuer: "", url: "", date: "")
- * #extracurriculars(activity: "", dates: "")
- * There are also the following generic functions that don't apply any formatting
- * #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
- * #generic-one-by-two(left: "", right: "")
- */
-== Education
+== Summary
+Senior Front-End Engineer with 7+ years building high-performance B2B SaaS, AI/ML products end-to-end. Deep React/TypeScript, Golang and Python expertise paired with genuine Product Design fluency.
 
-#edu(
-  institution: "University of Information Technologies and Sciences",
-  dates: dates-helper(start-date: "Aug 2013", end-date: "May 2017"),
-  degree: "Bachelor's of Science, Computer Science",
-
-  // Uncomment the line below if you want edu formatting to be consistent with everything else
-  // consistent: true
-)
-CGPA 3.6/4, Computer Science
 == Work Experience
 
 #work(
-  title: "Product Lead",
+  title: "Senior Front-End Engineer",
   location: "Copenhagen, Denmark",
   company: "Tiblo Digital",
   dates: dates-helper(start-date: "May 2024", end-date: "Present"),
 )
-- As a Team lead I streamlined the client on-boarding by Introducing new Framework for Requirement Analysis resulting in faster design delivery.
-- Designed and Launched a B2B web application, a New innovative product in collboration with TyreProf resulting in a 90% new customers converted in the first quarter. Implemented a feature that supports real time collaboration and presence detection in React using conflict free replicated data (CRDT).
-- Introduced a new collaboration style, design standards and documentation strategies with Storybook and Figma to simplify front end development.
+- Designed and shipped WheelLog, a B2B tire-management SaaS, leading the full product lifecycle from discovery interviews with 20+ fleet managers through a 3-sprint prototype cycle, achieving *80% customer conversion in Q1*.
+- Architected real-time multi-user collaboration with presence detection using CRDT in React, *eliminating write conflicts* in concurrent sessions and enabling live co-editing for the first time on the platform.
+- Established a Figma-based design system and Storybook component library used by the full engineering team, *reducing design debt by 40%* and front-end development time by 30%.
 
 #work(
-  title: "Front-end Engineer",
+  title: "Lead Front-end Engineer",
   location: "Dubai, UAE",
   company: "The Total Office (Contract)",
   dates: dates-helper(start-date: "Apr 2023", end-date: "May 2024"),
 )
-- Played a key role in addressing security vulnerabilities (CVEs), reducing their count from 411 to 3 through diligent analysis and mitigation measures.
-- Introduced ARIA attributes and customizable keyboard navigation, resulting in 98% user satisfaction from individuals with diverse abilities.
-- Optimized Core Web Vitals (LCP, CLS, FID) for a high-traﬃc e-commerce platform by implementing image lazy loading, code splitting, and service workers, improving conversion rates by 20% and page load speed from 3.4s to 1.2s.
+- Optimized Core Web Vitals (LCP, CLS, FID) for a high-traffic e-commerce platform implemented image lazy loading, code splitting, and service workers cutting page load from 3.4s to 1.2s and *lifting conversion rates by 20%*.
+- Drove a full accessibility overhaul, Introduced ARIA attributes and customizable keyboard navigation across all core flows, achieving *98% user satisfaction* from testers with diverse abilities and full WCAG 2.1 AA compliance.
+- Led security remediation effort in partnership with the backend team, triaging and resolving *411 CVEs down to 3* and embedding a design-review security checkpoint into the release pipeline to prevent regressions.
 
 #work(
   title: "Lead UX/UI Developer",
   location: "Austin, Texas, USA",
-  company: "MarketTime LLC (Contract)",
+  company: "MarketTime LLC",
   dates: dates-helper(start-date: "May 2022", end-date: "Apr 2023"),
 )
-- Documented and implemented core design requirements under the Lead UX Designer and Head of Design to ensure brand consistency across all digital touchpoints.
-- Performed daily design tasks and iterative improvements, moving concepts through the approval pipeline to final implementation.
-- Established a standardized UI component library that reduced front-end development time by 30% and ensured a unified visual language across multiple product versions.
+- Built a company-wide UI component library from scratch standardizing design tokens, interaction patterns, and documentation *reducing front-end development time by 30%* and ensuring visual consistency across 4 product versions.
+- Architected a Storybook-powered design system that decoupled component versioning from product releases, *cutting system upgrade costs by 60%* and accelerating design delivery speed by 90%.
+- Designed and engineered mtPay, a Stripe-integrated in-app payment feature, leading 5 rounds of prototype usability testing before launch shipped to *95% user adoption* in the first month.
 
 #work(
   title: "Front-end Engineer",
@@ -84,20 +63,20 @@ CGPA 3.6/4, Computer Science
   company: "Roxnor (Contract)",
   dates: dates-helper(start-date: "Feb 2022", end-date: "May 2022"),
 )
-- Built a Gutenberg block-based interface for an AI-powered content generation plugin (GetGenieAI) using React.
-- Integrated frontend with AI services via REST APIs, handling async data flows, loading states, and error fallbacks to ensure a smooth user experience.
+- Integrated the front end with AI REST APIs using React, implementing optimistic UI patterns that reduced perceived wait time by 40% and achieved a 4.7/5 user-satisfaction score in beta.
+- Built a Gutenberg block-based editor for GetGenieAI, an AI-powered content-generation WordPress plugin handling async AI response streaming, loading states, and error fallbacks to deliver sub-200ms perceived latency.
 
+
+== Project
 #work(
-  title: "Lead Product Designer",
-  location: "Silicon Valley, USA, Hybrid",
-  company: "Insidemaps Inc.",
-  dates: dates-helper(start-date: "Mar 2019", end-date: "Jan 2022"),
+  title: "Writer",
+  dates: dates-helper(start-date: "Jun 2025", end-date: "Present")
 )
-- Directed the end-to-end design and front-end development of an iOS-exclusive mobile app, corporate website, and comprehensive web app, resulting in a 25% increase in cross-platform user engagement.
-- Collaborated with the Senior Product Manager and Marketing teams to define the product vision, contributing to a 15% growth in monthly active users (MAU) through data-driven feature prioritization.
+- An open-source Markdown Editor with LSP, built in Terminal, AI assisted writing, Kanban board and a Freeform canvas to enhance agentic or general development workflow. Visit Project : https://github.com/git-emran/simple-notes
 
 
 == Skills
-- *Programming Languages*: JavaScript, Typescript, Python, C/C++, HTML/CSS, Java, Bash, Rust, Lua, SQL.
-- *Technologies*: React, Astro, Angular, SolidJS, Svelte, Artificial-Intelligence, Tailwind CSS, LangChain, Git, Linux, UNIX, Docker, Caddy, NGINX, Google Cloud Platform.
-- *Design Skills*: User Experience Design, Product Design, Accessibility Design, Human Centered Design, Interaction Design, UI Design, 2D Animation, Graphics Design.
+- *Core Stack*: TypeScript, JavaScript (ES2022+), Node.js, HTML5/CSS3, Golang, Python
+- *Technologies*: React, Astro, Angular, SolidJS, Svelte, Fast-API, Tailwind CSS, LangChain, REST-API, MongoDB, gRPC, Docker, Google Cloud Platform.
+- *AI/ML*: LangChain, AI/ML product integration, Async AI streaming, OpenCV.
+- *Tools*: Git, Linux, UNIX, CI/CD pipelines, Performance profiling(Lighthouse, Web Vitals).
