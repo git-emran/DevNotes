@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b4740694ef608501",
+        "id": "21bb8bc13af700cf",
         "type": "tabs",
         "children": [
           {
-            "id": "90e1b948c056d59c",
+            "id": "9542aad1314c800e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode-solutions/Hard/Sliding window maximum.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Sliding window maximum"
+              "title": "New tab"
             }
           }
         ]
@@ -169,8 +165,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "90e1b948c056d59c",
+  "active": "9542aad1314c800e",
   "lastOpenFiles": [
+    "Leetcode-solutions/Easy/Linked list cycle detection.md",
+    "Leetcode-solutions/Medium/Binary Search.md",
+    "Leetcode-solutions/Hard/Sliding window maximum.md",
     "Leetcode-solutions/Hard/Trapping-rain-water.md",
     "Projects/Neovim.md",
     "Projects/Social Share Scheduler Python.md",
@@ -187,7 +186,6 @@
     "Projects/Chess-Engine.md",
     "Projects/Global-UI.md",
     "Neovim/Neovim-Contribution.md",
-    "Leetcode-solutions/Medium/Binary Search.md",
     "Leetcode-solutions/Easy/Binary Search.md",
     "Neovim/Stash-Away Plugins.md",
     "Neovim/Old LSP onfig.md",
@@ -196,8 +194,6 @@
     "Leetcode-solutions/Easy/Roman to Integer.md",
     "Leetcode-solutions/Easy/Merging Two sorted list.md",
     "Interview-Prep/Design-interview/1️⃣ Design - Phase 1.md",
-    "Interview-Prep/Design-interview/2️⃣ Design - Phase 2.md",
-    "Leetcode-solutions/Hard/Largest Area-Rectangle of a Histogram.md",
     "Projects/Emran-Resume.pdf",
     "Projects/Emran-CoverLetter.pdf",
     "Videos",

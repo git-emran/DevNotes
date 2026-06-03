@@ -45,7 +45,7 @@ Senior Front-End Engineer with 7+ years building high-performance B2B SaaS, AI/M
 )
 - Optimized Core Web Vitals (LCP, CLS, FID) for a high-traffic e-commerce platform; implemented image lazy loading, code splitting, and service workers cutting page load from 3.4s to 1.2s and *lifting conversion rates by 20%*.
 - Drove a full accessibility overhaul, introduced ARIA attributes and customizable keyboard navigation across all core flows, achieving *98% user satisfaction* from testers with diverse abilities and full WCAG 2.1 AA compliance.
-- Led security remediation in partnership with the backend team, tackled 411 CVEs using Snyk and npm audit, classified by CVSS score, and shipped fixes to 3 remaining low-severity issues while embedding a mandatory dependency-audit step into the CI/CD release pipeline.
+- Led security remediation in partnership with the backend team, *tackled 411 CVEs using Snyk and npm audit*, classified by CVSS score, and shipped fixes to 3 remaining low-severity issues while embedding a mandatory dependency-audit step into the CI/CD release pipeline.
 
 #work(
   title: "Lead Front-end Engineer",
@@ -54,7 +54,7 @@ Senior Front-End Engineer with 7+ years building high-performance B2B SaaS, AI/M
   dates: dates-helper(start-date: "May 2022", end-date: "Apr 2023"),
 )
 - Architected the token layer of the design system using Style Dictionary, defining a single source-of-truth JSON schema that compiled to CSS custom properties, JS constants, and Figma tokens simultaneously, *eliminating token drift across 4 product versions*.
-- Decoupled component versioning from product releases via a Storybook-powered design system and independent npm package publishing, cutting system upgrade costs by 60% and accelerating design delivery speed by 90%.
+- Decoupled component versioning from product releases via a Storybook-powered design system and independent npm package publishing, *cutting system upgrade costs by 60%* and accelerating design delivery speed by 90%.
 
 #work(
   title: "Front-end Engineer",
@@ -62,8 +62,8 @@ Senior Front-End Engineer with 7+ years building high-performance B2B SaaS, AI/M
   company: "Roxnor (Contract)",
   dates: dates-helper(start-date: "Feb 2022", end-date: "May 2022"),
 )
-- Implemented optimistic UI patterns using React's useReducer; dispatched local state updates immediately on user action, then reconciled with the API response, reducing perceived wait time by 40% and achieving a 4.7/5 beta satisfaction score.
-- Built the full front end for GetGenieAI, a Gutenberg block-based AI content-generation WordPress plugin; implemented streaming AI responses via ReadableStream and TextDecoder, chunking token output into the editor in real time to deliver sub-200ms perceived latency.
+- *Implemented optimistic UI patterns using React's useReducer*; dispatched local state updates immediately on user action, then reconciled with the API response, reducing perceived wait time by 40% and achieving a 4.7/5 beta satisfaction score.
+- Built the full front end for GetGenieAI, a Gutenberg block-based AI content-generation WordPress plugin; *implemented streaming AI responses via ReadableStream and TextDecoder*, chunking token output into the editor in real time to deliver sub-200ms perceived latency.
 
 == Project
 #work(
