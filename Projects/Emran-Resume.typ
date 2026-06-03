@@ -62,8 +62,8 @@ Senior Front-End Engineer with 7+ years building high-performance B2B SaaS, AI/M
   company: "Roxnor (Contract)",
   dates: dates-helper(start-date: "Feb 2022", end-date: "May 2022"),
 )
-- *Implemented optimistic UI patterns using React's useReducer*; dispatched local state updates immediately on user action, then reconciled with the API response, reducing perceived wait time by 40% and achieving a 4.7/5 beta satisfaction score.
-- Built the full front end for GetGenieAI, a Gutenberg block-based AI content-generation WordPress plugin; *implemented streaming AI responses via ReadableStream and TextDecoder*, chunking token output into the editor in real time to deliver sub-200ms perceived latency.
+- Implemented optimistic UI patterns using React's useReducer; dispatched local state updates immediately on user action, then reconciled with the API response, reducing perceived wait time by 40% and achieving a 4.7/5 beta satisfaction score.
+- Built the full front end for GetGenieAI, a Gutenberg block-based AI content-generation WordPress plugin; implemented streaming AI responses via ReadableStream and TextDecoder, chunking token output into the editor in real time to deliver sub-200ms perceived latency.
 
 == Project
 #work(
