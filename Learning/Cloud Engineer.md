@@ -1,0 +1,12 @@
+
+### Things a Cloud Engineer does; Rough Format
+
+- Design, build, and operate highly available, scalable AWS infrastructure — including VPC architecture, IAM policy management, ECS/EKS container workloads, Lambda functions, RDS/Aurora databases, and S3 storage — in alignment with security and compliance requirements.
+- Lead Infrastructure as Code delivery: develop and maintain production-grade Terraform/OpenTofu modules, enforce IaC standards across the team, manage state backends, and drive toward 100% IaC coverage for owned infrastructure.
+- Build and optimize CI/CD pipelines in Harness — including deployment strategies, automated verification gates, rollback workflows, and pipeline-as-code standards that support frequent, low-risk releases.
+- Implement and maintain cloud security controls across owned systems: IAM least-privilege policies, KMS encryption, secrets management (AWS Secrets Manager/Vault), security group governance, and alignment with SOC2 and applicable compliance frameworks.
+- Provision and support AI/ML infrastructure on AWS — including SageMaker endpoints, Bedrock AgentCore integrations, and GPU-optimized compute — enabling the engineering team to build and deploy AI agent workflows reliably.
+- Monitor and tune production systems using CloudWatch, Datadog, or equivalent observability tooling — defining SLOs, reducing alert noise, and ensuring on-call engineers have high-confidence signals to act on.
+- Automate operational workflows through Python, Bash, or Go scripting — including infrastructure provisioning, configuration drift remediation, security patching, and incident response runbooks.
+- Use AI coding assistants (Claude Code and GitHub Copilot) as force-multipliers in your daily workflow — drafting Terraform modules, automation scripts, and pipeline configuration, while applying the same critical review to AI-generated output as you would to any peer pull request. Hold AI-generated code and documentation to the same quality bar as human-authored work: catch hallucinations, security anti-patterns, and logic errors before they reach staging or production.
+- Design and test disaster recovery procedures for owned services: backup validation, cross-region failover, and RTO/RPO documentation aligned to business requirements.

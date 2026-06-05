@@ -104,10 +104,11 @@ Senior Front-End Engineer with 6+ years shipping high-impact B2B SaaS and AI pro
 #project(
   name: "Writer",
   role: "Creator & Maintainer",
-  dates: dates-helper(start-date: "Jun 2025", end-date: "Present")
+  dates: dates-helper(start-date: "Jun 2025", end-date: "Present"),
+  url: "https://github.com/git-emran/simple-notes"
 )
-- An open-source Markdown Editor with LSP, built in Terminal, AI assisted writing, Kanban board and a Freeform canvas to enhance agentic or general development workflow. Visit Project : https://github.com/git-emran/simple-notes
-
+- An open-source Markdown Editor with LSP, built in Terminal, AI assisted writing, Kanban board and a Freeform canvas to enhance agentic or general development workflow.
+- Optimized local markdown parsing and tokenization rendering to achieve sub-16ms frame times during heavy AI streaming sessions, dynamic tags to organize and maintain notes.
 
 == Skills
 - *Core Stack*: TypeScript, JavaScript (ES2022+), Node.js, HTML5/CSS3, Golang, Python.
