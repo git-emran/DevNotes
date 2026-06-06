@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning/Cloud Engineer.md",
+                "file": "Leetcode-solutions/Medium/Reorder Linked List.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cloud Engineer"
+              "title": "Reorder Linked List"
             }
           }
         ]
@@ -169,11 +169,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "0d11c6fc68efc03b",
+  "active": "9542aad1314c800e",
   "lastOpenFiles": [
     "Projects/Concurrent Booking system.md",
-    "Learning/Front-End challenges.md",
+    "Leetcode-solutions/Medium/Reorder Linked List.md",
+    "Projects/Rest-API-in-Go.md",
+    "Projects/Tracker for Bodybuilders.md",
+    "Projects/Emran-Resume.pdf",
+    "Projects/Global-UI.md",
     "Learning/Cloud Engineer.md",
+    "Learning/Front-End challenges.md",
     "Leetcode-solutions/Easy/Linked list cycle detection.md",
     "Leetcode-solutions/Medium/Binary Search.md",
     "Leetcode-solutions/Hard/Sliding window maximum.md",
@@ -191,14 +196,9 @@
     "Leetcode-solutions/Medium/Search a 2D matrix.md",
     "Projects/Writer.md",
     "Projects/Chess-Engine.md",
-    "Projects/Global-UI.md",
     "Neovim/Neovim-Contribution.md",
     "Leetcode-solutions/Easy/Binary Search.md",
     "Neovim/Stash-Away Plugins.md",
-    "Neovim/Old LSP onfig.md",
-    "Leetcode-solutions/Easy/Palindrome.md",
-    "Leetcode-solutions/Easy/Maximum Subarray.md",
-    "Projects/Emran-Resume.pdf",
     "Projects/Emran-CoverLetter.pdf",
     "Videos",
     "DB_schema_sportz.png",
