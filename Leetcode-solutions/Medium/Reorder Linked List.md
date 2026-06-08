@@ -92,3 +92,76 @@ class Solution:
 
         nodes[i].next = None
 ```
+
+
+## Reverse And Merge
+
+### Intuition
+
+To reorder the list into the pattern  
+**L1 → Ln → L2 → Ln−1 → L3 → Ln−2 → ...**,  
+we can break the problem into **three simple steps**:
+
+1. **Find the middle** of the linked list using `slow` and `fast` pointers.  
+    This splits the list into two halves.
+    
+2. **Reverse the second half** of the list.  
+    Doing this makes it easy to merge nodes from the front and back alternately.
+    
+3. **Merge the two halves** one-by-one:  
+    Take one node from the first half (`first`), then one from the reversed second half (`second`), and repeat.
+    
+
+This method is clean, intuitive, and uses only `O(1)` extra space.
+
+### Algorithm
+
+1. **Find the middle**:
+    
+    - Use `slow` and `fast` pointers.
+    - When `fast` reaches the end, `slow` will be at the midpoint.
+2. **Reverse the second half**:
+    
+    - Start from `slow.next`.
+    - Reverse it using the standard linked-list reversal approach with `prev` and `tmp` variables.
+3. **Merge the two lists**:
+    
+    - Take a node from `first` half.
+    - Take a node from the reversed `second` half.
+    - Continue until `second` is exhausted.
+
+This produces the desired reordered list in-place with no extra memory.
+
+```python
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+class Solution:
+    def reorderList(self, head: Optional[ListNode]) -> None:
+        slow, fast = head, head.next
+
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+
+        second = slow.next
+        prev = slow.next = None
+
+        while second:
+            tmp = second.next
+            second.next = prev
+            prev = second
+            second = tmp
+        first, second = head, prev
+        while second:
+            tmp1, tmp2 = first.next, second.next
+            first.next = second
+            second.next = tmp1
+            first, second = tmp1, tmp2
+
+
+```

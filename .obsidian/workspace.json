@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode-solutions/Medium/Reorder Linked List.md",
+                "file": "Leetcode-solutions/Medium/Remove the nth Node from the End of the list.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reorder Linked List"
+              "title": "Remove the nth Node from the End of the list"
             }
           }
         ]
@@ -171,8 +171,9 @@
   },
   "active": "9542aad1314c800e",
   "lastOpenFiles": [
-    "Projects/Concurrent Booking system.md",
     "Leetcode-solutions/Medium/Reorder Linked List.md",
+    "Leetcode-solutions/Medium/Remove the nth Node from the End of the list.md",
+    "Projects/Concurrent Booking system.md",
     "Projects/Rest-API-in-Go.md",
     "Projects/Tracker for Bodybuilders.md",
     "Projects/Emran-Resume.pdf",
@@ -198,7 +199,6 @@
     "Projects/Chess-Engine.md",
     "Neovim/Neovim-Contribution.md",
     "Leetcode-solutions/Easy/Binary Search.md",
-    "Neovim/Stash-Away Plugins.md",
     "Projects/Emran-CoverLetter.pdf",
     "Videos",
     "DB_schema_sportz.png",
