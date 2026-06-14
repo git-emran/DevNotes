@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode-solutions/Medium/Remove the nth Node from the End of the list.md",
+                "file": "Projects/Wordle React.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Remove the nth Node from the End of the list"
+              "title": "Wordle React"
             }
           }
         ]
@@ -171,8 +171,12 @@
   },
   "active": "9542aad1314c800e",
   "lastOpenFiles": [
-    "Leetcode-solutions/Medium/Reorder Linked List.md",
+    "Leetcode-solutions/Medium/Copy Linked List with Random Pointer.md",
+    "Neovim/Neovim-Contribution.md",
+    "Leetcode-solutions/Medium/Remove Nth Node from End of the List.md",
+    "Random/starship.toml.md",
     "Leetcode-solutions/Medium/Remove the nth Node from the End of the list.md",
+    "Leetcode-solutions/Medium/Reorder Linked List.md",
     "Projects/Concurrent Booking system.md",
     "Projects/Rest-API-in-Go.md",
     "Projects/Tracker for Bodybuilders.md",
@@ -195,10 +199,6 @@
     "Projects/TTY.md",
     "Neovim/Learn-Neovim.md",
     "Leetcode-solutions/Medium/Search a 2D matrix.md",
-    "Projects/Writer.md",
-    "Projects/Chess-Engine.md",
-    "Neovim/Neovim-Contribution.md",
-    "Leetcode-solutions/Easy/Binary Search.md",
     "Projects/Emran-CoverLetter.pdf",
     "Videos",
     "DB_schema_sportz.png",
