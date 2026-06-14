@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Wordle React.md",
+                "file": "Leetcode-solutions/Medium/Copy Linked List with Random Pointer.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Wordle React"
+              "title": "Copy Linked List with Random Pointer"
             }
           }
         ]
@@ -171,9 +171,14 @@
   },
   "active": "9542aad1314c800e",
   "lastOpenFiles": [
-    "Leetcode-solutions/Medium/Copy Linked List with Random Pointer.md",
-    "Neovim/Neovim-Contribution.md",
     "Leetcode-solutions/Medium/Remove Nth Node from End of the List.md",
+    "Leetcode-solutions/Medium/ProductOfArrayExceptSelf.md",
+    "Leetcode-solutions/Medium/Copy Linked List with Random Pointer.md",
+    "Leetcode-solutions/Medium/Course Schedule.md",
+    "Leetcode-solutions/Medium/Longest Substring without repeating characters.md",
+    "Leetcode-solutions/Medium/Longest Repeating Character Replacement.md",
+    "Projects/Wordle React.md",
+    "Neovim/Neovim-Contribution.md",
     "Random/starship.toml.md",
     "Leetcode-solutions/Medium/Remove the nth Node from the End of the list.md",
     "Leetcode-solutions/Medium/Reorder Linked List.md",
@@ -194,11 +199,6 @@
     "Interview-Prep/System-Design-Prep/Facebook's Nearby Friends.md",
     "Leetcode-solutions/Medium/Find minimum in a Rotated Sorted Array.md",
     "Interview-Prep/System-Design-Prep",
-    "Projects/Barebones Rust TTY.md",
-    "Projects/Parser.md",
-    "Projects/TTY.md",
-    "Neovim/Learn-Neovim.md",
-    "Leetcode-solutions/Medium/Search a 2D matrix.md",
     "Projects/Emran-CoverLetter.pdf",
     "Videos",
     "DB_schema_sportz.png",
