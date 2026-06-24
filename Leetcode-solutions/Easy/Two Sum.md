@@ -32,7 +32,7 @@ Example 1
             if needed_number in seen_numbers:
                 return [seen_numbers[needed_number], current_index]
 
-            seen_numbers[current_number] = current_index </pre>
+            seen_numbers[current_number] = current_index
   ```
 
 

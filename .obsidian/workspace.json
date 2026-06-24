@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Tozo.md",
+                "file": "Leetcode-solutions/Easy/MergeIntervals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tozo"
+              "title": "MergeIntervals"
             }
           }
         ]
@@ -171,8 +171,16 @@
   },
   "active": "9542aad1314c800e",
   "lastOpenFiles": [
-    "Leetcode-solutions/Medium/Copy Linked List with Random Pointer.md",
+    "Leetcode-solutions/Easy/Maximum Subarray.md",
+    "Leetcode-solutions/Easy/Longest Common Prefix.md",
+    "Leetcode-solutions/Easy/Linked list cycle detection.md",
+    "Leetcode-solutions/Easy/Merging Two sorted list.md",
+    "Leetcode-solutions/Easy/LL - Reverse.md",
+    "Leetcode-solutions/Easy/Binary Search.md",
+    "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
+    "Leetcode-solutions/Easy/Two Sum.md",
     "Projects/Tozo.md",
+    "Leetcode-solutions/Medium/Copy Linked List with Random Pointer.md",
     "Leetcode-solutions/Medium/Remove Nth Node from End of the List.md",
     "Leetcode-solutions/Medium/ProductOfArrayExceptSelf.md",
     "Leetcode-solutions/Medium/Course Schedule.md",
@@ -190,14 +198,6 @@
     "Projects/Global-UI.md",
     "Learning/Cloud Engineer.md",
     "Learning/Front-End challenges.md",
-    "Leetcode-solutions/Easy/Linked list cycle detection.md",
-    "Leetcode-solutions/Medium/Binary Search.md",
-    "Leetcode-solutions/Hard/Sliding window maximum.md",
-    "Leetcode-solutions/Hard/Trapping-rain-water.md",
-    "Projects/Neovim.md",
-    "Projects/Social Share Scheduler Python.md",
-    "Interview-Prep/🐦‍🔥 Optimizely Prep.md",
-    "Interview-Prep/System-Design-Prep/Facebook's Nearby Friends.md",
     "Interview-Prep/System-Design-Prep",
     "Projects/Emran-CoverLetter.pdf",
     "Videos",
