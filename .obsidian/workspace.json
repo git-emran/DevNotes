@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode-solutions/Easy/MergeIntervals.md",
+                "file": "Interview-Prep/System-Design-Prep/RADIO Framework.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MergeIntervals"
+              "title": "RADIO Framework"
             }
           }
         ]
@@ -171,13 +171,16 @@
   },
   "active": "9542aad1314c800e",
   "lastOpenFiles": [
+    "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
+    "Interview-Prep/System-Design-Prep/RADIO Framework.md",
+    "Leetcode-solutions/Easy/LL - Reverse.md",
+    "Leetcode-solutions/Easy/Linked list cycle detection.md",
+    "Leetcode-solutions/Easy/Palindrome.md",
+    "Leetcode-solutions/Easy/Merging Two sorted list.md",
+    "Leetcode-solutions/Easy/MergeIntervals.md",
     "Leetcode-solutions/Easy/Maximum Subarray.md",
     "Leetcode-solutions/Easy/Longest Common Prefix.md",
-    "Leetcode-solutions/Easy/Linked list cycle detection.md",
-    "Leetcode-solutions/Easy/Merging Two sorted list.md",
-    "Leetcode-solutions/Easy/LL - Reverse.md",
     "Leetcode-solutions/Easy/Binary Search.md",
-    "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
     "Leetcode-solutions/Easy/Two Sum.md",
     "Projects/Tozo.md",
     "Leetcode-solutions/Medium/Copy Linked List with Random Pointer.md",
@@ -195,9 +198,6 @@
     "Projects/Rest-API-in-Go.md",
     "Projects/Tracker for Bodybuilders.md",
     "Projects/Emran-Resume.pdf",
-    "Projects/Global-UI.md",
-    "Learning/Cloud Engineer.md",
-    "Learning/Front-End challenges.md",
     "Interview-Prep/System-Design-Prep",
     "Projects/Emran-CoverLetter.pdf",
     "Videos",
