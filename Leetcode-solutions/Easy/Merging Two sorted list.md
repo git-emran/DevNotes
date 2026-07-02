@@ -1,4 +1,3 @@
-
 #### Creating variables:
 
 ```
@@ -22,13 +21,9 @@ cur = dummy
 			temp.next = list2
 			
 			list2 = list2.next
-
 		else:
-
 			temp.next = list1
-
 			list1 = list1.next
-
 		temp = temp.next
 ```
 ##### Appending the remaining node: 
@@ -37,17 +32,10 @@ cur = dummy
 ```python
 
 	if list1:
-
 		temp.next = list1
-
 	else:
-
 		temp.next = list2
-
-  
-
 	return dummy.next
-
 
 ```
 

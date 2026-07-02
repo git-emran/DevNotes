@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "21bb8bc13af700cf",
+        "id": "9d3ca2cf2564aca8",
         "type": "tabs",
         "children": [
           {
-            "id": "9542aad1314c800e",
+            "id": "2454d0d43b589113",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview-Prep/System-Design-Prep/RADIO Framework.md",
+                "file": "Learning/Front-End challenges.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RADIO Framework"
+              "title": "Front-End challenges"
             }
           }
         ]
@@ -169,9 +169,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "9542aad1314c800e",
+  "active": "2454d0d43b589113",
   "lastOpenFiles": [
+    "Random/LockBook.md",
+    "Videos/Screenshot 2026-07-02 at 4.40.49 PM.png",
     "Leetcode-solutions/Easy/BestTimeToBuyStock.md",
+    "Videos/Tech Videos.md",
+    "Projects/Social Share Scheduler Python.md",
+    "Projects/Chess-Engine.md",
+    "Projects/Chatterbox.md",
+    "Projects/Barebones Rust TTY.md",
+    "Projects/Flag Debt scanner.md",
+    "Leetcode-solutions/Medium/Find the Duplicate Number.md",
     "Interview-Prep/System-Design-Prep/RADIO Framework.md",
     "Leetcode-solutions/Easy/LL - Reverse.md",
     "Leetcode-solutions/Easy/Linked list cycle detection.md",
@@ -188,15 +197,6 @@
     "Leetcode-solutions/Medium/ProductOfArrayExceptSelf.md",
     "Leetcode-solutions/Medium/Course Schedule.md",
     "Leetcode-solutions/Medium/Longest Substring without repeating characters.md",
-    "Leetcode-solutions/Medium/Longest Repeating Character Replacement.md",
-    "Projects/Wordle React.md",
-    "Neovim/Neovim-Contribution.md",
-    "Random/starship.toml.md",
-    "Leetcode-solutions/Medium/Remove the nth Node from the End of the list.md",
-    "Leetcode-solutions/Medium/Reorder Linked List.md",
-    "Projects/Concurrent Booking system.md",
-    "Projects/Rest-API-in-Go.md",
-    "Projects/Tracker for Bodybuilders.md",
     "Projects/Emran-Resume.pdf",
     "Interview-Prep/System-Design-Prep",
     "Projects/Emran-CoverLetter.pdf",
