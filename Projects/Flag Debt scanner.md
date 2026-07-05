@@ -70,8 +70,8 @@ No one owns cleanup of this debt. It accumulates linearly with flag count and be
                         ┌────────────────────┼─────────────────────┐
                         ▼                    ▼                     ▼
                 ┌──────────────┐   ┌──────────────────┐   ┌──────────────────┐
-                │ Dashboard UI  │   │  CI Check API      │   │  PR Generator     │
-                │ (React)       │   │  (status checks)    │   │  (GitHub API)      │
+                │ Dashboard UI  │   │  CI Check API       │   │  PR Generator│
+                │ (React)       │   │  (status checks)    │   │  (GitHub API)│
                 └──────────────┘   └──────────────────┘   └──────────────────┘
 ```
 

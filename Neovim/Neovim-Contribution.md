@@ -76,6 +76,7 @@ The initiation sequence inside `src/nvim/main.c` is highly sensitive to ordering
 Code snippet
 
 ```mermaid
+
 flowchart TD
   A["main() Entry"] --> B["event_init() <br> Bring up Event Loop"]
   B --> C["early_init() <br> Allocate Minimal World"]
@@ -94,6 +95,7 @@ flowchart TD
   K --> L["create_windows() <br> Populate Buffers & Layout"]
   L --> M["Fire VimEnter / UIEnter"]
   M --> N["normal_enter() <br> Main Operational Loop"]
+  
 ```
 
 ### Phase 0: Entry Conditions & Mode Evaluation

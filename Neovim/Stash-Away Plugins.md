@@ -248,5 +248,3 @@ return {
 }
 
 ```
-
-[[Old LSP onfig]]

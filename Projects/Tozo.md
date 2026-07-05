@@ -27,3 +27,6 @@ QUART_ENV=development
 pythonpath = ["."]
 
 ```
+
+
+# SQL

@@ -1,4 +1,4 @@
-##### Navigation:
+> ##### Navigation:
 
 - Moving backward with `B` - Move around a sentence backward with b
 - `v a w ` to select around a word + command to execute around a word.

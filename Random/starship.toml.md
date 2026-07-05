@@ -1,3 +1,7 @@
+# My Starship Config
+
+Maintaining the config here due to this being kind of patched together. 
+
 ```toml
 
 format = """\
