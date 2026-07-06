@@ -213,14 +213,14 @@ Exposes Neovim serialization primitives over network, process, or local pipes.
     - `src/nvim/msgpack_rpc/server.c` — Connection dispatching tracking `--listen` routines.
         
 
-> ### 🛠️ API Contribution Checklist
-> 
-> - [ ] Treat all API signatures as long-term stable; ensure additions do not alter backward compatibility layers.
->     
-> - [ ] Wrap native runtime exceptions inside an explicit `Error` container instance.
->     
-> - [ ] Update cross-compilation data mapping arrays if altering definition headers (`*.in.h`).
->     
+### 🛠️ API Contribution Checklist
+
+- [ ] Treat all API signatures as long-term stable; ensure additions do not alter backward compatibility layers.
+    
+- [ ] Wrap native runtime exceptions inside an explicit `Error` container instance.
+    
+- [ ] Update cross-compilation data mapping arrays if altering definition headers (`*.in.h`).
+    
 
 ### Lua Runtime Layer
 
