@@ -35,7 +35,7 @@ In this part any 'Agent' provider will work with the opencode.nvim plugin. For e
 
 1. Go to "OpenRouter" to obtain free API key and a provider and store it inside `.zshrc` file and export their path. If you dont know what is 
 ```bash
-export OPENROUTER_API_KEY=**********
+export OPENROUTER_API_KEY=********
 export PROVIDER="YOUR_PROVIDER"
 ```
 

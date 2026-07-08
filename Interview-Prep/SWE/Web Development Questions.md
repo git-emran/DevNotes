@@ -2,7 +2,7 @@
 
 ---
 
-## 🟢 **Core JavaScript & Frontend (10)**
+## 🟢 Core JavaScript & Frontend (10)
 
 **1. What are the differences between `var`, `let`, and `const` in JavaScript?**
 

@@ -78,24 +78,23 @@ Code snippet
 ```mermaid
 
 flowchart TD
-  A["main() Entry"] --> B["event_init() <br> Bring up Event Loop"]
-  B --> C["early_init() <br> Allocate Minimal World"]
-  C --> D["command_line_scan() <br> Parse CLI & Flags"]
-  D --> E["nlua_init() <br> Spin up Lua Interpreter"]
+  A["main() Entry"] --> B["event_init() \n Bring up Event Loop"]
+  B --> C["early_init() \n Allocate Minimal World"]
+  C --> D["command_line_scan() \n Parse CLI & Flags"]
+  D --> E["nlua_init() \n Spin up Lua Interpreter"]
   E --> F{"Determine UI Mode"}
   
-  F -->|Built-in TUI| G["ui_client_start_server() <br> Handshake TUI Client"]
-  F -->|Headless / Embed| H["Establish Server/RPC Channel"]
+  F -->|Built-in TUI| G["ui_client_start_server() \n Handshake TUI Client"]
+  F -->|Headless or Embed| H["Establish Server/RPC Channel"]
   
-  G --> I["set_init_2() <br> Screen-dependent Options"]
+  G --> I["set_init_2() \n Screen-dependent Options"]
   H --> I
   
-  I --> J["source_startup_scripts() <br> Parse init.lua / init.vim"]
-  J --> K["load_plugins() <br> Packages & Runtime Plugins"]
-  K --> L["create_windows() <br> Populate Buffers & Layout"]
+  I --> J["source_startup_scripts() \n Parse init.lua / init.vim"]
+  J --> K["load_plugins() \n Packages & Runtime Plugins"]
+  K --> L["create_windows() \n Populate Buffers & Layout"]
   L --> M["Fire VimEnter / UIEnter"]
-  M --> N["normal_enter() <br> Main Operational Loop"]
-  
+  M --> N["normal_enter() \n Main Operational Loop"]
 ```
 
 ### Phase 0: Entry Conditions & Mode Evaluation
@@ -305,7 +304,6 @@ When implementing changes inside the codebase, use these common entry points to 
     
 2. Write the implementation using the standard signature:
     
-    C
     
     ```
     Object nvim_buf_custom_method(Buffer buffer, Error *err)
@@ -327,7 +325,8 @@ Quick reference commands to speed up discovery across the repository:
 
 Bash
 
-```
+```bash
+
 # Locate where a specific symbol or function is defined
 rg -n "\bvoid event_init\b" src/nvim
 

@@ -1,3 +1,4 @@
+# Problem:
 
 You are given an `m x n` integer matrix `matrix` with the following two properties:
 
@@ -22,7 +23,9 @@ You must write a solution in `O(log(m * n))` time complexity.
 **Input:** matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13
 **Output:** false
 
-# Binary Search(one-pass)
+
+# Solution
+## Binary Search(one-pass)
 ### Intuition
 
 Because the matrix is sorted row-wise and each row is sorted left-to-right, the entire matrix behaves like **one big sorted array**.  
@@ -50,6 +53,7 @@ This lets us access the correct matrix element without actually flattening the m
         - If the value is smaller → search the right half (`l = m + 1`).
         - If larger → search the left half (`r = m - 1`).
 4. If the loop ends with no match, return `false`.
+
 ```python
 
 class Solution:

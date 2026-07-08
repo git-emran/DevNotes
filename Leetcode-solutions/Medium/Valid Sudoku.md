@@ -1,4 +1,4 @@
-#hash-set
+# hash-set
 
 You are given a `9 x 9` Sudoku board `board`. A Sudoku board is valid if the following rules are followed:
 
@@ -266,7 +266,7 @@ This approach is both memory efficient and fast.
 Example - Dry Run
 
   
-
+python
 ```python
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
@@ -293,6 +293,8 @@ class Solution:
 
         return True
 ```
+
+
 
 ### Time & Space Complexity
 
@@ -325,3 +327,4 @@ This problem only checks if the current board state is valid, not whether the pu
 ### Processing the Same Cell Multiple Times
 
 When iterating through the board, make sure each cell is only processed once. Some implementations accidentally check the same digit multiple times when validating rows, columns, and boxes separately.
+

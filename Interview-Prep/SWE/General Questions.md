@@ -1,4 +1,6 @@
-- [ ] 
+# General Question
+
+
 | #   | Question                                                                      | Category              | Detailed Answer / Approach                                                                                                                                                                                                                                                                                                                              |
 | --- | ----------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | Explain the time and space complexity of quicksort.                           | Algorithms            | Average time complexity: O(n log n). Worst case: O(n²) if pivot is poorly chosen. Space complexity: O(log n) due to recursion stack. Key idea: Partition the array around a pivot, recursively sort partitions. Use randomized pivot to reduce worst case.                                                                                              |
@@ -106,7 +108,7 @@
 
 # 🐍 Python Deep Knowledge (25 Questions)
 
-### 26. **What are Python decorators and how do they work?**
+### 26. **What are Python decorators and how do they work?**
 
 **Answer:**
 
@@ -123,34 +125,34 @@ def decorator(fn):
 
 ```
 
-### 27. **Explain the difference between `@staticmethod` and `@classmethod`.**
+### 27. **Explain the difference between `@staticmethod` and `@classmethod`.**
 
 **Answer:**
 
-- `staticmethod`: no `self` or `cls`
+- `staticmethod`: no `self` or `cls`
 - `classmethod`: gets class as first argument
 
-### 28. **What is the GIL in Python?**
+### 28. **What is the GIL in Python?**
 
 **Answer:**
 
 Global Interpreter Lock — only one thread runs Python bytecode at a time. Limits true parallelism in CPython.
 
-### 29. **What is a Python generator and when do you use it?**
+### 29. **What is a Python generator and when do you use it?**
 
 **Answer:**
 
 A function that yields values one at a time. Used for memory-efficient iteration.
 
-### 30. **Difference between `deepcopy()` and `copy()` in Python?**
+### 30. **Difference between `deepcopy()` and `copy()` in Python?**
 
 **Answer:**
 
-`copy()` = shallow
+`copy()` = shallow
 
-`deepcopy()` = copies all nested objects
+`deepcopy()` = copies all nested objects
 
-### 31. **Explain duck typing in Python.**
+### 31. **Explain duck typing in Python.**
 
 **Answer:**
 
@@ -158,14 +160,14 @@ A function that yields values one at a time. Used for memory-efficient iteration
 
 
 
-### 32. **What are Python descriptors?**
+### 32. **What are Python descriptors?**
 
 **Answer:**
 
-Objects that define custom access logic via `__get__`, `__set__`, `__delete__`.
+Objects that define custom access logic via `__get__`, `__set__`, `__delete__`.
 
 
-### 33. **What is the Singleton pattern in Python?**
+### 33. **What is the Singleton pattern in Python?**
 
 **Answer:**
 
@@ -182,11 +184,11 @@ class Singleton:
 ```
 
 
-### 34. **How do Python context managers work?**
+### 34. **How do Python context managers work?**
 
 **Answer:**
 
-With `__enter__` and `__exit__`. Used in `with` blocks.
+With `__enter__` and `__exit__`. Used in `with` blocks.
 
 ```
 py
@@ -196,14 +198,14 @@ with open("file.txt") as f:
 
 ```
 
-### 35. **Difference between `is` and `==`?**
+### 35. **Difference between `is` and `==`?**
 
 **Answer:**
 
 - `is`: identity comparison
 - `==`: value comparison
 
-### 36. **What are metaclasses?**
+### 36. **What are metaclasses?**
 
 **Answer:**
 
@@ -211,7 +213,7 @@ They define how classes are created.
 
 Used for logging, validation, or singleton control at the class level.
 
-### 37. **What is the Strategy pattern in Python?**
+### 37. **What is the Strategy pattern in Python?**
 
 **Answer:**
 
@@ -231,7 +233,7 @@ class Slow(Strategy):
 
 ```
 
-### 38. **What are list comprehensions and their benefits?**
+### 38. **What are list comprehensions and their benefits?**
 
 **Answer:**
 
@@ -244,13 +246,13 @@ squares = [x*x for x in range(10)]
 
 ```
 
-### 39. **What is a Python iterator and iterable?**
+### 39. **What is a Python iterator and iterable?**
 
 **Answer:**
 
-Iterable implements `__iter__`; iterator implements `__next__`.
+Iterable implements `__iter__`; iterator implements `__next__`.
 
-### 40. **What is dependency injection and how do you achieve it in Python?**
+### 40. **What is dependency injection and how do you achieve it in Python?**
 
 **Answer:**
 
@@ -264,7 +266,7 @@ class Service:
 
 ```
 
-### 41. **Explain Python’s `property()` function.**
+### 41. **Explain Python’s `property()` function.**
 
 **Answer:**
 
@@ -280,29 +282,29 @@ class User:
 
 ```
 
-### 42. **What is method resolution order (MRO)?**
+### 42. **What is method resolution order (MRO)?**
 
 **Answer:**
 
 The order in which Python resolves methods when multiple inheritance is involved.
 
 
-### 43. **Difference between abstract class and interface (Python style)?**
+### 43. **Difference between abstract class and interface (Python style)?**
 
 **Answer:**
 
-Abstract classes use `ABC`; no true interfaces in Python, but can simulate with base classes.
+Abstract classes use `ABC`; no true interfaces in Python, but can simulate with base classes.
 
 
-### 44. **What is a coroutine in Python?**
+### 44. **What is a coroutine in Python?**
 
 **Answer:**
 
-A function declared with `async def` that can await other coroutines.
+A function declared with `async def` that can await other coroutines.
 
 
 
-### 45. **How does Python manage memory?**
+### 45. **How does Python manage memory?**
 
 **Answer:**
 
@@ -311,35 +313,35 @@ A function declared with `async def` that can await other coroutines.
 - Object pools (for small integers, strings)
 
 
-### 46. **Explain the Facade pattern in Python.**
+### 46. **Explain the Facade pattern in Python.**
 
 **Answer:**
 
 Provides a simplified interface to a complex system.
 
 
-### 47. **What’s the use of `__slots__`?**
+### 47. **What’s the use of `__slots__`?**
 
 **Answer:**
 
 Limits the attributes a class can have. Saves memory in large object sets.
 
 
-### 48. **How do you design a plugin architecture in Python?**
+### 48. **How do you design a plugin architecture in Python?**
 
 **Answer:**
 
 Use dynamic imports (`importlib`), interfaces, and discovery patterns.
 
 
-### 49. **What is a mixin and when should you use one?**
+### 49. **What is a mixin and when should you use one?**
 
 **Answer:**
 
 A reusable class used to “mix in” behavior to other classes without inheritance trees.
 
 
-### 50. **Explain command pattern with a Python example.**
+### 50. **Explain command pattern with a Python example.**
 
 **Answer:**
 
