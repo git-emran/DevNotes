@@ -1,6 +1,3 @@
- 
-	 `#software #markdown #desktop-app
-
 This is another attempt to create an web application to add it to my personal projects. This is one the biggest project. Gaining deep knowledge on each section will be the building blocks of the javascript.
 
 > Goal is to create a completely polished project. And gain a better understanding of 

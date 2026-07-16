@@ -1,12 +1,11 @@
-
  # 1. Understanding the Data Source
 
- Hacker News exposes a free, unauthenticated Firebase-backed API — no key needed:
+Hacker News exposes a free, unauthenticated Firebase-backed API — no key needed:
 
- - `https://hacker-news.firebaseio.com/v0/jobstories.json` → returns an array of **story IDs** (just numbers), most recent first
+- `https://hacker-news.firebaseio.com/v0/jobstories.json` → returns an array of **story IDs** (just numbers), most recent first
 - `https://hacker-news.firebaseio.com/v0/item/{id}.json` → returns the full item for one ID
 
- The gotcha: there's no single endpoint that returns full job objects. You get an ID list, then fan out N requests to fetch each item. This shapes your whole data-fetching strategy — you need pagination/batching or you'll fire off hundreds of requests on load.
+The gotcha: there's no single endpoint that returns full job objects. You get an ID list, then fan out N requests to fetch each item. This shapes your whole data-fetching strategy — you need pagination/batching or you'll fire off hundreds of requests on load.
 
  A job item looks like:
 
