@@ -1120,3 +1120,212 @@ This is a code smell — the image rendering layer knows about Unsplash's intern
 ))}
 ```
 While acceptable now since the list is never mutated client-side, it's a debt item. A production-grade key would be derived from stable content: `key={entry.tx ?? `${entry.type}-${entry.date}`}`. If we ever add client-side filtering (e.g., "show only service records"), index keys would cause React to confuse component identity during re-orders, producing subtle UI bugs that are hard to trace.
+
+
+## Part 10: Scaling & Security
+
+---
+
+**51. The architecture doc mentions scaling to 500,000 watches and 50,000 daily visits. Walk me through the full CDN + caching strategy to handle that load without touching the database for the majority of requests.**
+
+**Answer:** The strategy has three tiers:
+
+**Tier 1 — Static CDN (zero compute):** `generateStaticParams` pre-builds the top N most-accessed watches at build time. These pages live as static HTML on the CDN edge (Vercel's global network). A request for `/en/watch/SN-001` hits the nearest edge node and returns in <10ms — no database, no serverless function, no compute cost.
+
+**Tier 2 — ISR (stale-while-revalidate):** For the "long tail" watches not pre-built, the first request hits a serverless function, generates the page, and caches it at the CDN edge. Subsequent requests for the same watch serve the cached page. We'd set `next: { revalidate: 3600 }` so pages auto-refresh hourly.
+
+**Tier 3 — On-demand revalidation:** When a new blockchain transaction is recorded for a watch, the NestJS backend fires a POST to our `/api/revalidate` route with a shared secret. That route calls `revalidatePath('/en/watch/[serial]')` and `revalidatePath('/ar/watch/[serial]')`, surgically invalidating only those two pages. The database is queried exactly once after invalidation — by the first user who requests the updated page.
+
+At 50,000 daily visits spread across 500,000 watches, the vast majority of popular watches are CDN-cached. The database only sees traffic from cold ISR misses and revalidation fetches — a tiny fraction of total requests.
+
+---
+
+**52. If you were to connect this to the NestJS + PostgreSQL backend described in your README, what database indexes would you add to the `watches` table, and why?**
+
+**Answer:** The two primary access patterns are:
+1. `getWatchBySerial(serial)` — exact match on `serial`
+2. `getAllWatchSerials()` — full table scan for serial column only
+
+For pattern 1:
+```sql
+CREATE UNIQUE INDEX idx_watches_serial ON watches(serial);
+```
+`serial` is already the natural primary key concept, so it should be a unique index. A B-tree index on an exact-match lookup reduces query time from O(n) table scan to O(log n).
+
+For pattern 2 at 500k rows:
+```sql
+CREATE INDEX idx_watches_serial_only ON watches(serial) INCLUDE (id);
+```
+An index-only scan on `serial` means PostgreSQL never touches the heap — it reads only the index pages, which is dramatically faster for `SELECT serial FROM watches`.
+
+For the `passport_entries` table:
+```sql
+CREATE INDEX idx_passport_entries_watch_id ON passport_entries(watch_id);
+CREATE INDEX idx_passport_entries_date ON passport_entries(watch_id, date DESC);
+```
+The second composite index supports the `orderBy: { date: 'desc' }` in the Prisma query — the database uses the index to return pre-sorted results without a sort step.
+
+---
+
+**53. The on-demand revalidation endpoint you described requires a `REVALIDATION_SECRET`. Walk me through how you'd secure that API route against abuse.**
+
+**Answer:** The `/api/revalidate` route would be secured as follows:
+
+```typescript
+// app/api/revalidate/route.ts
+export async function POST(req: Request) {
+  const { serial, secret } = await req.json();
+
+  // 1. Shared secret validation
+  if (secret !== process.env.REVALIDATION_SECRET) {
+    return new Response('Unauthorized', { status: 401 });
+  }
+
+  // 2. Input validation — prevent path traversal
+  if (!/^[A-Z0-9-]+$/.test(serial)) {
+    return new Response('Invalid serial format', { status: 400 });
+  }
+
+  // 3. Rate limiting — e.g., via Upstash Redis
+  // const rateLimit = await redis.incr(`revalidate:${serial}`);
+  // if (rateLimit > 10) return new Response('Rate limited', { status: 429 });
+
+  await revalidatePath(`/en/watch/${serial}`);
+  await revalidatePath(`/ar/watch/${serial}`);
+  return new Response('Revalidated', { status: 200 });
+}
+```
+
+Key security layers:
+1. **Shared secret**: `REVALIDATION_SECRET` is a long random string (minimum 32 bytes, ideally generated with `openssl rand -hex 32`) stored in environment variables — never committed to the repo.
+2. **Serial format validation**: The regex `/^[A-Z0-9-]+$/` ensures the serial parameter can only contain uppercase letters, digits, and hyphens — preventing path traversal attacks where an attacker passes `../../../etc/passwd` as the serial.
+3. **Rate limiting**: Without this, an attacker could trigger thousands of revalidations per second, flooding the serverless function and the database with ISR re-fetches. A Redis-backed rate limiter (e.g., Upstash) caps revalidations per serial per time window.
+4. **HTTPS only**: Vercel enforces HTTPS, so the secret is never transmitted in plaintext.
+
+---
+
+**54. Your `ShareControls` component uses `navigator.clipboard`. What security model does the browser enforce around the Clipboard API, and could this become a vulnerability?**
+
+**Answer:** The Clipboard API (`navigator.clipboard.writeText`) is gated behind two browser security requirements:
+1. **Secure context**: Only works on `https://` or `localhost`. Our Vercel deployment satisfies this.
+2. **User gesture**: `writeText` must be called synchronously inside a user event handler (click, keydown, etc.). You cannot call it from a `setTimeout`, `setInterval`, or background task. Our `onClick` handler satisfies this.
+
+Could it be a vulnerability? The Clipboard API is **write-only** in `ShareControls` — we only write the passport URL to the clipboard. We never read clipboard contents (`navigator.clipboard.readText`). Write-only clipboard access is low-risk: the worst an attacker could do if they somehow injected code into our `handleCopy` is overwrite the user's clipboard with a different string. There's no way for a website to silently exfiltrate clipboard data via `writeText`.
+
+The actual risk vector would be if we ever added `readText()` to check the clipboard contents — that requires explicit user permission via the Permissions API in modern browsers (`clipboard-read` permission), so it cannot be done silently.
+
+---
+
+**55. Your app currently has no Content Security Policy (CSP) headers. What CSP would you add in production and why does it matter for a blockchain provenance app?**
+
+**Answer:** A CSP header tells the browser which origins are allowed to load resources. For this app I'd add it via `next.config.ts`:
+
+```typescript
+const ContentSecurityPolicy = `
+  default-src 'self';
+  script-src 'self' 'unsafe-inline';
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  img-src 'self' data: https://images.unsplash.com https://api.qrserver.com;
+  frame-src 'self';
+  connect-src 'self';
+  frame-ancestors 'none';
+`;
+
+const securityHeaders = [
+  { key: 'Content-Security-Policy', value: ContentSecurityPolicy.replace(/\n/g, '') },
+  { key: 'X-Frame-Options', value: 'DENY' },
+  { key: 'X-Content-Type-Options', value: 'nosniff' },
+  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+];
+```
+
+Why it matters for a provenance app specifically:
+- **`frame-ancestors 'none'`**: Prevents this page from being embedded in a malicious iframe. A clickjacking attack could overlay a transparent fraudulent UI on top of the legitimate passport page, tricking users into interacting with it.
+- **`script-src 'self'`**: If an attacker ever injects a `<script>` tag (e.g., via an XSS in a signer name field), CSP blocks execution of scripts from unauthorized origins — protecting the blockchain data displayed on the page.
+- **`img-src`**: Whitelisting only `unsplash.com` and `qrserver.com` means a compromised data source can't cause the browser to load tracking pixels from arbitrary domains, leaking user visit data.
+
+Note: `'unsafe-inline'` for scripts is needed because of the JSON-LD `<script dangerouslySetInnerHTML>` tag. In a stricter setup, you'd use a nonce-based approach for that specific script tag.
+
+---
+
+**56. The `EmbedPassport` component generates an iframe that third-party sites embed. What security attributes should that iframe include on the consumer side, and should the `/embed/[serial]` route set any response headers?**
+
+**Answer:** Two surfaces to secure:
+
+**On the consumer (third-party site) side**, the marketplace embedding the badge should ideally use:
+```html
+<iframe
+  src="https://allchrono.com/en/embed/SN-001"
+  sandbox="allow-scripts allow-same-origin"
+  loading="lazy"
+  referrerpolicy="no-referrer"
+></iframe>
+```
+- `sandbox="allow-scripts allow-same-origin"`: Restricts the iframe to its own origin, preventing it from redirecting the parent page, opening popups, or submitting forms. Without `sandbox`, the embed iframe could call `window.parent.location = "malicious-site.com"` to redirect the embedding page.
+- `referrerpolicy="no-referrer"`: Prevents the user's current URL from leaking to AllChrono's analytics via the `Referer` header.
+
+**On the `/embed/[serial]` route's response headers**, I'd set:
+```
+X-Frame-Options: ALLOWALL  (or omit it — to allow embedding anywhere)
+Content-Security-Policy: frame-ancestors *;
+X-Content-Type-Options: nosniff
+Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+```
+
+`frame-ancestors *` explicitly permits any origin to embed this specific route, while the main passport page retains `frame-ancestors 'none'`. This separation is intentional — the embed badge is designed to be embeddable; the full passport page is not.
+
+---
+
+**57. If AllChrono scaled to 12 locales and needed to serve users across APAC, MENA, and Europe simultaneously, what infrastructure changes would you propose beyond what's already in the codebase?**
+
+**Answer:** The current architecture scales well on the Next.js/Vercel layer because static HTML on a CDN is inherently global. The bottlenecks at 12 locales + global users would be:
+
+**1. Build time explosion**: At 12 locales × 500,000 watches = 6,000,000 static pages. A full rebuild would take hours. Solution: Use **on-demand ISR** as the primary strategy rather than `generateStaticParams`. Pre-build only the top ~1,000 most-trafficked watches per locale, and let everything else be ISR-generated on first request.
+
+**2. Database read latency across regions**: If the PostgreSQL database is in `us-east-1` and a user in Dubai triggers an ISR cache miss, the serverless function query roundtrips to the US. Solution: **Read replicas** in `eu-west-1` and `ap-southeast-1`, with regional routing via Vercel's `VERCEL_REGION` environment variable to select the nearest replica.
+
+**3. i18n dictionary scaling**: The current TS dictionary object is fine at 2 locales. At 12, the dictionary file becomes large and is always fully loaded regardless of locale. Solution: Code-split dictionaries by locale using dynamic imports:
+```typescript
+const dict = await import(`../locales/${locale}.json`);
+```
+Only the relevant locale's JSON is loaded per request.
+
+**4. Font loading for non-Latin scripts**: Japanese, Korean, Chinese fonts are orders of magnitude larger than Latin fonts. For CJK locales, use `next/font` with `preload: false` and a `unicode-range` subset to only download the glyphs actually used on the page.
+
+---
+
+**58. Walk me through how you would implement rate limiting on the watch data API endpoint to prevent a competitor from scraping your entire 500,000-watch database.**
+
+**Answer:** Since the passport pages are statically served HTML, traditional API rate limiting doesn't apply to the primary use case. The scraping threat is:
+1. A bot hitting `/en/watch/[serial]` for every possible serial in sequence.
+2. The bot parsing the HTML to extract watch data at scale.
+
+**Defense layers:**
+
+**Layer 1 — Edge Middleware rate limiting** (first line of defense):
+```typescript
+// middleware.ts
+import { NextResponse } from 'next/server';
+import { Ratelimit } from '@upstash/ratelimit';
+import { Redis } from '@upstash/redis';
+
+const ratelimit = new Ratelimit({
+  redis: Redis.fromEnv(),
+  limiter: Ratelimit.slidingWindow(30, '60 s'), // 30 req/min per IP
+});
+
+export async function middleware(req: NextRequest) {
+  const ip = req.headers.get('x-forwarded-for') ?? '127.0.0.1';
+  const { success } = await ratelimit.limit(ip);
+  if (!success) return new NextResponse('Too Many Requests', { status: 429 });
+}
+```
+
+**Layer 2 — `robots.txt`**: Declare the watch passport routes as `Disallow` for all bots except known search engine crawlers. Well-behaved scrapers respect this; it doesn't stop malicious ones but creates a legal paper trail.
+
+**Layer 3 — Honeypot serials**: Seed the database with a few fake watch serials that are never linked from any real page. Any client requesting these serials is definitively a scraper (not a real user navigating the site). Flag and block their IP/ASN automatically.
+
+**Layer 4 — Structural obfuscation**: For the production API backend (NestJS), require a signed JWT or API key for programmatic access. The Next.js server-side fetch uses a server-side secret header — never exposed to the browser. Client-side scrapers reading HTML get formatted display data, not raw JSON with all fields.
+
+**Layer 5 — Cloudflare Bot Management** (at the infrastructure level): Cloudflare's bot score assigns each request a likelihood of being automated. Requests above a threshold are served a CAPTCHA challenge or a 403, without the Next.js layer ever being involved.
