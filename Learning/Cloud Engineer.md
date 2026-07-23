@@ -1,5 +1,5 @@
 
-### Things a Cloud Engineer does; Rough Format
+# Things a Cloud Engineer does; Rough Format
 
 - Design, build, and operate highly available, scalable AWS infrastructure — including VPC architecture, IAM policy management, ECS/EKS container workloads, Lambda functions, RDS/Aurora databases, and S3 storage — in alignment with security and compliance requirements.
 - Lead Infrastructure as Code delivery: develop and maintain production-grade Terraform/OpenTofu modules, enforce IaC standards across the team, manage state backends, and drive toward 100% IaC coverage for owned infrastructure.
