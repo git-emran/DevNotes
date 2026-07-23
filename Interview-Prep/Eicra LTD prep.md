@@ -9,13 +9,18 @@
  Your actual leverage points:
 
  - **Genex Infosys** — you built a multi-turn intent-classification pipeline (Dialogflow CX + custom NLP fallback handlers) serving 1M+ monthly users and 50K concurrent sessions. That's backend systems work, not UI work — lead with it.
+ 
 - **Tiblo Digital's CRDT collaboration engine** — real-time, conflict-resolution, concurrency at 100k DAU. This is distributed-systems reasoning, which is what event-driven/microservices interviewers are actually probing for.
-- **The Total Office's CVE remediation and CI/CD gate** — shows you can operate in infra/DevOps-adjacent territory, not just component code.
-- **MarketTime's Style Dictionary token pipeline** — a compiler/build-system problem (single source of truth → multiple output targets), which is a legitimate "system design" story even though it shipped as a design system.
-- **tozo** (your personal project) — you're actively building backend fundamentals hands-on: Quart (async Python), PostgreSQL, resolved a real multi-installation Postgres conflict on macOS, worked through Pyright/pydantic validation error handling. This is your strongest direct answer to "why should we trust you with Python/Postgres" — you're doing it on your own time, unprompted.
-- **flag-debt-scanner** — you designed a full production architecture (Quart backend, Redis, Node ts-morph sidecar, React frontend, Postgres) with a complete data model, API surface, and five-phase build plan. This is a real system-design artifact you can walk through in detail if asked to design something on a whiteboard.
 
- Known softer spots from your own past prep: multi-tenant schema design, diagnosing slow queries (EXPLAIN ANALYZE, N+1 patterns), and microservices architecture at the "why," not just "what," level. This guide leans in on those deliberately — don't skip those sections tonight.
+- **The Total Office's CVE remediation and CI/CD gate** — shows you can operate in infra/DevOps-adjacent territory, not just component code.
+
+- **MarketTime's Style Dictionary token pipeline** — a compiler/build-system problem (single source of truth → multiple output targets), which is a legitimate "system design" story even though it shipped as a design system.
+
+- **Tozo** (your personal project) — you're actively building backend fundamentals hands-on: Quart (async Python), PostgreSQL, resolved a real multi-installation Postgres conflict on macOS, worked through Pyright/pydantic validation error handling. This is your strongest direct answer to "why should we trust you with Python/Postgres" — you're doing it on your own time, unprompted.
+
+- **Flag-debt-scanner** — you designed a full production architecture (Quart backend, Redis, Node ts-morph sidecar, React frontend, Postgres) with a complete data model, API surface, and five-phase build plan. This is a real system-design artifact you can walk through in detail if asked to design something on a whiteboard.
+
+Known softer spots from your own past prep: multi-tenant schema design, diagnosing slow queries (EXPLAIN ANALYZE, N+1 patterns), and microservices architecture at the "why," not just "what," level. This guide leans in on those deliberately — don't skip those sections tonight.
 
  ---
 
