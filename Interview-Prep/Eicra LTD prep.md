@@ -1,7 +1,6 @@
 # Interview Prep — Backend/Full-Stack Engineer (Node.js/TypeScript or Python, PostgreSQL, AWS)
 
 
-
  ## Read this first: the honest framing
 
  Your resume is titled "Senior Front-End Engineer," and this JD wants a backend/full-stack generalist with Node.js/TypeScript or Python, PostgreSQL, Docker, and AWS (ECS, S3, EventBridge, SQS). That gap will be visible to the interviewer within the first five minutes, so don't wait for them to notice it — name it yourself early, on your terms, and pivot to evidence.
