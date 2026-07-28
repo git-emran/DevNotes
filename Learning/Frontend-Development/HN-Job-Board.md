@@ -242,8 +242,9 @@ export function normalizeJob(item: HNJobItem): JobPost {
 
 ```typescript
 // src/hooks/useJobBoard.ts
-import { useState, useEffect, useCallback, useRef } from 'react';
-import { fetchJobStoryIds, fetchItemsBatched, HNApiError } from '../api/hackernews';
+
+import { useCallback, useEffect, useState } from 'react';
+import { fetchJobStoryIds, fetchItemBatches, HNApiError } from '../api/hackernews';
 import { normalizeJob } from '../utils/normalizeJob';
 import type { JobPost, FetchStatus } from '../types/job';
 
@@ -252,20 +253,23 @@ const PAGE_SIZE = 20;
 export function useJobBoard() {
   const [allIds, setAllIds] = useState<number[]>([]);
   const [jobs, setJobs] = useState<JobPost[]>([]);
-  const [status, setStatus] = useState<FetchStatus>('idle');
+  const [status, setStatus] = useState<FetchStatus>('loading'); // start loading, not idle
   const [error, setError] = useState<string | null>(null);
-  const cursorRef = useRef(0); // how many IDs we've consumed
+  const [cursor, setCursor] = useState(0); // was cursorRef — needs to be state, it drives hasMore in render
 
+  // Called from the mount effect. No setState('loading') here —
+  // status already defaults to 'loading', so the effect doesn't need
+  // to synchronously kick off a state change itself.
   const loadInitialIds = useCallback(async () => {
-    setStatus('loading');
     setError(null);
     try {
       const ids = await fetchJobStoryIds();
+      if(!ids) throw new Error('No Job Id is returned')
       setAllIds(ids);
       const firstPageIds = ids.slice(0, PAGE_SIZE);
-      const items = await fetchItemsBatched(firstPageIds);
+      const items = await fetchItemBatches(firstPageIds);
       setJobs(items.map(normalizeJob));
-      cursorRef.current = PAGE_SIZE;
+      setCursor(PAGE_SIZE);
       setStatus('success');
     } catch (err) {
       setError(err instanceof HNApiError ? err.message : 'Something went wrong.');
@@ -273,29 +277,41 @@ export function useJobBoard() {
     }
   }, []);
 
+  // Event-handler entry point — safe to synchronously reset state here,
+  // since it's triggered by a user action, not an effect.
+  const retry = useCallback(() => {
+    setStatus('loading');
+    loadInitialIds();
+  }, [loadInitialIds]);
+
   const loadMore = useCallback(async () => {
     if (status === 'loading-more') return;
     setStatus('loading-more');
     try {
-      const nextIds = allIds.slice(cursorRef.current, cursorRef.current + PAGE_SIZE);
-      const items = await fetchItemsBatched(nextIds);
+      const nextIds = allIds.slice(cursor, cursor + PAGE_SIZE);
+      const items = await fetchItemBatches(nextIds);
       setJobs((prev) => [...prev, ...items.map(normalizeJob)]);
-      cursorRef.current += PAGE_SIZE;
+      setCursor((c) => c + PAGE_SIZE);
       setStatus('success');
     } catch (err) {
       setError(err instanceof HNApiError ? err.message : 'Failed to load more.');
       setStatus('error');
     }
-  }, [allIds, status]);
+  }, [allIds, cursor, status]);
 
   useEffect(() => {
+    // Fetch-on-mount always ends in a setState once data resolves — that's
+    // unavoidable without a data-fetching library. This is the documented
+    // exception, not a bug.
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- initial data fetch, setState fires after the async boundary resolves
     loadInitialIds();
   }, [loadInitialIds]);
 
-  const hasMore = cursorRef.current < allIds.length;
+  const hasMore = cursor < allIds.length; // safe now: state, not a ref read in render
 
-  return { jobs, status, error, loadMore, hasMore, retry: loadInitialIds };
+  return { jobs, status, error, loadMore, hasMore, retry };
 }
+
 ```
 
  This hook is the single source of truth for the board's data. Components stay dumb.
