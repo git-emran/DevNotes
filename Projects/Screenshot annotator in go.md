@@ -418,6 +418,8 @@ go test ./... -v
 
  Three packages, all green, is your signal that the entire backend layer is correct in isolation — *before* you've wired a single line of frontend to it. This is worth pausing on: everything you've built so far works and is proven to work without a UI at all.
 
+ 
+
  ---
 
  ## Step 5 — Wire it together: `app.go` and `main.go`
@@ -468,7 +470,7 @@ func (a *App) UpdateSettings(s config.Settings) error {
 }
 ```
 
- **`main.go`**
+**`main.go`**
 
  ```go
 package main

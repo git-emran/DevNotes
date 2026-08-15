@@ -1,5 +1,4 @@
-> ##### Navigation:
-
+Navigation within Neovim
 - Moving backward with `B` - Move around a sentence backward with b
 - `v a w ` to select around a word + command to execute around a word.
 - Similarly `v i w` + command to execute inside the word

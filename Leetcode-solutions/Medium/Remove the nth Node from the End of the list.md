@@ -10,10 +10,12 @@ Output: [1,2,4]
 
 **Example 2:**
 
-```java
+```javascript
 Input: head = [5], n = 1
 
 Output: []
+
+
 ```
 
 **Example 3:**

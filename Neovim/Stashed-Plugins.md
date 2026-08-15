@@ -1,4 +1,4 @@
-## Fav colorthemes
+## Fav colortheme
 
 Rose pine
 
@@ -85,7 +85,7 @@ add {
 
 
 
-## Neocodeium:
+## AI Completions Neocodeium:
 
 ```lua
 
@@ -179,7 +179,7 @@ add {
 
         on_setup = function()
             -- apply colorscheme AFTER setup
-            vim.cmd.colorscheme 'techbase'
+            vim.cmd.colorscheme 'techbase' -- or 'entryway'
         end,
     },
 }
@@ -189,3 +189,26 @@ add {
 ```
 
 
+## Luna colorscheme
+
+```lua
+
+local add = require('vim-pack').add
+
+add {
+    {
+        src = 'wtfox/luna.nvim',
+        module_name = 'luna',
+        opts = {
+          transparent = true
+        },
+
+        on_setup = function()
+            -- apply colorscheme AFTER setup
+            vim.cmd.colorscheme 'luna'
+        end,
+    },
+}
+
+
+```
