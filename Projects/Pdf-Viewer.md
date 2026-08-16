@@ -1153,4 +1153,722 @@ fyne package -os windows -icon icon.png
 - **True back/forward history** (as in a browser, for internal PDF links) — a simple `[]int` stack of visited page indices, pushed on link-follow, popped on Back.
 - **Multiple open documents (tabs)** — each tab gets its own `Viewer`, all sharing one `Engine` pool (respect `MaxTotal` from Section 7).
 
- Everything above — the async/cancellable rendering, the byte-budgeted cache, the process-isolated worker pool, and the layered input validation — is what actually separates "renders a PDF" from "production ready." Don't cut Sections 6–8 even for a side project; they're the parts that keep the app usable on a 2,000-page scanned book and safe against a PDF someone found on a random forum.
+ Everything above — the async/cancellable rendering, the byte-budgeted cache, the process-isolated worker pool, and the layered input validation — is what actually separates "renders a PDF" from "production ready." Don't cut Sections 6–8 even for a side project; they're the parts that keep the app usable on a 2,000-page scanned book and safe against a PDF someone found on a random forum.# pdfview — Terminal-Styled PDF Viewer in Go (Corrected Build)
+
+ This is a redo of the original guide with the real bugs fixed and the cross-section inconsistencies resolved. Instead of re-running the same incremental "diff per section" format (which is exactly how the original picked up inconsistencies — each section quietly changed a function signature the next section assumed), this version gives you the **final, internally-consistent source for every file**, plus a short note on what changed and why. You still get the same section-by-section mental model, just without carrying bugs forward.
+
+ ## What was actually wrong, and what changed
+
+ 1. **`renderedPage.Image` was untyped garbage.** The original declared it as `interface{ Bounds() interface{} }` and then "converted" it with `p.Image.(interface{})` — a type assertion to bare `interface{}` doesn't convert anything; that line doesn't compile as written. Fixed: `Image` is a real `image.Image`, assigned directly to `canvas.Image.Image` (which is typed `image.Image`) — no assertion needed.
+2. **Two competing cancellation mechanisms.** Section 6 added `context.CancelFunc` for stale-render cancellation; Section 7 separately added a `time.After(10s)` timeout *inside* `Engine.RenderPage` that knew nothing about that context. A cancelled render and a timed-out render were handled by two different code paths that never talked to each other. Fixed: `RenderPage` now takes a `context.Context` and selects on both `ctx.Done()` (user navigated away) and a timeout (worker hung) in the same `select`.
+3. **Keyboard shortcuts mixed key types incorrectly.** `case fyne.KeyRight, "L"` inside `SetOnTypedKey` mixes an arrow key (a real key event) with a printable character (`l`/`h`/`+`/`-`/`0`), which Fyne delivers through `SetOnTypedRune`, not `SetOnTypedKey`. Fixed: arrow keys go through `SetOnTypedKey`, printable shortcuts go through `SetOnTypedRune`.
+4. **`Next()`/`Prev()` changed signature between sections** (returned `error` in Section 4, returned nothing in Section 6) and callers in `main.go` were never updated to match. Fixed: one signature throughout — errors go through the `onError` callback into the status bar, which is the right place for them in a GUI app anyway (nothing useful to do with a returned `error` on a button-click handler).
+5. **Status bar update was never actually wired in.** The original left "call `updateStatus()` after each render" as a comment/exercise. Fixed: `Viewer` takes an `onStateChange` callback (same pattern as `onError`) and calls it after every successful render or cache hit.
+6. **Zoom's render-size guard was described in Tips but never actually implemented in the `RenderPage` code path.** Fixed: it's a real check in `renderPageInternal`, using the page's actual point size from `GetPageSize`, not just the zoom multiplier — a PDF with a huge `MediaBox` at low zoom is exactly what this guard needs to catch, and the original's zoom-only check would have missed it.
+7. **Missing import** (`theme` in `toolbar.go`) that the original called out in prose instead of just including.
+8. **Status bar split into its own file** (`status.go`) instead of being half-declared inside `viewer.go`, matching the project layout table.
+
+ ## Architecture (unchanged, it was the right call)
+
+ | Concern | Choice | Why |
+| --- | --- | --- |
+| GUI toolkit | [Fyne](https://fyne.io/) | Pure Go, cross-platform, canvas-based, easy theming |
+| PDF rendering | [go-pdfium](https://github.com/klippa-app/go-pdfium) | BSD-licensed, Chrome's own PDF engine, multi-process worker pool for crash isolation |
+| Rendering strategy | On-demand, LRU-cached, byte-budgeted | Never load a whole document into memory |
+| Concurrency | Background goroutines +`context.Context` | Responsive UI, drops stale work on fast scroll/zoom |
+
+ ```
+pdfview/
+├── go.mod
+├── main.go       # entrypoint, window, wiring
+├── theme.go      # terminal-styled Fyne theme
+├── toolbar.go    # zoom / navigation toolbar
+├── viewer.go     # page canvas + render/cache/cancel logic
+├── status.go     # status bar + error surfacing
+├── cache.go      # LRU page-image cache, byte-budgeted
+├── engine.go     # go-pdfium wrapper: open, render, close
+├── security.go   # file validation, resource limits
+└── util.go       # small shared helpers
+```
+
+ ## Setup
+
+ ```bash
+go version   # need 1.22+
+
+# macOS
+xcode-select --install
+# Linux (Debian/Ubuntu)
+sudo apt install gcc libgl1-mesa-dev libx11-dev libxrandr-dev \
+  libxcursor-dev libxinerama-dev libxi-dev xorg-dev
+
+mkdir pdfview && cd pdfview
+go mod init github.com/<you>/pdfview
+
+go get fyne.io/fyne/v2@latest
+go get github.com/klippa-app/go-pdfium@latest
+```
+
+ Pin exact versions and commit `go.sum` — PDF rendering output can shift subtly across `go-pdfium`/PDFium versions, and you don't want a `go get -u` in CI silently changing what users see.
+
+ ---
+
+ ## main.go
+
+ ```go
+package main
+
+import (
+	"log"
+	"os"
+	"path/filepath"
+
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+)
+
+func newDefaultSize() fyne.Size {
+	return fyne.NewSize(900, 700)
+}
+
+func main() {
+	if len(os.Args) < 2 {
+		log.Fatal("usage: pdfview <file.pdf>")
+	}
+
+	a := app.New()
+	a.Settings().SetTheme(&terminalTheme{})
+	w := a.NewWindow("pdfview")
+	w.Resize(newDefaultSize())
+
+	engine, err := newEngine()
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer engine.Close()
+
+	pageCount, err := engine.OpenFile(os.Args[1])
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	status := newStatusBar()
+	filename := filepath.Base(os.Args[1])
+
+	var viewer *Viewer
+	viewer = newViewer(engine, pageCount,
+		func(err error) { status.Error(err) },
+		func() { status.Update(viewer.pageIndex, viewer.pageCount, viewer.zoom, filename) },
+	)
+
+	tb := newToolbar()
+	tb.Back.OnActivated = viewer.Prev
+	tb.Forward.OnActivated = viewer.Next
+	tb.ZoomIn.OnActivated = viewer.ZoomIn
+	tb.ZoomOut.OnActivated = viewer.ZoomOut
+	tb.ZoomReset.OnActivated = viewer.ZoomReset
+
+	content := container.NewBorder(tb.Container, status.label, nil, nil, viewer.image)
+	w.SetContent(content)
+
+	// Arrow keys: real key events, go through SetOnTypedKey.
+	w.Canvas().SetOnTypedKey(func(e *fyne.KeyEvent) {
+		switch e.Name {
+		case fyne.KeyRight:
+			viewer.Next()
+		case fyne.KeyLeft:
+			viewer.Prev()
+		}
+	})
+	// Printable shortcuts (vim-style h/l, +/-/0 zoom): go through SetOnTypedRune,
+	// not SetOnTypedKey — this is the actual Fyne-correct way to catch them.
+	w.Canvas().SetOnTypedRune(func(r rune) {
+		switch r {
+		case 'l':
+			viewer.Next()
+		case 'h':
+			viewer.Prev()
+		case '+', '=':
+			viewer.ZoomIn()
+		case '-':
+			viewer.ZoomOut()
+		case '0':
+			viewer.ZoomReset()
+		}
+	})
+
+	viewer.render()
+	w.ShowAndRun()
+}
+```
+
+ ## theme.go
+
+ ```go
+package main
+
+import (
+	_ "embed"
+	"image/color"
+
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/theme"
+)
+
+var (
+	bgColor  = color.NRGBA{R: 0x0d, G: 0x0d, B: 0x0d, A: 0xff}
+	fgColor  = color.NRGBA{R: 0x33, G: 0xff, B: 0x66, A: 0xff}
+	dimColor = color.NRGBA{R: 0x1a, G: 0x1a, B: 0x1a, A: 0xff}
+)
+
+// Embed a real terminal font. Drop a licensed TTF at fonts/JetBrainsMono-Regular.ttf
+// (JetBrains Mono is OFL-licensed) or delete this block and fall back to
+// theme.DefaultTheme().Font(style) with style.Monospace = true if you'd
+// rather not ship a font file yet.
+//
+//go:embed fonts/JetBrainsMono-Regular.ttf
+var monoFontData []byte
+
+var monoFont = fyne.NewStaticResource("JetBrainsMono-Regular.ttf", monoFontData)
+
+type terminalTheme struct{}
+
+func (terminalTheme) Color(name fyne.ThemeColorName, variant fyne.ThemeVariant) color.Color {
+	switch name {
+	case theme.ColorNameBackground:
+		return bgColor
+	case theme.ColorNameForeground:
+		return fgColor
+	case theme.ColorNameButton, theme.ColorNameDisabledButton:
+		return dimColor
+	default:
+		return theme.DefaultTheme().Color(name, theme.VariantDark)
+	}
+}
+
+func (terminalTheme) Font(style fyne.TextStyle) fyne.Resource {
+	return monoFont
+}
+
+func (terminalTheme) Icon(name fyne.ThemeIconName) fyne.Resource {
+	return theme.DefaultTheme().Icon(name)
+}
+
+func (terminalTheme) Size(name fyne.ThemeSizeName) float32 {
+	return theme.DefaultTheme().Size(name)
+}
+```
+
+ Keep `Color`/`Font`/`Size` allocation-free — Fyne calls them on every redraw. That's why the colors and font resource above are package-level vars, not built inside the methods.
+
+ ## toolbar.go
+
+ ```go
+package main
+
+import (
+	"fyne.io/fyne/v2/theme"
+	"fyne.io/fyne/v2/widget"
+)
+
+type Toolbar struct {
+	Container *widget.Toolbar
+	ZoomIn    *widget.ToolbarAction
+	ZoomOut   *widget.ToolbarAction
+	ZoomReset *widget.ToolbarAction
+	Back      *widget.ToolbarAction
+	Forward   *widget.ToolbarAction
+}
+
+func newToolbar() *Toolbar {
+	t := &Toolbar{}
+
+	t.Back = widget.NewToolbarAction(theme.NavigateBackIcon(), func() {})
+	t.Forward = widget.NewToolbarAction(theme.NavigateNextIcon(), func() {})
+	t.ZoomOut = widget.NewToolbarAction(theme.ZoomOutIcon(), func() {})
+	t.ZoomReset = widget.NewToolbarAction(theme.ZoomFitIcon(), func() {})
+	t.ZoomIn = widget.NewToolbarAction(theme.ZoomInIcon(), func() {})
+
+	t.Container = widget.NewToolbar(
+		t.Back,
+		t.Forward,
+		widget.NewToolbarSeparator(),
+		t.ZoomOut,
+		t.ZoomReset,
+		t.ZoomIn,
+	)
+	return t
+}
+```
+
+ Build it once at startup and mutate the `OnActivated` callbacks / enable- disable state — don't rebuild the toolbar on every page change, that's the most common source of a janky Fyne UI.
+
+ ## engine.go
+
+ ```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"image"
+	"time"
+
+	pdfium_mp "github.com/klippa-app/go-pdfium/multi_threaded"
+	"github.com/klippa-app/go-pdfium/pdfium"
+	"github.com/klippa-app/go-pdfium/requests"
+	"github.com/klippa-app/go-pdfium/responses"
+)
+
+// Multi-process pool from the start: each worker is a separate OS process,
+// so a PDF that crashes PDFium's C++ parser takes down a disposable worker,
+// not your whole app. There's no reason to build the single-threaded
+// version first and swap later — the wrapper interface is identical either
+// way, so start here.
+type Engine struct {
+	pool     pdfium.Pool
+	instance pdfium.Pdfium
+	doc      *responses.OpenDocument
+}
+
+func newEngine() (*Engine, error) {
+	pool, err := pdfium_mp.Init(pdfium_mp.Config{
+		MinIdle:  1,
+		MaxIdle:  2,
+		MaxTotal: 4, // cap concurrent PDFium processes; size against target RAM
+	})
+	if err != nil {
+		return nil, fmt.Errorf("init pdfium pool: %w", err)
+	}
+	inst, err := pool.GetInstance(30 * time.Second)
+	if err != nil {
+		return nil, fmt.Errorf("get pdfium instance: %w", err)
+	}
+	return &Engine{pool: pool, instance: inst}, nil
+}
+
+const maxPageCount = 20000
+
+func (e *Engine) OpenFile(path string) (pageCount int, err error) {
+	data, err := readFileBytes(path)
+	if err != nil {
+		return 0, err
+	}
+
+	doc, err := e.instance.OpenDocument(&requests.OpenDocument{File: &data})
+	if err != nil {
+		return 0, fmt.Errorf("open document: %w", err)
+	}
+	e.doc = doc
+
+	pageInfo, err := e.instance.GetPageCount(&requests.GetPageCount{Document: doc.Document})
+	if err != nil {
+		return 0, fmt.Errorf("page count: %w", err)
+	}
+	if pageInfo.PageCount > maxPageCount {
+		return 0, fmt.Errorf("document has too many pages (%d)", pageInfo.PageCount)
+	}
+	return pageInfo.PageCount, nil
+}
+
+type renderedPage struct {
+	Image  image.Image // real image.Image — this was the broken placeholder type before
+	Width  int
+	Height int
+}
+
+const maxRenderPixels = 8000 * 8000 // ~64M pixels; tune to your needs
+
+// RenderPage rasterizes a page, respecting both an external cancellation
+// context (the caller navigated/zoomed again before this finished) and a
+// hard timeout (the worker itself is hung on a pathological page). Both
+// conditions are handled in the same select, unlike the original guide
+// where they were two disconnected mechanisms.
+func (e *Engine) RenderPage(ctx context.Context, pageIndex int, scale float32) (*renderedPage, error) {
+	type result struct {
+		page *renderedPage
+		err  error
+	}
+	resultCh := make(chan result, 1)
+
+	go func() {
+		page, err := e.renderPageInternal(pageIndex, scale)
+		resultCh <- result{page, err}
+	}()
+
+	select {
+	case r := <-resultCh:
+		return r.page, r.err
+	case <-ctx.Done():
+		return nil, ctx.Err()
+	case <-time.After(10 * time.Second):
+		return nil, fmt.Errorf("render page %d: timed out", pageIndex)
+	}
+}
+
+func (e *Engine) renderPageInternal(pageIndex int, scale float32) (*renderedPage, error) {
+	page := requests.Page{Document: e.doc.Document, Index: &pageIndex}
+
+	// Guard against maliciously huge MediaBox * zoom, not just zoom alone —
+	// a page that declares an enormous point size can blow this budget even
+	// at 100% zoom.
+	sizeRes, err := e.instance.GetPageSize(&requests.GetPageSize{Page: page})
+	if err != nil {
+		return nil, fmt.Errorf("get page size %d: %w", pageIndex, err)
+	}
+	effectivePixels := float64(sizeRes.Width) * float64(scale) * float64(sizeRes.Height) * float64(scale)
+	if effectivePixels > maxRenderPixels {
+		return nil, fmt.Errorf("requested render size exceeds limit")
+	}
+
+	res, err := e.instance.RenderPageInDPI(&requests.RenderPageInDPI{
+		Page: page,
+		DPI:  int(72 * scale), // 72 DPI == 100% zoom baseline
+	})
+	if err != nil {
+		return nil, fmt.Errorf("render page %d: %w", pageIndex, err)
+	}
+	defer res.Cleanup()
+
+	img := res.Result.Image
+	b := img.Bounds()
+	return &renderedPage{Image: img, Width: b.Dx(), Height: b.Dy()}, nil
+}
+
+func (e *Engine) Close() {
+	if e.doc != nil {
+		e.instance.FPDF_CloseDocument(&requests.FPDF_CloseDocument{Document: e.doc.Document})
+	}
+	e.instance.Close()
+	e.pool.Close()
+}
+```
+
+ ## viewer.go
+
+ ```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"sync"
+
+	"fyne.io/fyne/v2/canvas"
+)
+
+const (
+	minZoom     = 0.25
+	maxZoom     = 4.0
+	zoomStep    = 0.25
+	defaultZoom = 1.0
+)
+
+type Viewer struct {
+	image *canvas.Image
+
+	engine    *Engine
+	pageIndex int
+	pageCount int
+	zoom      float32
+
+	cache    *pageCache
+	cancel   context.CancelFunc
+	renderMu sync.Mutex
+
+	onError       func(error)
+	onStateChange func()
+}
+
+func newViewer(engine *Engine, pageCount int, onError func(error), onStateChange func()) *Viewer {
+	img := canvas.NewImageFromImage(nil)
+	img.FillMode = canvas.ImageFillContain
+	return &Viewer{
+		image:         img,
+		engine:        engine,
+		pageIndex:     0,
+		pageCount:     pageCount,
+		zoom:          defaultZoom,
+		cache:         newPageCache(256 << 20), // 256MB render budget, ~32 pages at ~8MB/page
+		onError:       onError,
+		onStateChange: onStateChange,
+	}
+}
+
+// render is the single entry point for every navigation/zoom action.
+// Calling it again while a render is in flight cancels the previous one —
+// this is a DoS guard as much as a UX one: without it, a user (or script)
+// rapidly flipping pages queues unbounded concurrent RenderPage calls.
+func (v *Viewer) render() {
+	v.renderMu.Lock()
+	if v.cancel != nil {
+		v.cancel()
+	}
+	ctx, cancel := context.WithCancel(context.Background())
+	v.cancel = cancel
+	v.renderMu.Unlock()
+
+	key := fmt.Sprintf("%d@%.2f", v.pageIndex, v.zoom)
+	if cached, ok := v.cache.Get(key); ok {
+		v.Show(cached)
+		if v.onStateChange != nil {
+			v.onStateChange()
+		}
+		return
+	}
+
+	pageIndex, zoom := v.pageIndex, v.zoom
+	go func() {
+		page, err := v.engine.RenderPage(ctx, pageIndex, zoom)
+		if ctx.Err() != nil {
+			return // superseded by a newer render — drop the result
+		}
+		if err != nil {
+			if v.onError != nil {
+				fyneDo(func() { v.onError(err) })
+			}
+			return
+		}
+		v.cache.Put(key, page, int64(page.Width*page.Height*4)) // RGBA bytes
+		fyneDo(func() {
+			v.Show(page)
+			if v.onStateChange != nil {
+				v.onStateChange()
+			}
+		})
+	}()
+}
+
+func (v *Viewer) Show(p *renderedPage) {
+	v.image.Image = p.Image // no cast needed now that Image is a real image.Image
+	v.image.Refresh()
+}
+
+func (v *Viewer) Next() {
+	if v.pageIndex < v.pageCount-1 {
+		v.pageIndex++
+		v.render()
+	}
+}
+
+func (v *Viewer) Prev() {
+	if v.pageIndex > 0 {
+		v.pageIndex--
+		v.render()
+	}
+}
+
+func (v *Viewer) ZoomIn()    { v.zoom = clampZoom(v.zoom + zoomStep); v.render() }
+func (v *Viewer) ZoomOut()   { v.zoom = clampZoom(v.zoom - zoomStep); v.render() }
+func (v *Viewer) ZoomReset() { v.zoom = defaultZoom; v.render() }
+
+func clampZoom(z float32) float32 {
+	if z < minZoom {
+		return minZoom
+	}
+	if z > maxZoom {
+		return maxZoom
+	}
+	return z
+}
+```
+
+ ## cache.go
+
+ ```go
+package main
+
+import (
+	"container/list"
+	"sync"
+)
+
+// Size-bounded LRU cache for rendered pages, keyed by "pageIndex@zoom".
+// Bounded by byte budget, not item count — rendered pages vary wildly in
+// size depending on content and zoom.
+type pageCache struct {
+	mu        sync.Mutex
+	items     map[string]*list.Element
+	order     *list.List
+	usedBytes int64
+	maxBytes  int64
+}
+
+type cacheEntry struct {
+	key   string
+	page  *renderedPage
+	bytes int64
+}
+
+func newPageCache(maxBytes int64) *pageCache {
+	return &pageCache{
+		items:    make(map[string]*list.Element),
+		order:    list.New(),
+		maxBytes: maxBytes,
+	}
+}
+
+func (c *pageCache) Get(key string) (*renderedPage, bool) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	if el, ok := c.items[key]; ok {
+		c.order.MoveToFront(el)
+		return el.Value.(*cacheEntry).page, true
+	}
+	return nil, false
+}
+
+func (c *pageCache) Put(key string, page *renderedPage, bytes int64) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+
+	if el, ok := c.items[key]; ok {
+		c.order.MoveToFront(el)
+		el.Value.(*cacheEntry).page = page
+		return
+	}
+
+	el := c.order.PushFront(&cacheEntry{key: key, page: page, bytes: bytes})
+	c.items[key] = el
+	c.usedBytes += bytes
+
+	for c.usedBytes > c.maxBytes && c.order.Len() > 1 {
+		back := c.order.Back()
+		entry := back.Value.(*cacheEntry)
+		c.order.Remove(back)
+		delete(c.items, entry.key)
+		c.usedBytes -= entry.bytes
+	}
+}
+```
+
+ Consider prefetching page N+1 in the background after N finishes rendering for very large documents — run it as a lower-priority goroutine sharing the same cancellation context, so a real user-initiated navigation always wins.
+
+ ## status.go
+
+ ```go
+package main
+
+import (
+	"fmt"
+
+	"fyne.io/fyne/v2/widget"
+)
+
+type StatusBar struct {
+	label *widget.Label
+}
+
+func newStatusBar() *StatusBar {
+	return &StatusBar{label: widget.NewLabel("")}
+}
+
+func (s *StatusBar) Update(page, total int, zoom float32, filename string) {
+	s.label.SetText(fmt.Sprintf("-- %s -- page %d/%d  zoom %.0f%%", filename, page+1, total, zoom*100))
+}
+
+// Errors render in the same status line rather than a disruptive modal.
+// Wrap engine errors with your own messages (engine.go already does this
+// with %w) so you control exactly what's user-visible vs. logged.
+func (s *StatusBar) Error(err error) {
+	s.label.SetText(fmt.Sprintf("!! error: %v", err))
+}
+```
+
+ ## security.go
+
+ ```go
+package main
+
+import (
+	"bytes"
+	"fmt"
+	"os"
+	"path/filepath"
+)
+
+const (
+	maxFileSizeBytes = 500 << 20 // 500MB
+	pdfMagicBytes    = "%PDF-"
+)
+
+// readFileBytes validates and reads a PDF file before any bytes reach the
+// PDFium parser. Treat every PDF as untrusted, adversarial input.
+func readFileBytes(path string) ([]byte, error) {
+	// Normalize + reject traversal if this path ever comes from anything
+	// other than a native file-picker dialog (CLI arg, IPC message,
+	// persisted "recent files" list, etc.) — it does here, since Args[1]
+	// is exactly that kind of external input.
+	clean := filepath.Clean(path)
+
+	info, err := os.Stat(clean)
+	if err != nil {
+		return nil, fmt.Errorf("stat file: %w", err)
+	}
+	if info.IsDir() {
+		return nil, fmt.Errorf("path is a directory")
+	}
+	// Check size via Stat before reading — never allocate for a file
+	// you're about to reject.
+	if info.Size() > maxFileSizeBytes {
+		return nil, fmt.Errorf("file exceeds maximum size of %d bytes", maxFileSizeBytes)
+	}
+
+	data, err := os.ReadFile(clean)
+	if err != nil {
+		return nil, fmt.Errorf("read file: %w", err)
+	}
+
+	// Cheap magic-byte check. Not a security boundary on its own (headers
+	// can be spoofed) but free, and it catches honest mistakes before the
+	// parser. Never trust the .pdf extension alone.
+	if !bytes.HasPrefix(data, []byte(pdfMagicBytes)) {
+		return nil, fmt.Errorf("file does not appear to be a PDF")
+	}
+
+	return data, nil
+}
+```
+
+ ## util.go
+
+ ```go
+package main
+
+import "fyne.io/fyne/v2"
+
+// fyneDo marshals a function onto Fyne's UI goroutine. Any UI mutation
+// triggered from a background goroutine (render results, errors) must go
+// through this — Fyne widgets are not safe to touch off the UI thread.
+func fyneDo(f func()) {
+	fyne.Do(f)
+}
+```
+
+ ---
+
+ ## Packaging
+
+ ```bash
+go install fyne.io/fyne/v2/cmd/fyne@latest
+
+fyne package -os darwin -icon icon.png
+fyne package -os linux -icon icon.png
+fyne package -os windows -icon icon.png
+```
+
+ `go-pdfium`'s multi-process mode spawns a helper worker binary — bundle it alongside your executable and reference it via a path relative to `os.Executable()`, never a hardcoded absolute path. Build in CI so every release is reproducible, code-sign your binaries (macOS notarization, Windows Authenticode), and pin + checksum the `go-pdfium` worker binary you ship so a compromised dependency mirror can't swap in a malicious one.
+
+ ## Layered defenses, all in this build
+
+ Magic-byte check → file size cap → page-count cap → path cleaning → render-size guard (actual page size × zoom, not just zoom) → process isolation via the worker pool → per-render timeout. Each one is individually weak; together they're what makes this safe to point at a random PDF someone found on a forum, not just a well-behaved test file.
+
+ ## What would make this genuinely "optimal" vs. just correct
+
+ The above is a correct, hardened single-document viewer. Two things are worth calling out honestly rather than glossing over:
+
+ - **Text selection and search are not included.** For a lot of people "PDF reader" implicitly means "I can Ctrl+F it." `go-pdfium` supports text extraction per page, and it slots into the existing cache/cancel pattern in `viewer.go` — but it's real additional work (a search-results overlay, highlight rendering, next/prev-match state), not a small addition. If search matters to you, it should be scoped as its own section before you call this "done," not left as a "where to go from here" bullet.
+- **No outline/bookmark navigation.** Also supported by `go-pdfium` (document outline tree), also a real sidebar widget + state, not a one-liner.
+
+ If either of those is a must-have for what you consider "optimal," say so and I'll build that section out properly rather than hand-wave it — the rest of this architecture (engine wrapper, cache, cancellation) already supports adding it without a rewrite.
