@@ -241,26 +241,30 @@ func main() {
 
  Goal: open a file (via CLI arg or file dialog) and render page 0 to an image.
 
+engine.go -
  ```go
-// engine.go
 package main
 
 import (
 	"fmt"
+	"image"
 
-	"github.com/klippa-app/go-pdfium/pdfium"
+	"github.com/klippa-app/go-pdfium"
 	"github.com/klippa-app/go-pdfium/requests"
 	"github.com/klippa-app/go-pdfium/responses"
 	pdfium_single "github.com/klippa-app/go-pdfium/single_threaded"
 )
 
-// NEW (Section 3): thin wrapper around go-pdfium so the rest of the app
-// never touches the library directly. Single-threaded pool for now —
-// we upgrade this to a multi-process pool in Section 7.
+type renderedPage struct {
+	Image  image.Image
+	Width  int
+	Height int
+}
+
 type Engine struct {
-	pool     pdfium.Pool
-	instance pdfium.Pdfium
-	doc      *responses.OpenDocument
+	pool      pdfium.Pool
+	insatance pdfium.Pdfium
+	doc       *responses.OpenDocument
 }
 
 func newEngine() (*Engine, error) {
@@ -269,61 +273,58 @@ func newEngine() (*Engine, error) {
 	if err != nil {
 		return nil, fmt.Errorf("pdfium instance: %w", err)
 	}
-	return &Engine{pool: pool, instance: inst}, nil
+
+	return &Engine{pool: pool, insatance: inst}, nil
 }
 
 func (e *Engine) OpenFile(path string) (pageCount int, err error) {
-	data, err := readFileBytes(path) // defined in security.go, Section 8
+	data, err := readFileBytes(path)
 	if err != nil {
 		return 0, err
 	}
 
-	doc, err := e.instance.OpenDocument(&requests.OpenDocument{File: &data})
+	doc, err := e.insatance.OpenDocument(&requests.OpenDocument{File: &data})
 	if err != nil {
-		return 0, fmt.Errorf("open document: %w", err)
+		return 0, fmt.Errorf("open document : %w", err)
 	}
 	e.doc = doc
-
-	pageInfo, err := e.instance.GetPageCount(&requests.GetPageCount{Document: doc.Document})
+	pageInfo, err := e.insatance.FPDF_GetPageCount(&requests.FPDF_GetPageCount{Document: doc.Document})
 	if err != nil {
-		return 0, fmt.Errorf("page count: %w", err)
+		return 0, fmt.Errorf("page count : %w", err)
 	}
 	return pageInfo.PageCount, nil
 }
 
-// RenderPage rasterizes a single page at the given DPI-equivalent scale.
 func (e *Engine) RenderPage(pageIndex int, scale float32) (*renderedPage, error) {
-	page := requests.Page{Document: e.doc.Document, Index: &pageIndex}
-
-	res, err := e.instance.RenderPageInDPI(&requests.RenderPageInDPI{
+	page := requests.Page{
+		ByIndex: &requests.PageByIndex{
+			Document: e.doc.Document,
+			Index:    pageIndex,
+		},
+	}
+	res, err := e.insatance.RenderPageInDPI(&requests.RenderPageInDPI{
 		Page: page,
-		DPI:  int(72 * scale), // 72 DPI = 100% zoom baseline
+		DPI:  int(72 * scale),
 	})
 	if err != nil {
 		return nil, fmt.Errorf("render page %d: %w", pageIndex, err)
 	}
 	defer res.Cleanup()
-
 	return &renderedPage{
-		Image: res.Result.Image,
-		Width: res.Result.Image.Bounds().Dx(),
-		Height: res.Result.Image.Bounds().Dy(),
+		Image:  res.Result.RenderedImage,
+		Width:  res.Result.RenderedImage.Bounds().Dx(),
+		Height: res.Result.RenderedImage.Bounds().Dy(),
 	}, nil
 }
 
 func (e *Engine) Close() {
 	if e.doc != nil {
-		e.instance.FPDF_CloseDocument(&requests.FPDF_CloseDocument{Document: e.doc.Document})
+		e.insatance.FPDF_CloseDocument(&requests.FPDF_CloseDocument{Document: e.doc.Document})
+		e.insatance.Close()
+		e.pool.Close()
 	}
-	e.instance.Close()
-	e.pool.Close()
 }
 
-type renderedPage struct {
-	Image  interface{ Bounds() interface{} } // placeholder — replaced by image.Image below
-	Width  int
-	Height int
-}
 ```
 
  > Note: the `renderedPage.Image` type above is simplified for readability — in your actual file, use `image.Image` from the standard library (the `go-pdfium` `RenderPageInDPI` response already returns one). Import `"image"` and set `Image image.Image`.

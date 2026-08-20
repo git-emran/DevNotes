@@ -1,6 +1,6 @@
 This is my vimrc config
 
-```vimrc
+```zsh
 set nocompatible
 
 filetype plugin indent on
