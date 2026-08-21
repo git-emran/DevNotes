@@ -4,14 +4,12 @@ A proximity service is used to define nearby restaurants, friends, etc.
 
 
 ## Step 1 :
+
 Establishing design scope. Following questions can be one of the first questions to be asked. 
 
 - *Can a user specify search radius ? When a search spits out nothing does the system auto-expand the search ?*
-
 - *What is the maximum allowed distance that a user can search ?*
-
 - *Is the distance dynamic ?*
-
 - *How the system data is being created ?*
 
 
@@ -23,6 +21,7 @@ Establishing design scope. Following questions can be one of the first questions
 + A detailed view of the businesses on the client side.
 
 ### Non-functional requirements
+
 + Low-latency, data privacy, location based services compliancy
 + Data privacy, GDPR compliancy
 + High availability and scalability. System should handle traffic during peak hours, assuming peak hours in densly populated areas.
@@ -128,11 +127,39 @@ Scalability of business service and LBS
 
 Both the business service and LBS are stateless services, so it’s easy to automatically add more servers to accommodate peak traffic (e.g. mealtime) and remove servers during off-peak hours (e.g. sleep time). If the system operates on the cloud, we can set up different regions and availability zones to further improve availability [9]. We discuss this more in the deep dive.
 
-Algorithms to fetch nearby businesses
+## Algorithms to fetch nearby businesses
 In real life, companies might use existing geospatial databases such as Geohash in Redis [10] or Postgres with PostGIS extension [11]. You are not expected to know the internals of those geospatial databases during an interview. It’s better to demonstrate your problem-solving skills and technical knowledge by explaining how the geospatial index works, rather than to simply throw out database names.
 
 The next step is to explore different options for fetching nearby businesses. We will list a few options, go over the thought process, and discuss trade-offs.
 
+
+### Two-dimensional search
+
+Most simple way to find a business is to create a pre-determined circle and find all the businesses in that circle.
+
+The pseudo SQL query looks like:
+
+```sql
+
+SELECT business_id. latitude,longitude,
+FROM business
+WHERE (latitude between {:my_lat} - radius AND {:my_lat} + radius) AND (longitude BETWEEN {:my_long} - radius AND {:my_long} + radius)
+
+```
+
+
+This query is not efficient because we need to scan the whole table. Even if we build indexes on longitude and latitude column, we still need to perform intersect operation on those two datasets.
+
+There are two types of geospatial indexing approaches:
+1. Hash: even grid, geohash, cartesian tiers, etc.
+2. Tree: quadtree, Google S2, RTree, etc.
+
+
+Index -> Hash -> Even Grid, Geohash, Cartesian Tiers.
+Index -> Tree -> Quadtree, googleS2, Rtree
+
+
+### Evenly Divided Grid
 
 
 
