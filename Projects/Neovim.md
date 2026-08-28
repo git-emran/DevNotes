@@ -1,5 +1,3 @@
-[[Neovim issues]]
-
 Neovim contribution guidelines quickstart:
 
 Here's a complete workflow based on Neovim's actual contribution guidelines:

@@ -161,5 +161,10 @@ Index -> Tree -> Quadtree, googleS2, Rtree
 
 ### Evenly Divided Grid
 
+Each grid has businesses indexed. The problem with this approach is that while one grid has multiple businesses and other grid has beach, deserts with no businesses at all. IT is an un-even distribution of datasets.
+
+### GeoHash
+
+
 
 

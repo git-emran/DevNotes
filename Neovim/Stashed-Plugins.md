@@ -214,7 +214,7 @@ add {
 ```
 
 
-### Token Colorscheme
+## Token Colorscheme
 
 ```lua
 

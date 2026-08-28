@@ -632,12 +632,40 @@ func clampZoom(z float32) float32 {
  **Security:** `maxZoom` isn't just UX polish — it's a resource-exhaustion control. `RenderPageInDPI`'s output size grows roughly with the square of DPI. A page with an unusually large `MediaBox` (some malicious PDFs declare enormous page dimensions) combined with unbounded zoom can be used to force a multi-gigabyte allocation. Always clamp the *effective* render size (`page dimensions × zoom`), not just the zoom multiplier — add this check in `Engine.RenderPage` too, not only in the UI layer:
 
  ```go
-// engine.go — add inside RenderPage, before calling RenderPageInDPI
-const maxRenderPixels = 8000 * 8000 // ~64M pixels, adjust to your needs
+/func (e *Engine) RenderPage(pageIndex int, scale float32) (*renderedPage, error) {
+	page := requests.Page{
+		ByIndex: &requests.PageByIndex{
+			Document: e.doc.Document,
+			Index:    pageIndex,
+		},
+	}
+	sizeRes, err := e.insatance.GetPageSize(&requests.GetPageSize{Page: page})
+	if err != nil {
+		return nil, fmt.Errorf("get page size %d: %w", pageIndex, err)
+	}
 
-// (after fetching page size via GetPageSize)
-if float32(pageWidthPt) * scale * float32(pageHeightPt) * scale > maxRenderPixels {
-	return nil, fmt.Errorf("requested render size exceeds limit")
+	pageHeightPt := sizeRes.Height
+	pageWidthPt := sizeRes.Width
+
+	effectivePixels := pageWidthPt * float64(scale) * pageHeightPt * float64(scale)
+	if effectivePixels > maxRenderPixels {
+		return nil, fmt.Errorf("requested render size exceeds limit")
+	}
+
+	res, err := e.insatance.RenderPageInDPI(&requests.RenderPageInDPI{
+		Page: page,
+		DPI:  int(72 * scale),
+	})
+	if err != nil {
+		return nil, fmt.Errorf("render page %d: %w", pageIndex, err)
+	}
+	defer res.Cleanup()
+	return &renderedPage{
+		Image:  res.Result.RenderedImage,
+		Width:  res.Result.RenderedImage.Bounds().Dx(),
+		Height: res.Result.RenderedImage.Bounds().Dy(),
+	}, nil
+}
 }
 ```
 
