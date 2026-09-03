@@ -1,4 +1,4 @@
-# Building an Applicaiton monitoring system(Production ready)
+# Building an Application monitoring system(Production ready)
 
 
 ## Connecting Neon DB:
@@ -8,4 +8,4 @@ Neon database connection documentation is the way to go. Currently Connecting th
 General work flow :
 Generate -> Migrate
 
-beawtiful 
+beautiful 
