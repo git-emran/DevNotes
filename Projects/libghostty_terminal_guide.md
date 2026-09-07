@@ -517,7 +517,7 @@ static void send_key_events(int pty_fd, GhosttyKeyEncoder encoder,
 
  ---
 
- ## Step 7 — mouse input (goes after `send_key_events()`)
+## Step 7 — mouse input (goes after `send_key_events()`)
 
  ```c
 static GhosttyMouseButton raylib_mouse_to_ghostty(int rl_btn) {

@@ -2,9 +2,10 @@
 
 // Put your personal information here, replacing mine
 #let name = "Emran Hossain"
-#let email = "clearlybestemran@gmail.com"
+#let email = "emrn.hossn@gmail.com"
 #let linkedin = "www.linkedin.com/in/emran-hossain-80ab17190/"
 #let personal-site = "www.github.com/git-emran"
+#let phone = "880-1886-324-116"
 
 
 /*
@@ -27,6 +28,7 @@
   // feel free to comment those lines out and they will not show.
   email: email,
   linkedin: linkedin,
+  phone: phone,
   personal-site: personal-site,
   accent-color: "#26428b",
   font: "New Computer Modern",
@@ -50,7 +52,7 @@ Senior Front-End Engineer with 6+ years shipping high-impact B2B SaaS and AI pro
 == Work Experience
 
 #work(
-  title: "Senior Front-End Engineer",
+  title: "Lead Front-End Engineer",
   location: "Copenhagen, Denmark",
   company: "Tiblo Digital",
   dates: dates-helper(start-date: "May 2024", end-date: "Present"),
