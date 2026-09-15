@@ -84,34 +84,27 @@ GEMINI_API_KEY=your_free_gemini_api_key_here
 
  Verifies your API key works and that the SDK is wired up correctly, before anything else. `load_dotenv()` is what actually reads your `.env` file — it was missing from the original guide despite `python-dotenv` being installed.
 
+Previously google had `gemini-2.5-flash` for free development, but now its `gemini-3.5-flash` by default.
+
  ```python
-import os
+iimport os
 from dotenv import load_dotenv
 from google import genai
-from google.genai import types
 
-load_dotenv()  # reads GEMINI_API_KEY from your .env file
+load_dotenv()
 
 def run_hello_agent(prompt: str):
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
-        raise ValueError("GEMINI_API_KEY is not set. Add it to your .env file.")
-    client = genai.Client(api_key=key)  # created inside the function, not at import time
+        raise ValueError("gemini api key is not set.")
+    client = genai.Client(api_key=key)
+    interaction = client.interactions.create(model="gemini-3.5-flash", input=prompt)
 
-    system_instruction = "You are a minimal file operations agent. Focus on precise file tasks."
+    print("Agent Response:", interaction.output_text)
 
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            system_instruction=system_instruction,
-            temperature=0.0  # 💡 deterministic tool execution
-        )
-    )
-    print("Agent Response:", response.text)
 
 if __name__ == "__main__":
-    run_hello_agent("Say hello and state your capability.")
+    run_hello_agent("Say hello and state your capability")
 ```
 
  **Run it:** `python step1_hello.py` → you should see a one-line greeting printed to the terminal.
