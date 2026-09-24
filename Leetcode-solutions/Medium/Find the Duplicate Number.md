@@ -6,7 +6,7 @@ Return the repeated integer.
 
 **Example 1:**
 
-```java
+```javascript
 Input: nums = [1,2,3,2,2]
 
 Output: 2
