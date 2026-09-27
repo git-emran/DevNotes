@@ -64,3 +64,27 @@
 ---
 
 *Thank you for using Writer!* 🚀
+
+
+
+## 🚀 Releasing a New Version
+
+To create a new release:
+
+```bash
+# 1. Bump version in package.json (e.g., to 3.1.0)
+npm version 3.1.0 --no-git-tag-version
+
+# 2. Commit the version bump
+git add -A && git commit -m "release: v3.1.0"
+
+# 3. Create and push a tag — this triggers the GitHub Actions build
+git tag v3.1.0
+git push origin main --tags
+```
+
+GitHub Actions will automatically:
+1. Build for macOS (x64 + arm64), Windows, and Linux
+2. Create a **draft release** with all binaries attached
+3. Go to [Releases](https://github.com/git-emran/simple-notes/releases), review the draft, and click **Publish**
+
