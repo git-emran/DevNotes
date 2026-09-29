@@ -30,5 +30,3 @@ Explanation: The LCA of nodes 3 and 4 is 3, since a node can be a descendant of 
 - `-100 <= Node.val <= 100`
 - `p != q`
 - `p` and `q` will both exist in the BST.
-
-
