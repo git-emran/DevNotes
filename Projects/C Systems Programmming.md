@@ -63,7 +63,7 @@ Configure ![](vscode-file://vscode-app/Applications/Antigravity%20IDE.app/Conten
 
 `.vscode/c_cpp_properties.json`:
 
-```
+```json
 json{  "configurations": [    {      "name": "C/C++",      "includePath": [        "${workspaceFolder}/**",        "${workspaceFolder}/common",        "${workspaceFolder}/include"      ],      "defines": ["_GNU_SOURCE"],      "cStandard": "c17"    }  ],  "version": 4}
 ```
 

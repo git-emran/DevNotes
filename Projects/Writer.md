@@ -88,3 +88,10 @@ GitHub Actions will automatically:
 2. Create a **draft release** with all binaries attached
 3. Go to [Releases](https://github.com/git-emran/simple-notes/releases), review the draft, and click **Publish**
 
+
+
+## 3.1.2 Changelog:
+
+- App update modal: App update modal previously had full transparent background, now it has a background color.
+- Forced Updates: Forced updates are no longer enforced. Users can now choose whether to auto-update or update manually
+
