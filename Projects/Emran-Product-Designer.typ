@@ -39,7 +39,7 @@
 )
 
 == Summary
-Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI products. I work accross Product Design and Front-end Engineering with proven ability to lead full product cycles, design systems, performance optimization, and cross-functional collaboration resulting in significant business outcomes.
+Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI products. I work across Product Design and Front-end Engineering with proven ability to lead full product cycles, design systems, performance optimization, and cross-functional collaboration resulting in significant business outcomes.
 
 == Education
 #edu(
@@ -70,7 +70,7 @@ Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI produ
 )
 - Successfully reduced churn rate for a 500K+ user platform by running bi-weekly user behavior analytics reviews with the PM, translated findings into a prioritized backlog of UI optimizations and shipped them across two quarters.
 - Redesigned a legacy platform following latest WCAG 2.1 compliancy with custom keyboard and voice navigation patterns, Also conducted 3 rounds of moderated usability testing with 30 users with disabilities, passed external audit with zero critical violations.
-- Built a computer-vision powered product discover y feature using ML image similarity, ran 3 rounds of concept testing with 15 real shoppers, validated a more than 50% uplift in product engagement in a controlled test environment, and handed off a production-ready spec to engineering.
+- Built a design system from scratch utilizing tokenization method for optimal developer experience for reusability. Built rapid prototypes using agentic development.
 
 #work(
   title: "Lead UI/UX Designer",
@@ -78,18 +78,18 @@ Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI produ
   company: "MarketTime LLC",
   dates: dates-helper(start-date: "May 2022", end-date: "Apr 2023"),
 )
-- Redesigned the B2B order-management dashboard using data-driven layout prioritization. Also reduced complex order-entr y time and decreased user suppor t tickets related to transaction errors by 30%.
+- Redesigned the B2B order-management dashboard using data-driven layout prioritization. Also reduced complex order-entry time and decreased user support tickets related to transaction errors by 30%.
 - Built and shipped a company-wide UI component library from scratch, and design system 40+ components following the atomic design patterns, standardized design tokens, detailed interaction patterns, and rigorous documentation cutting cross-functional engineering handoff cycles.
 - Led the end-to-end checkout and payment flow for “mtPay”(Stripe Integration), achieving 95% user adoption at launch by proactively resolving 12 critical friction points identified across 5 rounds of usability testing.
 
 
 #work(
-  title: "Senior Product Designer",
+  title: "Lead Product Designer",
   location: "Dhaka, Bangladesh",
   company: "Roxnor (Contract)",
   dates: dates-helper(start-date: "Feb 2022", end-date: "May 2022"),
 )
-- Reduced spatial scanning error rates and cut onboarding time from 15 steps to 5 steps by redesigning the capture flow with ML assisted autocomplete, inline error recovery, and step-level cognitive-load audits, decreased inbound onboarding suppor t tickets.
+- Reduced spatial scanning error rates and cut onboarding time from 15 steps to 5 steps by redesigning the capture flow with ML assisted autocomplete, inline error recovery, and step-level cognitive-load audits, decreased inbound on-boarding support tickets.
 - Acted as design-engineering bridge for a cross-functional team of 6, reduced design-related PR review cycles from 4 rounds to 1 in over 3 months.
 - Designed the UX for a Computer Vision powered 3D spatial scanning workflow, built an in-app interactive guide which was validated with 3 rounds of moderated testing with a group of 24 users which made scanning easier for brand new users.
 
@@ -120,5 +120,6 @@ Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI produ
 - Designed a slideshow experience that lives inside a developer's existing editor rather than a separate app parsing Markdown headings into a center-aligned presentation layout with seamless, distraction-free rendering.
 
 == Skills
+- *Product Design*: Figma, Origami, Prototyping, Design Systems, Information Architecture, User Research, Usability Testing, Product Strategy.
 - *Core Stack*: TypeScript, JavaScript (ES2022+), Node.js, HTML5/CSS3, Golang, Python.
 - *Technologies*: React, Astro, Angular, SolidJS, Svelte, Fast-API, WebSockets, LangChain, Open-CV, MongoDB, gRPC, Docker, Async AI streaming, Git, Linux, UNIX, CI/CD pipelines, AI/ML product integration.
