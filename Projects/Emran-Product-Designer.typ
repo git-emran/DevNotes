@@ -78,7 +78,7 @@ Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI produ
   company: "MarketTime LLC",
   dates: dates-helper(start-date: "May 2022", end-date: "Apr 2023"),
 )
-- Redesigned the B2B order-management dashboard using data-driven layout prioritization. Also reduced complex order-entry time and decreased user support tickets related to transaction errors by 30%.
+- Reworked the B2B order-management dashboard around task frequency and error severity, giving high-frequency actions greater visual priority which reduced cognitive load on order entry.
 - Built and shipped a company-wide UI component library from scratch, and design system 40+ components following the atomic design patterns, standardized design tokens, detailed interaction patterns, and rigorous documentation cutting cross-functional engineering handoff cycles.
 - Led the end-to-end checkout and payment flow for “mtPay”(Stripe Integration), achieving 95% user adoption at launch by proactively resolving 12 critical friction points identified across 5 rounds of usability testing.
 
@@ -89,7 +89,7 @@ Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI produ
   company: "Roxnor (Contract)",
   dates: dates-helper(start-date: "Feb 2022", end-date: "May 2022"),
 )
-- Reduced spatial scanning error rates and cut onboarding time from 15 steps to 5 steps by redesigning the capture flow with ML assisted autocomplete, inline error recovery, and step-level cognitive-load audits, decreased inbound on-boarding support tickets.
+- Reduced spatial scanning user flow from 15 steps to 5 steps by redesigning the entire process with ML assisted autocomplete UI, inline error recovery steps, and step-level cognitive-load audits with real users, decreased inbound on-boarding support tickets.
 - Acted as design-engineering bridge for a cross-functional team of 6, reduced design-related PR review cycles from 4 rounds to 1 in over 3 months.
 - Designed the UX for a Computer Vision powered 3D spatial scanning workflow, built an in-app interactive guide which was validated with 3 rounds of moderated testing with a group of 24 users which made scanning easier for brand new users.
 
