@@ -39,7 +39,7 @@
 )
 
 == Summary
-Senior Front-End Engineer with 6+ years shipping high-impact B2B SaaS and AI products. Specialized in building complex, real-time React/TypeScript applications at scale. Proven ability to lead full product cycles, design systems, performance optimization, and cross-functional collaboration resulting in significant business outcomes.
+Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI products. I work accross Product Design and Front-end Engineering with proven ability to lead full product cycles, design systems, performance optimization, and cross-functional collaboration resulting in significant business outcomes.
 
 == Education
 #edu(
