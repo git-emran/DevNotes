@@ -4,7 +4,7 @@
 #let name = "Emran Hossain"
 #let email = "emrn.hossn@gmail.com"
 #let linkedin = "www.linkedin.com/in/emran-hossain-80ab17190/"
-#let personal-site = "www.github.com/git-emran"
+#let personal-site = "www.emranh.vercel.app"
 #let phone = "880-1886-324-116"
 
 
