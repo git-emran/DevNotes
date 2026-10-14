@@ -57,8 +57,8 @@ Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI produ
   company: "Tiblo Digital",
   dates: dates-helper(start-date: "May 2024", end-date: "Present"),
 )
-- Led the 0→1 UX for WheelLog, a B2B fleet-management platform serving 5K–10K operators. Ran 20+ customer interviews and a three-sprint prototyping cycle that helped bring the product to value six weeks faster and built a markdown based design system from scratch for rapid agentic development.
-- Helped increase MAU by 35% over two quarters by working with PM and Marketing to identify activation drop-offs and prioritize retention improvements by redesigning the core user flows.
+- Led the 0→1 UX for WheelLog, a B2B fleet-management platform serving 5K–10K operators. Ran 20+ customer interviews and a three-sprint prototyping cycle that helped bring the product to value six weeks faster. Also I built a markdown based design system from scratch for rapid agentic development.
+- Helped increase MAU(Monthly Active Users) by 35% over two quarters by working with PM and Marketing to identify activation drop-offs and prioritize retention improvements by redesigning the core user flows.
 - Used AI-assisted development to build realistic fleet-telemetry prototypes for remote user testing, helping the team validate three major features before development.
 - Led a cross-functional team of 12 (design, eng, research, policy) to ship AI citation transparency patter ns used by 1M+ users in the EU, satisfying DSA compliance requirements 3 weeks ahead of deadline.
 

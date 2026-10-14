@@ -23,7 +23,7 @@
       "version": 55,
       "versionNonce": 299648517,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1791821096500,
       "link": null,
       "locked": false,
@@ -247,16 +247,13 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        128.3828125,
-        266.12109375
-      ]
+      "lastCommittedPoint": null
     }
   ],
   "appState": {
-    "viewBackgroundColor": "#fdf8f6",
+    "viewBackgroundColor": "#ffffff",
     "gridSize": 20,
-    "theme": "dark"
+    "theme": "light"
   },
   "files": {}
 }
