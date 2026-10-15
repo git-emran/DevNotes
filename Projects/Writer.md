@@ -95,3 +95,7 @@ GitHub Actions will automatically:
 - App update modal: App update modal previously had full transparent background, now it has a background color.
 - Forced Updates: Forced updates are no longer enforced. Users can now choose whether to auto-update or update manually
 
+
+
+# Sprint
+Sprint is a feature that 
