@@ -193,7 +193,7 @@ Senior Front-End Engineer with 7+ years shipping high-impact B2B SaaS and AI pro
 )
 
 #text(style: "italic")[Creator & Maintainer]
-- Designed a slideshow experience inside neovim's built in buffer creator, A custom parser for parsing Markdown headings into a center-aligned presentation layout with seamless, distraction-free rendering.
+- Designed a slideshow experience with neovim's built in buffer creator, A custom parser for parsing Markdown headings into a center-aligned presentation layout with seamless, distraction-free rendering.
 
 
 #v(9pt)
