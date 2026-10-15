@@ -61,11 +61,11 @@
 }
 
 // Header
-#align(left)[
+#align(center)[
   #text(size: 21pt, weight: "bold")[#name]
 
   #v(2pt)
-  #text(size: 8pt, fill: accent)[
+  #text(size: 9pt, fill: accent)[
     #link("mailto:" + email)[#email]
     #h(5pt) | #h(5pt)
     #link("https://" + linkedin)[LinkedIn]
