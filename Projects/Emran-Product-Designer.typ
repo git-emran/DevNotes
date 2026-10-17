@@ -80,7 +80,7 @@
 
 #section("Summary")
 
-Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI products. I work across Product Design and Front-end Engineering with proven ability to lead full product cycles, design systems, performance optimization, and cross-functional collaboration resulting in significant business outcomes.
+Product Designer with a software engineering background, building B2B SaaS and AI products from early exploration through launch. I bring research, interaction design, prototyping, and technical implementation together to make complex workflows easier to use and products easier to build.
 
 #section("Education")
 
@@ -98,9 +98,12 @@ Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI produ
   "Product Design Lead",
   location: "Copenhagen, Denmark",
 )
-- Took WheelLog from an early concept to a working fleet-management experience, grounding the first version in 20+ customer interviews and three sprints of prototyping. The work brought time to value forward by six weeks for a product serving 5K–10K operators.
+- Led the 0→1 UX for WheelLog, a B2B fleet-management platform serving an average of 5K–10K operators daily in a realtime environment. Ran 20+ customer interviews and a three-sprint prototyping cycle that helped bring the product to value six weeks faster.
 
-- Built realistic fleet-telemetry prototypes with AI-assisted development, allowing the team to test three major features with remote users before committing to implementation.
+- Helped grow monthly active users by 35% over two quarters by partnering with Product and Marketing to identify activation drop-offs and redesign core flows on the user dashboard.
+
+- Built realistic fleet-telemetry prototypes with AI-assisted development, enabling remote user testing, A/B testing and evaluation of three major features before development.
+
 
 #v(8pt)
 #entry(
@@ -109,9 +112,11 @@ Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI produ
   "Product Design Lead",
   location: "Dubai, UAE",
 )
-- Worked with the PM to review user-behavior data every two weeks, turning recurring friction points into a prioritized backlog of improvements for a platform serving 500K+ users. Shipped changes over two quarters to address churn.
+- Reduced churn for a 500K+ user platform by running bi-weekly user behavior analytics reviews with the PM, translating findings into a prioritized backlog of UI optimizations, and shipping improvements across two quarters.
 
-- Built a token-based design system from scratch to make components more reusable and give engineers a more consistent foundation for implementation. Used AI-assisted prototyping to explore ideas quickly.
+- Redesigned a legacy platform around WCAG 2.1 accessibility requirements, incorporating custom keyboard and voice-navigation patterns to make core interactions more accessible. Validated the experience through three rounds of moderated testing with 30 users with disabilities and passed an external audit with zero critical violations.
+
+- Built a design system from scratch using "token method" to standardize user interface design decisions and component reusability. Built rapid prototypes using agentic development.
 
 #v(8pt)
 #entry(
@@ -120,9 +125,11 @@ Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI produ
   "Lead UI/UX Designer",
   location: "Austin, Texas, USA",
 )
-- Reorganized a B2B order-management dashboard around task frequency and error severity, bringing high-frequency actions forward and reducing unnecessary cognitive load during order entry.
+- Reorganized the B2B order-management dashboard using task frequency and error severity to guide information hierarchy, bringing high-use actions forward and making critical order-entry workflows easier to scan.
 
-- Created a company-wide design system with 40+ reusable components, shared design tokens, interaction patterns, and implementation documentation to give design and engineering a consistent language.
+- Designed and shipped a company-wide design system with 40+ components, standardizing existing design tokens, reusable patterns, and interaction documentation to improve interface consistency and give engineering a more reliable implementation reference.
+
+- Led the end-to-end checkout and payment flow for mtPay (Stripe integration), achieving 95% user adoption at launch by resolving 12 critical friction points identified across five rounds of usability testing.
 
 #v(8pt)
 
@@ -132,11 +139,11 @@ Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI produ
   "Lead Product Designer",
   location: "Dhaka, Bangladesh",
 )
-- Cut a spatial-scanning workflow from 15 steps to 5 using ML-assisted suggestions, inline error recovery, and step-level cognitive-load reviews, while reducing inbound onboarding support tickets.
+- Cut the spatial-scanning workflow from 15 steps to five by introducing ML-assisted autocomplete, inline error recovery, and step-level cognitive-load audits. Simplified the path through onboarding while decreasing inbound support tickets
 
-- Brought design and engineering closer together on a six-person team, reducing design-related PR review cycles from four rounds to one over three months.
+- Reduced design-related PR review cycles from four rounds to one over three months by bridging design and engineering on a six-person cross-functional team and resolving implementation ambiguities earlier.
 
-- Designed a computer-vision-powered 3D scanning experience and an interactive in-app guide, refining both through three rounds of moderated testing with 24 users.
+- Designed the user experience for a computer-vision-powered 3D spatial-scanning workflow and created an interactive in-app guide to help users navigate the process. Validated the experience through three rounds of moderated testing with 24 users
 
 #v(8pt)
 
@@ -148,7 +155,7 @@ Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI produ
 )
 - Engineered a conversational AI platform for a government bank portal serving 1M+ monthly users. Built a multi-turn intent classification pipeline using Dialogflow CX and custom NLP fallback handlers, achieving 97% query resolution accuracy and reducing average resolution time by 60%, while supporting 50K concurrent sessions without latency degradation.
 
-- Shaped the architecture and end-to-end user experience of an enterprise conversational AI platform for a major banking portal. Monthly customer interactions increased by 90% following deployment.
+- Led the design architecture and end-to-end UX for an enterprise conversational AI platform deployed across a major tier-1 banking portal, driving a 90% increase in monthly customer interactions.
 
 #v(8pt)
 
@@ -199,7 +206,5 @@ Senior Product Designer with 8+ years shipping high-impact B2B SaaS and AI produ
 #section("Skills")
 
 - *Product Design:* Figma, Origami, Prototyping, Design Systems, Information Architecture, User Research, Usability Testing, Product Strategy.
-
-- *Design & Engineering:* Figma, Origami, TypeScript, JavaScript, HTML/CSS, React, Node.js, Python, Go.
-
+- *Core Stack:* TypeScript, JavaScript (ES2022+), Node.js, HTML5/CSS3, Golang, Python.
 - *Technologies:* React, Astro, Angular, SolidJS, Svelte, FastAPI, WebSockets, LangChain, OpenCV, MongoDB, gRPC, Docker, Async AI Streaming, Git, Linux, UNIX, CI/CD Pipelines, AI/ML Product Integration.
