@@ -80,8 +80,9 @@
 
 #section("Summary")
 
-Software Engineer with 7+ years shipping high-impact B2B SaaS and AI products. Specialized in building complex, real-time React/TypeScript applications at scale. Proven ability to lead full product cycles, design systems, performance optimization, and cross-functional collaboration resulting in significant business outcomes.
+Senior Front-End Engineer with 6+ years of experience architecting complex B2B SaaS platforms, AI-powered products, and developer infrastructure. Specializes in React, TypeScript, real-time collaboration, design-system architecture, and performance engineering. I combine hands-on implementation with system-level thinking, translating ambiguous product requirements into resilient architectures, measurable customer outcomes, and engineering workflows that scale across teams.
 
+#v(4pt)
 #section("Education")
 
 #entry(
@@ -90,10 +91,9 @@ Software Engineer with 7+ years shipping high-impact B2B SaaS and AI products. S
   "Bachelor's of Science, Computer Science and Mathematics",
   location: "Dhaka, Bangladesh",
 )
-- Cumulative GPA: 4.0/4.0 | Dean's List, Merit Scholarship
 
-#v(9pt)
 
+#v(4pt)
 #section("Work Experience")
 
 #entry(
@@ -103,10 +103,13 @@ Software Engineer with 7+ years shipping high-impact B2B SaaS and AI products. S
   location: "Copenhagen, Denmark",
 )
 #v(2pt)
-- Designed and shipped WheelLog, a B2B tire-management SaaS, leading the full product lifecycle from discovery interviews with 20+ fleet managers through a 3-sprint prototype cycle, achieving *80% customer conversion in Q1*.
-- Architected real-time multi-user collaboration with presence detection using CRDT in React, *eliminating write conflicts* in concurrent sessions and enabling live co-editing for the first time on the platform for 100k Daily Active Users.
-- Streamlined client onboarding by building a requirements-analysis framework that cut discovery-to-spec time by 35% and reduced revision cycles from 4 rounds to 1, measurably improving engineering throughput.
-- *Championed a documentation-first engineering culture*, introduced ADRs (Architecture Decision Records) and a component contract specification process, *cutting cross-team integration bugs by 50%* and reducing onboarding time for new engineers from 2 weeks to 4 days.
+- Engineered WheelLog's front-end application from prototype to production, translating discovery findings from 20+ fleet-manager interviews into application workflows, reusable UI components, and production-ready feature implementations which help me achieve 80% customer conversion in Q1.
+
+- Implemented CRDT-based state synchronization and presence tracking for a multi-user fleet-management application, coordinating concurrent edits without destructive write conflicts and supporting real-time collaboration across a platform with 100K daily active users.
+
+- Developed a requirements-to-specification workflow that standardized technical scoping, acceptance criteria, and implementation handoffs, reducing discovery-to-specification time by 35% and cutting revision cycles from four rounds to one.
+
+- Introduced architecture decision records (ADRs), explicit component contracts, and documented integration boundaries to reduce ambiguity between engineering teams, cutting cross-team integration defects by 50% and reducing engineer onboarding time from two weeks to four days.
 
 #v(9pt)
 #entry(
@@ -115,10 +118,13 @@ Software Engineer with 7+ years shipping high-impact B2B SaaS and AI products. S
   "Lead Front-end Engineer",
   location: "Dubai, UAE",
 )
-- Optimized Core Web Vitals (LCP, CLS, FID) for an e-commerce platform with serving 500k+ monthly users, implemented image lazy loading, code splitting, and service workers cutting page load from 3.4s to 1.2s and *lifting conversion rates by 20%*.
-- Drove a full accessibility overhaul, introduced ARIA attributes and customizable keyboard navigation across all core flows, achieving *98% user satisfaction* from testers with diverse abilities and full WCAG 2.1 AA compliance.
-- Neutralized 411 CVEs across the dependency tree and assessed vulnerabilities by CVSS score using Snyk + npm audit, shipped remediations to all critical/high-severity issues within a single sprint, and embedded a mandatory dependency-audit gate in the CI/CD pipeline—reducing future CVE exposure by 100% at merge time.
-- *Scaled front-end team velocity 2×*, introduced a component-driven development workflow with Storybook visual regression testing, reducing QA cycles from 5 days to 2 and cutting UI bug regression rate by 65% across quarterly releases.
+- Reduced page-load time from 3.4s to 1.2s on an e-commerce application serving 500K+ monthly users by implementing route-level code splitting, deferred image loading, service-worker caching and it improved conversion by 20%.
+
+- Refactored accessible interaction patterns across core application flows, implementing semantic HTML, ARIA attributes, and keyboard-navigation behavior to meet WCAG 2.1 AA requirements and achieve 98% satisfaction among accessibility testers.
+
+- Audited the transitive dependency tree using Snyk and npm audit, triaged 411 vulnerability findings by CVSS severity, and remediated critical and high-severity issues within one sprint. Integrated dependency auditing into CI/CD to enforce security checks before code integration.
+
+- Established a component-driven development pipeline using Storybook and visual regression testing, standardizing component isolation and UI verification across the team. Doubled team velocity, reduced QA cycles from five days to two, and decreased UI regression rates by 65%.
 
 #v(9pt)
 #entry(
@@ -127,10 +133,11 @@ Software Engineer with 7+ years shipping high-impact B2B SaaS and AI products. S
   "Lead Front-end Engineer",
   location: "Austin, Texas, USA",
 )
-- Architected the token layer of the design system using Style Dictionary, defining a single source-of-truth JSON schema that compiled to CSS custom properties, JS constants, and Figma tokens simultaneously, *eliminating token drift across 4 product versions*.
-- *Decoupled design system versioning from product releases* and published components as independent npm packages versioned via semantic-release, enabling teams to adopt system upgrades asynchronously—cutting system upgrade costs by 60% and accelerating design delivery speed by 90% across 3 product teams.
-- Engineered automated visual regression testing at component level, integrated Chromatic CI into the design system pipeline, catching pixel-level regressions across 200+ components before merge—reducing production UI defects by 74% over 6 months and saving ~12 QA hours per release cycle.
+- Architected a design-token compilation pipeline with Style Dictionary, defining a canonical JSON token schema and generating platform-specific outputs for CSS custom properties, JavaScript constants, and Figma. Eliminated token inconsistencies across four product versions.
 
+- Distributed the design system as independently versioned npm packages using semantic-release, decoupling component releases from application deployment schedules and enabling three product teams to upgrade asynchronously which reduced upgrade costs by 60% and accelerated design delivery by 90%.
+
+- Integrated Chromatic visual regression testing into the component CI pipeline, validating visual changes across 200+ components before merge and preventing unintended UI changes from reaching production. Reduced production UI defects by 74% over six months and saved approximately 12 QA hours per release cycle.
 #v(9pt)
 #entry(
   "Roxnor (Contract)",
@@ -138,8 +145,9 @@ Software Engineer with 7+ years shipping high-impact B2B SaaS and AI products. S
   "Front-end Engineer",
   location: "Dhaka, Bangladesh",
 )
-- Implemented optimistic UI patterns using React's useReducer and dispatched local state updates immediately on user action, then reconciled with the API response, reducing perceived wait time by 40% and achieving a 4.7/5 beta satisfaction score.
-- Built the full front end for GetGenieAI, a Gutenberg block-based AI content-generation WordPress plugin, implemented streaming AI responses via ReadableStream and TextDecoder, chunking token output into the editor in real time to deliver sub-200ms perceived latency.
+- Implemented optimistic state transitions using React's useReducer, separating immediate client-side updates from asynchronous server reconciliation and handling rollback on failed mutations; reduced perceived interaction latency by 40% and achieved a 4.7/5 beta satisfaction score.
+
+- Developed the front end for GetGenieAI, a Gutenberg-based AI content-generation plugin, using the Streams API (ReadableStream) and TextDecoder to incrementally decode and render streamed model responses inside the editor, achieving sub-200ms perceived latency.
 
 #v(9pt)
 #entry(
@@ -148,7 +156,7 @@ Software Engineer with 7+ years shipping high-impact B2B SaaS and AI products. S
   "Jr. Software Engineer",
   location: "Dhaka, Bangladesh",
 )
-- *Engineered a Conversational AI platform* for a government bank portal serving 1M+ monthly users, designed a multi-turn intent classification pipeline using Dialogflow CX with custom NLP fallback handlers, achieving 97% query resolution accuracy and reducing average resolution time by 60% while scaling to 50K concurrent sessions without latency degradation.
+- Implemented a conversational AI system for a government banking portal serving 1M+ monthly users, combining Dialogflow CX multi-turn intent routing with custom NLP fallback handlers to improve classification coverage and query resolution. Achieved 97% query-resolution accuracy, reduced average resolution time by 60%, and supported 50K concurrent sessions without latency degradation.
 
 #v(9pt)
 #section("Project")
@@ -199,5 +207,9 @@ Software Engineer with 7+ years shipping high-impact B2B SaaS and AI products. S
 #v(9pt)
 #section("Skills")
 
-- *Core Stack*: TypeScript, JavaScript (ES2022+), Node.js, HTML5/CSS3, Golang, Python.
-- *Technologies*: React, Astro, Angular, SolidJS, Svelte, Fast-API, WebSockets, LangChain, Open-CV, MongoDB, gRPC, Docker, Async AI streaming, Git, Linux, UNIX, CI/CD pipelines, AI/ML product integration.
+- *Languages:* TypeScript, JavaScript (ES2022+), Go, Python, HTML5, CSS3
+- *Application Engineering:* React, Node.js, Astro, Angular, SolidJS, Svelte, state management, component architecture, rendering optimization, accessibility
+- *Concurrency & Communication:* CRDTs, WebSockets, asynchronous processing, streaming APIs, gRPC
+- *Design-System Infrastructure:* Style Dictionary, design tokens, Storybook, Chromatic, npm package architecture, semantic-release
+- *AI & Data:* LangChain, OpenCV, FastAPI, MongoDB, AI streaming interfaces, NLP integration
+- *Infrastructure & Quality:* Docker, Linux, Unix, Git, CI/CD, automated testing, dependency security, performance profiling
