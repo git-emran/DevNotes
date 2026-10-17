@@ -179,8 +179,9 @@ Senior Front-End Engineer with 6+ years of experience architecting complex B2B S
 )
 
 #text(style: "italic")[Creator & Maintainer]
-- An open-source Markdown Editor with LSP, built in Terminal, AI assisted writing, Kanban board and a Freeform canvas to enhance agentic or general development workflow.
-- Optimized local markdown parsing and tokenization rendering to achieve sub-16ms frame times during heavy AI streaming sessions, dynamic tags to organize and maintain notes.
+- Built a terminal-native Markdown editor integrating language-server support, AI-assisted writing, Kanban task management, and a freeform canvas into a unified development workspace.
+
+- Optimized Markdown parsing, tokenization, and incremental rendering to maintain sub-16ms frame times during high-volume AI streaming, also implemented dynamic tagging for structured note organization and retrieval.
 
 #v(9pt)
 #grid(
@@ -201,7 +202,7 @@ Senior Front-End Engineer with 6+ years of experience architecting complex B2B S
 )
 
 #text(style: "italic")[Creator & Maintainer]
-- Designed a slideshow experience with neovim's built in buffer creator, A custom parser for parsing Markdown headings into a center-aligned presentation layout with seamless, distraction-free rendering.
+- Implemented a Markdown-to-slide rendering pipeline on Neovim's native buffer infrastructure, parsing document headings into a center-aligned presentation layout with custom parsing and rendering logic.
 
 
 #v(9pt)
