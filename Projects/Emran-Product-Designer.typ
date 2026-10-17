@@ -129,7 +129,7 @@ Product Designer with a software engineering background, building B2B SaaS and A
 
 - Designed and shipped a company-wide design system with 40+ components, standardizing existing design tokens, reusable patterns, and interaction documentation to improve interface consistency and give engineering a more reliable implementation reference.
 
-- Led the end-to-end checkout and payment flow for mtPay (Stripe integration), achieving 95% user adoption at launch by resolving 12 critical friction points identified across five rounds of usability testing.
+- Led end-to-end design of mtPay's Stripe-integrated checkout and payment flow. Used five rounds of usability testing to identify and resolve 12 critical friction points; the feature reached 95% user adoption at launch.
 
 #v(8pt)
 
@@ -143,7 +143,7 @@ Product Designer with a software engineering background, building B2B SaaS and A
 
 - Reduced design-related PR review cycles from four rounds to one over three months by bridging design and engineering on a six-person cross-functional team and resolving implementation ambiguities earlier.
 
-- Designed the user experience for a computer-vision-powered 3D spatial-scanning workflow and created an interactive in-app guide to help users navigate the process. Validated the experience through three rounds of moderated testing with 24 users
+- Designed the UX for a computer vision powered 3D spatial-scanning workflow and created an interactive in-app guide, validating the experience through three rounds of moderated testing with 24 users.
 
 #v(8pt)
 
@@ -153,9 +153,9 @@ Product Designer with a software engineering background, building B2B SaaS and A
   "Jr. Software Engineer",
   location: "Dhaka, Bangladesh",
 )
-- Engineered a conversational AI platform for a government bank portal serving 1M+ monthly users. Built a multi-turn intent classification pipeline using Dialogflow CX and custom NLP fallback handlers, achieving 97% query resolution accuracy and reducing average resolution time by 60%, while supporting 50K concurrent sessions without latency degradation.
+- Engineered a conversational AI platform for a government banking portal serving 1M+ monthly users. Built a multi-turn intent-classification pipeline using Dialogflow CX and custom NLP fallback handlers, achieving 97% query-resolution accuracy and reducing average resolution time by 60%, while supporting 50K concurrent sessions without latency degradation.
 
-- Led the design architecture and end-to-end UX for an enterprise conversational AI platform deployed across a major tier-1 banking portal, driving a 90% increase in monthly customer interactions.
+- Led the design architecture and end-to-end UX for an enterprise conversational AI platform deployed across a major tier-1 banking portal, contributing to improvements in customer interactions and satisfaction.
 
 #v(8pt)
 
