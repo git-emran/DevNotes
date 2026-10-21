@@ -99,7 +99,7 @@ Product Designer with a software engineering background, building B2B SaaS and A
 )
 - Led the design of a B2B fleet-management platform serving an average of 5K–10K operators daily interacting in a realtime environment.
 
-- Helped grow monthly active users by 35% over two quarters by taking the initiative to partner with the marketing team and identify where does the user drop offs happens.
+- Helped grow monthly active users by 35% over two quarters by taking the initiative to partner with the marketing team and identify where user drop offs occurred.
 
 - Built realistic fleet-telemetry prototypes with AI-assisted development for faster A/B tests.
 
@@ -129,8 +129,8 @@ Product Designer with a software engineering background, building B2B SaaS and A
 #v(8pt)
 
 #entry(
-  "Roxnor (Contract)",
-  "Feb 2022 – May 2022",
+  "InsideMaps Inc",
+  "Mar 2019 – May 2022",
   "Lead Product Designer",
   location: "Dhaka, Bangladesh",
 )
@@ -138,13 +138,13 @@ Product Designer with a software engineering background, building B2B SaaS and A
 
 - Reduced design-related PR review cycles from four rounds to one over three months by creating a delivery guide.
 
-- Led the team to build an unique user experience for a computer vision powered 3D spatial-scanning workflow. Built this by interviewing 24 beta users.
+- Led the team to build a unique user experience for a computer vision powered 3D spatial-scanning workflow. Built this by interviewing 24 beta users.
 
 #v(8pt)
 
 #entry(
   "Genex Infosys PLC",
-  "May 2020 – Feb 2022",
+  "Apr 2017 – Mar 2019",
   "Jr. Software Engineer",
   location: "Dhaka, Bangladesh",
 )
@@ -152,7 +152,7 @@ Product Designer with a software engineering background, building B2B SaaS and A
 
 - Contributed to the API development and documentation for an enterprise conversational AI platform deployed across a major tier-1 banking portal.
 
-#v(36pt)
+#v(40pt)
 
 #section("Projects")
 
