@@ -86,7 +86,7 @@ Product Designer with a software engineering background, building B2B SaaS and A
 #entry(
   "University of Information Technologies and Sciences",
   "Mar 2013 – Jun 2017",
-  "Bachelor's of Science, Computer Science and Mathematics",
+  "Bachelor of Science, Computer Science and Mathematics",
   location: "Dhaka, Bangladesh",
 )
 
@@ -101,7 +101,7 @@ Product Designer with a software engineering background, building B2B SaaS and A
 
 - Helped grow monthly active users by 35% over two quarters by taking the initiative to partner with the marketing team and identify where user drop offs occurred.
 
-- Built realistic fleet-telemetry prototypes with AI-assisted development for faster A/B tests.
+- Built realistic fleet-telemetry prototypes with AI-assisted development and cut variant build time from 2 weeks to 2 days.
 
 
 #v(8pt)
@@ -111,9 +111,9 @@ Product Designer with a software engineering background, building B2B SaaS and A
   "Product Design Lead",
   location: "Dubai, UAE",
 )
-- Reduced churn for a 500K+ user platform by leading bi-weekly user behavior analytics reviews.
+- Reduced 20% churn at checkout over 6 weeks for a 500K+ user platform by leading bi-weekly user behavior analytics reviews.
 
-- Built a design system from scratch using "tokenization method" to standardize user interface design decision. Built rapid interactive prototypes using agentic development.
+- Built a design system from scratch using "tokenization method" to standardize user interface design decisions. Built rapid interactive prototypes using agentic development.
 
 #v(8pt)
 #entry(
@@ -122,7 +122,7 @@ Product Designer with a software engineering background, building B2B SaaS and A
   "Lead UI/UX Designer",
   location: "Austin, Texas, USA",
 )
-- Reorganized the B2B order-management dashboard using task frequency and error severity as guides to design the layout.
+- Led the Redesign of the B2B order-management dashboard using task frequency and error severity as guides to design the layout.
 
 - Designed and shipped a large design system with 50+ components, standardizing design delivery and accuracy.
 
@@ -136,7 +136,7 @@ Product Designer with a software engineering background, building B2B SaaS and A
 )
 - Cut the spatial-scanning workflow from 15 steps to five by introducing ML-assisted autocomplete, inline error recovery right in the UI.
 
-- Reduced design-related PR review cycles from four rounds to one over three months by creating a delivery guide.
+- Reduced design-related PR review cycles from 4 rounds to 1 over three months by creating a delivery guide.
 
 - Led the team to build a unique user experience for a computer vision powered 3D spatial-scanning workflow. Built this by interviewing 24 beta users.
 
