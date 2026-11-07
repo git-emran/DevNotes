@@ -75,6 +75,8 @@
     #link("mailto:" + email)[#email]
     #h(5pt) | #h(5pt)
     #link("https://" + personal-site)[Portfolio]
+    #h(5pt) | #h(5pt)
+    #link("https://" + linkedin)[LinkedIn]
   ]
 ]
 
@@ -116,7 +118,7 @@ Product Designer with a software engineering background, building B2B SaaS and A
 
 - Redesigned a legacy platform around WCAG 2.1 accessibility requirements, incorporating custom keyboard and voice-navigation patterns to make core interactions more accessible. Validated the experience through three rounds of moderated testing with 30 users with disabilities and passed an external audit with zero critical violations.
 
-- Built a design system from scratch using "token method" to standardize user interface design decisions and component reusability. Built rapid prototypes using agentic development.
+- Built a design system from scratch using unique token system to standardize user interface design decisions and component reusability. Built rapid prototypes using agentic development with that token system.
 
 #v(8pt)
 #entry(
