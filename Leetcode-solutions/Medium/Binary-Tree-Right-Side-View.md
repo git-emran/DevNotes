@@ -87,4 +87,44 @@ class Solution:
 
 
 
+## Breadth First Search
 
+### Intuition
+In BFS we explore the tree level by level.
+If we look at each level from left to right, the last node we encounter at that level is the one visible from the right side.
+
+So for every level:
+
+- Traverse all nodes.
+- Remember the rightmost node.
+- Add it to the answer.
+
+### Algorithm
+- If the tree is empty → return an empty list.
+- Initialize a queue with the root.
+- While the queue is not empty:
+- Determine how many nodes are in the current level (level_size).
+- For each node in the level:
+- Pop it from the queue.
+- Update rightmost_node to this node.
+- Push its left child, then right child (if they exist).
+- After finishing the level, append rightmost_node's value to the result.
+- Return the result list.
+
+```py
+
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+class Solution:
+    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
+        q = deque([root])
+
+
+
+```
