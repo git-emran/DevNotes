@@ -97,7 +97,7 @@ Product Designer with a software engineering background, building B2B SaaS and A
 #entry(
   "Tiblo Digital - Product Design Lead",
   "May 2024 – Present",
-  "Digital Agency",
+  "Software Design & Development Agency",
   location: "Copenhagen, Denmark",
 )
 - Led the 0→1 UX for WheelLog, a B2B fleet-management platform serving an average of 5K–10K operators daily in a realtime environment. Ran 20+ customer interviews and a three-sprint prototyping cycle that helped bring the product to value six weeks faster.
