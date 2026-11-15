@@ -95,9 +95,9 @@ Product Designer with a software engineering background, building B2B SaaS and A
 
 #section("Work Experience")
 #entry(
-  "Tiblo Digital",
+  "Tiblo Digital - Product Design Lead",
   "May 2024 – Present",
-  "Product Design Lead",
+  "Digital Agency",
   location: "Copenhagen, Denmark",
 )
 - Led the 0→1 UX for WheelLog, a B2B fleet-management platform serving an average of 5K–10K operators daily in a realtime environment. Ran 20+ customer interviews and a three-sprint prototyping cycle that helped bring the product to value six weeks faster.
@@ -109,9 +109,9 @@ Product Designer with a software engineering background, building B2B SaaS and A
 
 #v(8pt)
 #entry(
-  "The Total Office (Contract)",
-  "Apr 2023 – May 2024",
-  "Product Design Lead",
+  "The Total Office - Product Design Lead",
+  "Apr 2023 – May 2024 (Contract)",
+  "Office Workstation Solution Provider",
   location: "Dubai, UAE",
 )
 - Reduced churn for a 500K+ user platform by running bi-weekly user behavior analytics reviews with the PM, translating findings into a prioritized backlog of UI optimizations, and shipping improvements across two quarters.
@@ -122,9 +122,9 @@ Product Designer with a software engineering background, building B2B SaaS and A
 
 #v(8pt)
 #entry(
-  "MarketTime LLC",
+  "MarketTime LLC - Lead UI/UX Designer",
   "May 2022 – Apr 2023",
-  "Lead UI/UX Designer",
+  "B2B Wholesale Orderwriting & B2B eCommerce",
   location: "Austin, Texas, USA",
 )
 - Reorganized the B2B order-management dashboard using task frequency and error severity to guide information hierarchy, bringing high-use actions forward and making critical order-entry workflows easier to scan.
@@ -136,9 +136,9 @@ Product Designer with a software engineering background, building B2B SaaS and A
 #v(8pt)
 
 #entry(
-  "Roxnor (Contract)",
-  "Feb 2022 – May 2022",
-  "Lead Product Designer",
+  "Roxnor  - Lead Product Designer",
+  "Feb 2022 – May 2022 (Contract)",
+  "B2C Software as a Service Company",
   location: "Dhaka, Bangladesh",
 )
 - Cut the spatial-scanning workflow from 15 steps to five by introducing ML-assisted autocomplete, inline error recovery, and step-level cognitive-load audits. Simplified the path through onboarding while decreasing inbound support tickets
@@ -150,9 +150,9 @@ Product Designer with a software engineering background, building B2B SaaS and A
 #v(8pt)
 
 #entry(
-  "Genex Infosys PLC",
+  "Genex Infosys PLC - Jr. Software Engineer",
   "May 2020 – Feb 2022",
-  "Jr. Software Engineer",
+  "BPO & ITeS Company",
   location: "Dhaka, Bangladesh",
 )
 - Engineered a conversational AI platform for a government banking portal serving 1M+ monthly users. Built a multi-turn intent-classification pipeline using Dialogflow CX and custom NLP fallback handlers, achieving 97% query-resolution accuracy and reducing average resolution time by 60%, while supporting 50K concurrent sessions without latency degradation.
@@ -210,3 +210,4 @@ Product Designer with a software engineering background, building B2B SaaS and A
 - *Product Design:* Figma, Origami, Prototyping, Design Systems, Information Architecture, User Research, Usability Testing, Product Strategy.
 - *Core Stack:* TypeScript, JavaScript (ES2022+), Node.js, HTML5/CSS3, Golang, Python.
 - *Technologies:* React, Astro, Angular, SolidJS, Svelte, FastAPI, WebSockets, LangChain, OpenCV, MongoDB, gRPC, Docker, Async AI Streaming, Git, Linux, UNIX, CI/CD Pipelines, AI/ML Product Integration.
+- *Soft Skills:*  Cross-functional Collaboration, Systems Thinking, Technical Communication, Problem Solving, Ownership & Accountability, Strategic Thinking, Adaptability, Stakeholder Management
