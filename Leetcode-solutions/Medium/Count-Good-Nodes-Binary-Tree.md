@@ -27,6 +27,20 @@ Output: 4
 - `1 <= number of nodes in the tree <= 100,000`
 - `-100 <= Node.val <= 100`
 
+## Depth First Search
+Intuition
+A node is “good” if on the path from the root to that node, no earlier node has a value greater than it.
+So while traversing the tree, we just need to carry the maximum value seen so far on the current path.
+
+If the current node’s value ≥ that maximum → it is a good node.
+
+Algorithm
+- Start DFS from the root and store the root's value as the current maxSoFar.
+- At each node: Update maxSoFar = max(maxSoFar, node.val).
+- Recursively explore:
+- Left child with updated maxSoFar
+- Right child with updated maxSoFar
+- Sum the counts from left and right and return the total.
 
 ```python
 # Definition for a binary tree node.
