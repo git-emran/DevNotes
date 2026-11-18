@@ -150,14 +150,30 @@ Product Designer with a software engineering background, building B2B SaaS and A
 #v(8pt)
 
 #entry(
-  "Genex Infosys PLC - Jr. Software Engineer",
+  "Insidemaps Capture - Product Designer",
   "May 2020 – Feb 2022",
+  "BPO & ITeS Company",
+  location: "Dhaka, Bangladesh",
+)
+- Implemented a Material Design-based system, standardized design documentation, and design workshops reducing workload by 50%  within first 3 months of joining.
+
+- Revamped and optimized web and iOS apps, boosting retention rate by 120% and increasing unique users by 80%.
+
+- Led the research and implementation of brand-new monetization strategies resulting in 8% increase in annual product revenue.
+
+- Streamlined the user onboarding process, reducing the time it takes for new users to become active by 30%, leading to a significant improvement in user retention.
+
+
+#entry(
+  "Genex Infosys  - Jr Software Engineer",
+  "May 2019 – May 2020",
   "BPO & ITeS Company",
   location: "Dhaka, Bangladesh",
 )
 - Engineered a conversational AI platform for a government banking portal serving 1M+ monthly users. Built a multi-turn intent-classification pipeline using Dialogflow CX and custom NLP fallback handlers, achieving 97% query-resolution accuracy and reducing average resolution time by 60%, while supporting 50K concurrent sessions without latency degradation.
 
 - Led the design architecture and end-to-end UX for an enterprise conversational AI platform deployed across a major tier-1 banking portal, contributing to improvements in customer interactions and satisfaction.
+
 
 #v(8pt)
 
