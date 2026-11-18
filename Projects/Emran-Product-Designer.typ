@@ -166,7 +166,7 @@ Product Designer with a software engineering background, building B2B SaaS and A
 
 #entry(
   "Genex Infosys  - Jr Software Engineer",
-  "May 2019 – May 2020",
+  "Feb 2019 – May 2020",
   "BPO & ITeS Company",
   location: "Dhaka, Bangladesh",
 )
