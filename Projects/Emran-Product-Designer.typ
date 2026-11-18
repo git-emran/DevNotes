@@ -152,7 +152,7 @@ Product Designer with a software engineering background, building B2B SaaS and A
 #entry(
   "Insidemaps Capture - Product Designer",
   "May 2020 – Feb 2022",
-  "BPO & ITeS Company",
+  "Real Estate Technology Company",
   location: "Dhaka, Bangladesh",
 )
 - Implemented a Material Design-based system, standardized design documentation, and design workshops reducing workload by 50%  within first 3 months of joining.
